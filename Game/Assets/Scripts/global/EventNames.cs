@@ -1,0 +1,11 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class EventNames : MonoBehaviour
+{
+    //bolt custom events
+    public const string BOLT_CUSTOM_EVENT_PATROL_TRANSITION_TO_CHASING = "BOLT_CUSTOM_EVENT_PATROL_TRANSITION_TO_CHAXSING";
+    public const string BOLT_CUSTOM_EVENT_CHASING_TRANSITION_TO_PATROL = "BOLT_CUSTOM_EVENT_CHASING_TRANSITION_TO_PATROL";
+    public const string BOLT_CUSTOM_EVENT_CHASING_TRANSITION_TO_ATTACK = "BOLT_CUSTOM_EVENT_CHASING_TRANSITION_TO_ATTACK";
+    public const string BOLT_CUSTOM_EVENT_ATTACK_TRANSITION_TO_PATROL = "BOLT_CUSTOM_EVENT_ATTACK_TRANSITION_TO_PATROL";
+}
