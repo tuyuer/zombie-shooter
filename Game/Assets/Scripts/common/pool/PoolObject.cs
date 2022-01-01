@@ -32,7 +32,7 @@ public class PoolObject : MonoBehaviour
         gameObject.SetActive(true);
     }
 
-    public void DestroySelf()
+    public virtual void DestroySelf()
     {
         if (onObjectDestroyed != null)
         {

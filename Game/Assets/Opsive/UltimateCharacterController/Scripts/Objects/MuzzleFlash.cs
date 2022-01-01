@@ -145,7 +145,32 @@ namespace Opsive.UltimateCharacterController.Objects
                 m_GameObject.SetActive(true);
             }
         }
-        
+
+        //added by wenzhihua
+        public void ShowEffect()
+        {
+
+            m_TimeScale = 1;
+            m_GameObject.layer = m_StartLayer;
+
+            m_Color = Color.white;
+            m_Color.a = m_StartAlpha;
+            if (m_Material != null)
+            {
+                m_Material.SetColor(m_TintColorPropertyID, m_Color);
+            }
+            m_FadeSpeed = Random.Range(m_MinFadeSpeed, m_MaxFadeSpeed);
+            if (m_Light != null)
+            {
+                m_Light.intensity = m_StartLightIntensity;
+            }
+            if (m_Particles != null)
+            {
+                m_Particles.Play(true);
+            }
+        }
+
+
         /// <summary>
         /// Decrease the alpha value of the muzzle flash to give it a fading effect. As soon as the alpha value reaches zero place the muzzle flash back in
         /// the object pool. If a light exists decrease the intensity of the light as well.
@@ -165,8 +190,13 @@ namespace Opsive.UltimateCharacterController.Objects
                 if (m_Pooled) {
                     ObjectPoolBase.Destroy(m_GameObject);
                 } else {
-                    m_GameObject.SetActive(false);
+                    //m_GameObject.SetActive(false);
                 }
+            }
+
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                ShowEffect();
             }
         }
 

@@ -6,14 +6,12 @@ public class Bullet : PoolObject
 {
     public float speed = 100;
     private Rigidbody rigidbody = null;
+    private TrailRenderer trailRender = null;
 
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
-    }
-
-    void Update()
-    {
+        trailRender = GetComponent<TrailRenderer>();
     }
 
     public void Shoot(Vector3 startPos, Vector3 moveDir)
@@ -27,5 +25,11 @@ public class Bullet : PoolObject
     private void OnCollisionEnter(Collision collision)
     {
         DestroySelf();
+    }
+
+    public override void DestroySelf()
+    {
+        base.DestroySelf();
+        trailRender.Clear();
     }
 }

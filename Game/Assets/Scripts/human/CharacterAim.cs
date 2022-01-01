@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterAim : MonoBehaviour
 {
+    public GameObject aimTarget;
     public LayerMask layerMask;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,10 @@ public class CharacterAim : MonoBehaviour
         {
             Vector3 target = hitInfo.point;
             target.y = transform.position.y;
-            transform.LookAt(target);
+            transform.forward = target - transform.position;
+            target.y = 1.3f;
+            aimTarget.transform.position = target;
+            //transform.LookAt(target);
         }
     }
 }

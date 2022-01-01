@@ -9,6 +9,7 @@ namespace HitJoy
     {
         public Animator animator;
         public Transform character;
+        public CharacterAim characterAim;
 
         public Brain actorBrain;
         public CharacterController characterController;
