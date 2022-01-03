@@ -29,6 +29,7 @@ public class Bullet : PoolObject
 
     private void OnTriggerEnter(Collider other)
     {
+        GameWorld.Instance.SpawnBlood(transform.position, Quaternion.Inverse(transform.rotation));
         DestroySelf();
     }
 
