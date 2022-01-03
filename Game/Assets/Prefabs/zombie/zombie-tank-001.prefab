@@ -971,7 +971,7 @@ MonoBehaviour:
   heightOffset: 0
   senseDetectRadius: 100
   senseDetectAngle: 360
-  attackDetectRadius: 1.4
+  attackDetectRadius: 1
   attackDetectAngle: 131
   viewBlockerLayerMask:
     serializedVersion: 2
