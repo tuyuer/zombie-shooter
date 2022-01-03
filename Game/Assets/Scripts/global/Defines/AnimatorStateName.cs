@@ -20,4 +20,8 @@ public class AnimatorStateName
 
     public const string ActorDodge = "Base Layer.ActorDodge";
     public const string AttackUp = "Base Layer.AttackUp";
+
+
+    public const string AttackX = "Base Layer.AttackX";
+    public const string AttackO = "Base Layer.AttackO";
 }

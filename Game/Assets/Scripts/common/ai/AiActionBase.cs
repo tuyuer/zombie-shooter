@@ -58,4 +58,9 @@ public class AiActionBase : MonoBehaviour
     { 
 
     }
+
+    private void Update()
+    {
+
+    }
 }

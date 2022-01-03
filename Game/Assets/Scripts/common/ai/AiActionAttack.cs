@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class AiActionAttack : AiActionBase
 {
+    public float coldTime = 2.0f;
+    private float coldElapsed = 0f;
     void Awake()
     {
+        coldElapsed = coldTime;
         actionType = ai_action_type.ai_action_type_attack;
     }
 
     public override void OnUpdate()
     {
+        coldElapsed += Time.deltaTime;
+
         Transform playerTrans = aiController.enemySense.FindTarget();
         if (playerTrans != null)
         {
@@ -22,7 +27,9 @@ public class AiActionAttack : AiActionBase
             else
             {
                 AnimatorStateInfo stateInfo = aiController.animator.GetCurrentAnimatorStateInfo(0);
-                if (stateInfo.IsName(AnimatorStateName.Locomotion))
+                if (!stateInfo.IsName(AnimatorStateName.AttackX) &&
+                    !stateInfo.IsName(AnimatorStateName.AttackO) &&
+                    coldElapsed > coldTime)
                 {
                     aiController.OnTargetOutAttackArea();
                 }
@@ -32,7 +39,11 @@ public class AiActionAttack : AiActionBase
 
     private void AttackTarget(Transform targetTrans)
     {
-        aiController.transform.LookAt(targetTrans);
-        aiController.animator.SetTrigger(AnimatorParameter.AttackO);
+        if (coldElapsed > coldTime)
+        {
+            aiController.transform.LookAt(targetTrans);
+            aiController.animator.SetTrigger(AnimatorParameter.AttackO);
+            coldElapsed = 0;
+        }
     }
 }

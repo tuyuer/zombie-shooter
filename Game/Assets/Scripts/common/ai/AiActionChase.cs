@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AiActionChase : AiActionBase
-{   
-    
+{
+    public float chaseSpeed = 3.0f;
     void Awake()
     {
         actionType = ai_action_type.ai_action_type_chase;
@@ -38,7 +38,7 @@ public class AiActionChase : AiActionBase
         {
             aiController.transform.LookAt(targetTrans);
             Vector3 moveDir = (targetTrans.position - aiController.transform.position).normalized;
-            aiController.characterController.Move(moveDir * Time.deltaTime);
+            aiController.characterController.Move(moveDir * chaseSpeed * Time.deltaTime);
         }
     }
 }
