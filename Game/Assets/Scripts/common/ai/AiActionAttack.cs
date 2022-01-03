@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AiActionAttack : AiActionBase
 {
-    public AiActionAttack()
+    void Awake()
     {
         actionType = ai_action_type.ai_action_type_attack;
     }

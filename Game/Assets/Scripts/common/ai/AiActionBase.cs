@@ -16,7 +16,7 @@ public enum ai_action_state
 };
 
 
-public class AiActionBase
+public class AiActionBase : MonoBehaviour
 {
     protected AiController aiController;
 

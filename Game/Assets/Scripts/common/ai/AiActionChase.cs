@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class AiActionChase : AiActionBase
 {   
-    public AiActionChase()
+    
+    void Awake()
     {
         actionType = ai_action_type.ai_action_type_chase;
     }

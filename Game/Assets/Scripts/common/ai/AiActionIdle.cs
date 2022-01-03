@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AiActionIdle : AiActionBase
-{   
-    public AiActionIdle()
+{
+    void Awake()
     {
         actionType = ai_action_type.ai_action_type_idle;
     }
