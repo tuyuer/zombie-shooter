@@ -29,13 +29,14 @@ public class AiActionChase : AiActionBase
 
     private void ChaseTarget(Transform targetTrans)
     {
-        aiController.animator.SetFloat(AnimatorParameter.ForwardSpeed, 1.0f);
         if (aiController.enemySense.DetectTargetInAttackField(targetTrans))
         {
+            aiController.animator.SetFloat(AnimatorParameter.ForwardSpeed, 0f);
             aiController.OnTargetEnterAttackArea();
         }
         else
         {
+            aiController.animator.SetFloat(AnimatorParameter.ForwardSpeed, 1.0f);
             aiController.transform.LookAt(targetTrans);
             Vector3 moveDir = (targetTrans.position - aiController.transform.position).normalized;
             aiController.characterController.Move(moveDir * chaseSpeed * Time.deltaTime);
