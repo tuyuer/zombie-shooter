@@ -24,11 +24,6 @@ public class Bullet : PoolObject
 
     private void OnCollisionEnter(Collision collision)
     {
-        DestroySelf();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
         GameWorld.Instance.SpawnBlood(transform.position, Quaternion.Inverse(transform.rotation));
         DestroySelf();
     }
