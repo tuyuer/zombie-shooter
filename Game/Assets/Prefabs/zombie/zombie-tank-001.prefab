@@ -911,6 +911,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8496425238900565533}
+  - component: {fileID: 1120188193}
   - component: {fileID: 288220494}
   - component: {fileID: 868681887}
   - component: {fileID: 868681888}
@@ -919,7 +920,8 @@ GameObject:
   - component: {fileID: 2995860976616564998}
   - component: {fileID: 1260720466805290368}
   - component: {fileID: 882291415147051193}
-  - component: {fileID: 1120188193}
+  - component: {fileID: 1235355903639205697}
+  - component: {fileID: 5083813043258927278}
   m_Layer: 8
   m_Name: zombie-tank-001
   m_TagString: Enemy
@@ -942,6 +944,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1120188193
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496425238900565532}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0.5
+  m_AngularDrag: 0.5
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!136 &288220494
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1061,19 +1079,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de173d2589efa45ffad46a9f1a1b4f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &1120188193
-Rigidbody:
+--- !u!114 &1235355903639205697
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8496425238900565532}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0.5
-  m_AngularDrag: 0.5
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c9b6c2e6bd1aa4fbe8b1e47a44a651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damgeTime: 0.7
+--- !u!114 &5083813043258927278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496425238900565532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a90c4398e638f343bbc03b352b534bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

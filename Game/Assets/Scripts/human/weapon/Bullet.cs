@@ -24,7 +24,15 @@ public class Bullet : PoolObject
 
     private void OnCollisionEnter(Collision collision)
     {
+        //add blood
         GameWorld.Instance.SpawnBlood(transform.position, Quaternion.Inverse(transform.rotation));
+
+        //target damage
+        AiController aiController = collision.gameObject.GetComponent<AiController>();
+        if (aiController != null)
+            aiController.OnAttackedByBullet();
+
+        //destroy
         DestroySelf();
     }
 

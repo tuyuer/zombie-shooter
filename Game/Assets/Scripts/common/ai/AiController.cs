@@ -5,6 +5,7 @@ using HitJoy;
 
 public class AiController : MonoBehaviour
 {
+    public float blood = 100.0f;
     public float thinkingTime = 1.0f;
     private float thinkingElapsed = 0.0f;
 
@@ -83,5 +84,26 @@ public class AiController : MonoBehaviour
     {
         CurActionType = ai_action_type.ai_action_type_idle;
         thinkingElapsed = thinking_type_wait;
+    }
+
+    public void OnAttackedByBullet()
+    {
+        blood -= 20;
+        if (blood > 0)
+        {
+            CurActionType = ai_action_type.ai_action_type_damage;
+            thinkingElapsed = thinking_type_immediately;
+        }
+        else
+        {
+            CurActionType = ai_action_type.ai_action_type_death;
+            thinkingElapsed = thinking_type_immediately;
+        }
+    }
+
+    public void OnDamageEnd()
+    {
+        CurActionType = ai_action_type.ai_action_type_idle;
+        thinkingElapsed = thinking_type_immediately;
     }
 }

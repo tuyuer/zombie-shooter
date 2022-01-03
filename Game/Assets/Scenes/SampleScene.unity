@@ -182,10 +182,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 868681887, guid: 8c941f4ba9cd8324db5201b358a1117c, type: 3}
-      propertyPath: attackDetectRadius
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8496425238900565532, guid: 8c941f4ba9cd8324db5201b358a1117c,
         type: 3}
       propertyPath: m_Name
