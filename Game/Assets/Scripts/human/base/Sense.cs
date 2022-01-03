@@ -28,10 +28,6 @@ namespace HitJoy
         {
         }
 
-        void OnDrawGizmos()
-        {
-
-        }
 
         public virtual Transform FindTarget()
         {

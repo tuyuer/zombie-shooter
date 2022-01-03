@@ -27,6 +27,11 @@ public class Bullet : PoolObject
         DestroySelf();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        DestroySelf();
+    }
+
     public override void DestroySelf()
     {
         base.DestroySelf();

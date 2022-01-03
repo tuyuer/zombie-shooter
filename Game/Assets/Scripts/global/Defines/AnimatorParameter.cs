@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AnimatorParameter : MonoBehaviour
 {
+    public const string ForwardSpeed = "ForwardSpeed";
     public const string YSpeed = "YSpeed";
     public const string XSpeed = "XSpeed";
 
