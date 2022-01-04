@@ -203,7 +203,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 6508811787449905383}
   muzzleFlash: {fileID: 1265779596463895074}
   weaponSound: {fileID: 1457703558}
-  coldTime: 0.5
+  coldTime: 0.3
 --- !u!1 &2233767740773971266
 GameObject:
   m_ObjectHideFlags: 0

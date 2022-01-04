@@ -1853,6 +1853,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3253024692142175890, guid: cebe2afd15ee24c4591638d20ab79713,
         type: 3}
+      propertyPath: coldTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253024692142175890, guid: cebe2afd15ee24c4591638d20ab79713,
+        type: 3}
       propertyPath: blackboard
       value: 
       objectReference: {fileID: 2328570869821687287}
@@ -1863,12 +1868,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cebe2afd15ee24c4591638d20ab79713, type: 3}
---- !u!4 &7442394574879601533 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2233767740773542240, guid: cebe2afd15ee24c4591638d20ab79713,
-    type: 3}
-  m_PrefabInstance: {fileID: 8770581620483070493}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6094018161831832719 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3253024692142175890, guid: cebe2afd15ee24c4591638d20ab79713,
@@ -1881,3 +1880,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc989e5ccf6c1e84385a22dc5519f34c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &7442394574879601533 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2233767740773542240, guid: cebe2afd15ee24c4591638d20ab79713,
+    type: 3}
+  m_PrefabInstance: {fileID: 8770581620483070493}
+  m_PrefabAsset: {fileID: 0}
