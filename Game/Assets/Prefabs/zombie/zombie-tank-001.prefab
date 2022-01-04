@@ -1018,7 +1018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8f7945251c049b894bf5f0800014a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thinkingTime: 0
+  blood: 100
+  thinkingTime: 1
   animator: {fileID: 8496425238711566715}
   characterController: {fileID: 415935908648114712}
   brain: {fileID: 868681888}
@@ -1091,7 +1092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c9b6c2e6bd1aa4fbe8b1e47a44a651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damgeTime: 0.7
+  handleTime: 1
 --- !u!114 &5083813043258927278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,3 +1105,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a90c4398e638f343bbc03b352b534bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handleTime: 1
