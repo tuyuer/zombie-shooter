@@ -3,17 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using HitJoy;
 
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(Brain))]
+[RequireComponent(typeof(EnemySense))]
+[RequireComponent(typeof(ActorMouth))]
+
 public class AiController : MonoBehaviour
 {
-    public float blood = 100.0f;
-    public float thinkingTime = 1.0f;
-    private float thinkingElapsed = 0.0f;
-
     public Animator animator;
     public CharacterController characterController;
     public Brain brain;
     public EnemySense enemySense;
     public ActorMouth actorMouth;
+
+    public float blood = 100.0f;
+    public float thinkingTime = 1.0f;
+    private float thinkingElapsed = 0.0f;
 
     private List<AiActionBase> actionList = new List<AiActionBase>();
     private ai_action_type curActionType = ai_action_type.ai_action_type_idle;

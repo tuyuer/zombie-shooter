@@ -26,6 +26,10 @@ public class BulletEffect : PoolObject
 
     private void OnCollisionEnter(Collision collision)
     {
+        AiController aiController = collision.gameObject.GetComponent<AiController>();
+        if (aiController == null)
+            return;
+
         //play hit sound
         if (hitSounds.Length > 0)
         {
@@ -36,9 +40,7 @@ public class BulletEffect : PoolObject
         GameWorld.Instance.SpawnBlood(transform.position, Quaternion.Inverse(transform.rotation));
 
         //target damage
-        AiController aiController = collision.gameObject.GetComponent<AiController>();
-        if (aiController != null)
-            aiController.OnAttackedByBullet();
+        aiController.OnAttackedByBullet();
 
         //destroy
         DestroySelf();

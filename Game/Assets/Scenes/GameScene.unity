@@ -1040,9 +1040,9 @@ GameObject:
   - component: {fileID: 1444030786}
   - component: {fileID: 1444030785}
   - component: {fileID: 1444030784}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: ground-plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
