@@ -129,7 +129,7 @@ MonoBehaviour:
   aimTarget: {fileID: 0}
   layerMask:
     serializedVersion: 2
-    m_Bits: 384
+    m_Bits: 448
 --- !u!1 &5102191918489756680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,6 +1797,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5102191918489860174}
     m_Modifications:
+    - target: {fileID: 1457703558, guid: cebe2afd15ee24c4591638d20ab79713, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2233767740773542240, guid: cebe2afd15ee24c4591638d20ab79713, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1843,7 +1847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2233767740773971264, guid: cebe2afd15ee24c4591638d20ab79713, type: 3}
       propertyPath: m_Name
-      value: weapon-pistol (1)
+      value: weapon-pistol
       objectReference: {fileID: 0}
     - target: {fileID: 3253024692142175890, guid: cebe2afd15ee24c4591638d20ab79713, type: 3}
       propertyPath: blackboard

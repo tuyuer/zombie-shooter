@@ -26,6 +26,12 @@ public class BulletEffect : PoolObject
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.layer == LayerMask.NameToLayer(LayerNames.Obstacle))
+        {
+            DestroySelf();
+            return;
+        }
+
         AiController aiController = collision.gameObject.GetComponent<AiController>();
         if (aiController == null)
             return;
