@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using HitJoy;
 
-[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(Brain))]
 [RequireComponent(typeof(EnemySense))]
@@ -100,13 +99,11 @@ public class AiController : MonoBehaviour
         {
             CurActionType = ai_action_type.ai_action_type_damage;
             thinkingElapsed = thinking_type_immediately;
-            actorMouth.PlayDamageSpeek();
         }
         else
         {
             CurActionType = ai_action_type.ai_action_type_death;
             thinkingElapsed = thinking_type_immediately;
-            actorMouth.PlayDeathSpeek();
         }
     }
 
@@ -114,5 +111,17 @@ public class AiController : MonoBehaviour
     {
         CurActionType = ai_action_type.ai_action_type_idle;
         thinkingElapsed = thinking_type_immediately;
+    }
+
+    public void OnDeath()
+    {
+        gameObject.layer = LayerMask.NameToLayer("Death");
+        actorMouth.PlayDeathSpeek();
+        GameWorld.Instance.PlayKilledSoundEffect(transform.position);
+    }
+
+    public bool IsDeath()
+    {
+        return curActionType == ai_action_type.ai_action_type_death;
     }
 }

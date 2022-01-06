@@ -7,6 +7,8 @@ public class GameWorld : MonoBehaviour
     public SimpleObjectPool bloodPool = null;
     public SimpleObjectPool soundPool = null;
 
+    public AudioClip killedEffect = null;
+
     private static GameWorld _instance = null;
 
     public static GameWorld Instance
@@ -36,5 +38,10 @@ public class GameWorld : MonoBehaviour
         {
             soundEffect.PlayAudioClip(audioClip);
         }
+    }
+
+    public void PlayKilledSoundEffect(Vector3 position)
+    {
+        PlaySound(position, killedEffect);
     }
 }

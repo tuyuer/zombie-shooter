@@ -620,6 +620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodPool: {fileID: 44651140}
   soundPool: {fileID: 1082595992}
+  killedEffect: {fileID: 8300000, guid: 90a86b87b9859e94c92b4ad400919750, type: 3}
 --- !u!1 &634187212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,6 +1898,10 @@ PrefabInstance:
       propertyPath: bulletPool
       value: 
       objectReference: {fileID: 1595287019}
+    - target: {fileID: 8770581619713265819, guid: 47ba3c0c3751c0748a50afb108c750d6, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47ba3c0c3751c0748a50afb108c750d6, type: 3}
 --- !u!1001 &4944562466488940234

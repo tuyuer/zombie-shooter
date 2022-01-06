@@ -16,6 +16,7 @@ public class AiActionDamage : AiActionBase
         base.OnEnter();
         int nIndex = Random.Range(0, 1);
         aiController.animator.SetTrigger("Damage" + nIndex);
+        aiController.actorMouth.PlayDamageSpeek();
         handleElapsed = 0f;
     }
 

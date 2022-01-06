@@ -30,6 +30,9 @@ public class BulletEffect : PoolObject
         if (aiController == null)
             return;
 
+        if (aiController.IsDeath())
+            return;
+
         //play hit sound
         if (hitSounds.Length > 0)
         {

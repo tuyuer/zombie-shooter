@@ -1107,7 +1107,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 211148b06cb750d429401907c9fe7711, type: 3}
   - {fileID: 8300000, guid: 9c805035d5016c34898015c8ff0409c3, type: 3}
   randomSpeeks: []
-  deathSpeeks: []
+  deathSpeeks:
+  - {fileID: 8300000, guid: d86769036b7b96c48a96bc2ae4a5c0d9, type: 3}
+  killedEffect: {fileID: 8300000, guid: 90a86b87b9859e94c92b4ad400919750, type: 3}
 --- !u!136 &288220494
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1166,13 +1168,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8f7945251c049b894bf5f0800014a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blood: 100
-  thinkingTime: 1
   animator: {fileID: 8496425238711566715}
   characterController: {fileID: 415935908648114712}
   brain: {fileID: 868681888}
   enemySense: {fileID: 868681887}
   actorMouth: {fileID: 4372304483695870887}
+  blood: 100
+  thinkingTime: 1
 --- !u!143 &415935908648114712
 CharacterController:
   m_ObjectHideFlags: 0
