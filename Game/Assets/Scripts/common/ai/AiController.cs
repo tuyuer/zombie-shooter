@@ -115,9 +115,9 @@ public class AiController : MonoBehaviour
 
     public void OnDeath()
     {
-        gameObject.layer = LayerMask.NameToLayer("Death");
         actorMouth.PlayDeathSpeek();
         GameWorld.Instance.PlayKilledSoundEffect(transform.position);
+        gameObject.layer = LayerMask.NameToLayer(LayerNames.Death);
     }
 
     public bool IsDeath()

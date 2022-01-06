@@ -20,7 +20,7 @@ namespace HitJoy
 
         void Awake()
         {
-            viewBlockerLayerMask = LayerMask.GetMask(LayerNames.Terrain, LayerNames.Wall);
+            viewBlockerLayerMask = LayerMask.GetMask(LayerNames.Obstacle, LayerNames.Wall);
         }
 
         // Update is called once per frame
