@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameWorld : MonoBehaviour
 {
     public SimpleObjectPool bloodPool = null;
+    public SimpleObjectPool soundPool = null;
 
     private static GameWorld _instance = null;
 
@@ -23,5 +24,17 @@ public class GameWorld : MonoBehaviour
         GameObject fetchedObj = bloodPool.FetchObject();
         fetchedObj.transform.position = position;
         fetchedObj.transform.rotation = rotation;
+    }
+
+    public void PlaySound(Vector3 position, AudioClip audioClip)
+    {
+        GameObject fetchedObj = soundPool.FetchObject();
+        fetchedObj.transform.position = position;
+
+        SoundEffect soundEffect = fetchedObj.GetComponent<SoundEffect>();
+        if (soundEffect != null)
+        {
+            soundEffect.PlayAudioClip(audioClip);
+        }
     }
 }

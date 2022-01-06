@@ -30,7 +30,7 @@ public class Weapon : MonoBehaviour
         if (isReady)
         {
             GameObject bulletObj = bulletPool.FetchObject();
-            Bullet bullet = bulletObj.GetComponent<Bullet>();
+            BulletEffect bullet = bulletObj.GetComponent<BulletEffect>();
 
             Vector3 moveDir = blackboard.characterAim.aimTarget.transform.position - spawnPoint.position;
 

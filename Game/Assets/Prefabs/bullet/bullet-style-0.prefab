@@ -48,6 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 3
   speed: 2500
+  hitSounds:
+  - {fileID: 8300000, guid: d0e3d6e6097cfe9458f0827a8fcf339a, type: 3}
+  - {fileID: 8300000, guid: ef7e9323b69a882428956d69790e09b5, type: 3}
 --- !u!54 &1258609786
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -76,6 +79,7 @@ TrailRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -223,6 +227,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1

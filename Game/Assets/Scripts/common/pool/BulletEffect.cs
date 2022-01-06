@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : PoolObject
+public class BulletEffect : PoolObject
 {
     public float speed = 100;
-    private Rigidbody rigidbody = null;
-    private TrailRenderer trailRender = null;
+    public AudioClip[] hitSounds;
+
+    private Rigidbody rigidbody;
+    private TrailRenderer trailRender;
 
     void Awake()
     {
@@ -24,6 +26,12 @@ public class Bullet : PoolObject
 
     private void OnCollisionEnter(Collision collision)
     {
+        //play hit sound
+        if (hitSounds.Length > 0)
+        {
+            GameWorld.Instance.PlaySound(transform.position, hitSounds[Random.Range(0, hitSounds.Length - 1)]);
+        }
+
         //add blood
         GameWorld.Instance.SpawnBlood(transform.position, Quaternion.Inverse(transform.rotation));
 
