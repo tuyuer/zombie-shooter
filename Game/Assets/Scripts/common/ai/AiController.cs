@@ -13,6 +13,7 @@ public class AiController : MonoBehaviour
     public CharacterController characterController;
     public Brain brain;
     public EnemySense enemySense;
+    public ActorMouth actorMouth;
 
     private List<AiActionBase> actionList = new List<AiActionBase>();
     private ai_action_type curActionType = ai_action_type.ai_action_type_idle;
@@ -93,11 +94,13 @@ public class AiController : MonoBehaviour
         {
             CurActionType = ai_action_type.ai_action_type_damage;
             thinkingElapsed = thinking_type_immediately;
+            actorMouth.PlayDamageSpeek();
         }
         else
         {
             CurActionType = ai_action_type.ai_action_type_death;
             thinkingElapsed = thinking_type_immediately;
+            actorMouth.PlayDeathSpeek();
         }
     }
 

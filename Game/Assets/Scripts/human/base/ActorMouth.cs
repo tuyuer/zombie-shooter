@@ -5,16 +5,28 @@ using UnityEngine;
 public class ActorMouth : MonoBehaviour
 {
     public AudioSource audioSource;
-    public AudioClip[] audioClips;
-    // Start is called before the first frame update
-    void Start()
+    public AudioClip[] damageSpeeks;
+    public AudioClip[] randomSpeeks;
+    public AudioClip[] deathSpeeks;
+
+    public void PlayDamageSpeek()
     {
-        
+        if (damageSpeeks.Length > 0)
+        {
+            audioSource.PlayOneShot(damageSpeeks[Random.Range(0, damageSpeeks.Length - 1)]);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayRandomSpeek()
     {
-        
+
+    }
+
+    public void PlayDeathSpeek()
+    {
+        if (deathSpeeks.Length > 0)
+        {
+            audioSource.PlayOneShot(deathSpeeks[Random.Range(0, deathSpeeks.Length - 1)]);
+        }
     }
 }
