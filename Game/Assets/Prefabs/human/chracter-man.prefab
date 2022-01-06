@@ -1846,17 +1846,9 @@ PrefabInstance:
       value: weapon-pistol (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3253024692142175890, guid: cebe2afd15ee24c4591638d20ab79713, type: 3}
-      propertyPath: coldTime
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3253024692142175890, guid: cebe2afd15ee24c4591638d20ab79713, type: 3}
       propertyPath: blackboard
       value: 
       objectReference: {fileID: 2328570869821687287}
-    - target: {fileID: 3253024692142175890, guid: cebe2afd15ee24c4591638d20ab79713, type: 3}
-      propertyPath: bulletPool
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cebe2afd15ee24c4591638d20ab79713, type: 3}
 --- !u!114 &6094018161831832719 stripped

@@ -24,7 +24,6 @@ public class CharacterAim : MonoBehaviour
             transform.forward = target - transform.position;
             target.y = 1.3f;
             aimTarget.transform.position = target;
-            //transform.LookAt(target);
         }
     }
 }
