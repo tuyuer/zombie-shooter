@@ -30,6 +30,18 @@ public class ObjectSpawnPoint : MonoBehaviour
     {
         if (objectToSpawn != null)
         {
+            AiController[] childrenComps = GetComponentsInChildren<AiController>();
+            int nAliveCount = 0;
+            foreach (var aiController in childrenComps)
+            {
+                if (!aiController.IsDeath())
+                {
+                    nAliveCount++;
+                }
+            }
+            if (nAliveCount > 2)
+                return;
+            
             GameObject clonedObj = Instantiate(objectToSpawn);
             clonedObj.transform.parent = transform;
             clonedObj.transform.position = transform.position;

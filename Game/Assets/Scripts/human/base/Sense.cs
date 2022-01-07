@@ -87,6 +87,7 @@ namespace HitJoy
 
         void OnDrawGizmosSelected()
         {
+#if UNITY_EDITOR
             Color originHandleColor = UnityEditor.Handles.color;
 
             Color c = new Color(0, 0, 0.7f, 0.4f);
@@ -100,6 +101,7 @@ namespace HitJoy
             UnityEditor.Handles.DrawSolidArc(transform.position, Vector3.up, rotatedForward, attackDetectAngle, attackDetectRadius);
 
             UnityEditor.Handles.color = originHandleColor;
+#endif
         }
     }
 

@@ -32,8 +32,8 @@ public class Weapon : MonoBehaviour
             GameObject bulletObj = bulletPool.FetchObject();
             BulletEffect bullet = bulletObj.GetComponent<BulletEffect>();
 
-            Vector3 moveDir = blackboard.characterAim.aimTarget.transform.position - spawnPoint.position;
-
+            //Vector3 moveDir = blackboard.characterAim.aimTarget.transform.position - spawnPoint.position;
+            Vector3 moveDir = transform.forward;
             bullet.Shoot(spawnPoint.position, moveDir);
             muzzleFlash.ShowEffect();
             weaponSound.Play();

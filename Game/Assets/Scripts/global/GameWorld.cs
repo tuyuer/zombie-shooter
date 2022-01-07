@@ -9,6 +9,9 @@ public class GameWorld : MonoBehaviour
 
     public AudioClip killedEffect = null;
 
+    public Joystick joystick = null;
+    public Joystick aimstick = null;
+
     private static GameWorld _instance = null;
 
     public static GameWorld Instance

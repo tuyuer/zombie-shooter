@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class InputComponent : MonoBehaviour
@@ -32,8 +31,15 @@ public class InputComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        KeyboardControls();
-        MouseEvents();
+        if (GlobalDef.ENABLE_STICKJOY)
+        {
+            StickjoyControls();
+        }
+        else
+        {
+            KeyboardControls();
+            MouseEvents();
+        }
     }
 
     void KeyboardControls()
@@ -80,10 +86,28 @@ public class InputComponent : MonoBehaviour
         {
             actionState = input_action_state.press;
         }
-
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            EditorApplication.isPaused = true;
+            UnityEditor.EditorApplication.isPaused = true;
+        }
+#endif
+        onDirectionEvent(new Vector2(h, v), new Vector2(hRaw, vRaw), actionState);
+    }
+
+    void StickjoyControls()
+    {
+        //Store the input axes.
+        float h = GameWorld.Instance.joystick.Direction.x;
+        float v = GameWorld.Instance.joystick.Direction.y;
+
+        float hRaw = h > 0 ? 1 : 0;
+        float vRaw = v > 0 ? 1 : 0;
+
+        input_action_state actionState = input_action_state.release;
+        if (GameWorld.Instance.joystick.Direction.sqrMagnitude > 0)
+        {
+            actionState = input_action_state.press;
         }
         onDirectionEvent(new Vector2(h, v), new Vector2(hRaw, vRaw), actionState);
     }

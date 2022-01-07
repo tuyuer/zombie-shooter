@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 public class GlobalDef
 {
+    //Common Funcs
+    public const bool ENABLE_STICKJOY = true;
+
     //Common Defines
     public const int INVALID_VALUE = -1;
     public const float ZERO_VALUE = 0.0f;
