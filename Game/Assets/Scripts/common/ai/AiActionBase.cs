@@ -5,10 +5,12 @@ using UnityEngine;
 public enum ai_action_type
 {
     ai_action_type_idle,
+    ai_action_type_patrol,
     ai_action_type_chase,
     ai_action_type_attack,
     ai_action_type_damage,
     ai_action_type_death,
+    ai_action_type_count
 };
 
 public enum ai_action_state

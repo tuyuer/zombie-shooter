@@ -9,6 +9,12 @@ public class AiActionIdle : AiActionBase
         actionType = ai_action_type.ai_action_type_idle;
     }
 
+    public override void OnEnter()
+    {
+        base.OnEnter();
+        Idle();
+    }
+
     public override void OnUpdate()
     {
         Transform playerTrans = aiController.enemySense.FindTarget();
@@ -17,12 +23,16 @@ public class AiActionIdle : AiActionBase
             bool isTargetInSense = aiController.enemySense.DetectTargetInSenseView(playerTrans);
             if (!isTargetInSense)
             {
-                Idle();
+                aiController.OnTargetOutSenseArea();
             }
             else
             {
                 aiController.OnTargetEnterSenseArea();
             }
+        }
+        else
+        {
+            aiController.OnTargetOutSenseArea();
         }
     }
 

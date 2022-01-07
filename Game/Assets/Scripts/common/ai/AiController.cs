@@ -34,8 +34,21 @@ public class AiController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AiActionBase[] aiBaseList = GetComponents<AiActionBase>();
         actionList.Clear();
-        actionList.AddRange(GetComponents<AiActionBase>());
+
+        for (int i = 0; i < (int)ai_action_type.ai_action_type_count; i++)
+        {
+            for (int j = 0; j < aiBaseList.Length; j++)
+            {
+                if (i == (int)aiBaseList[j].ActionType)
+                {
+                    actionList.Add(aiBaseList[j]);
+                    break;
+                }
+            }
+        }
+
         foreach (var aiAction in actionList)
         {
             aiAction.SetController(this);
@@ -65,7 +78,9 @@ public class AiController : MonoBehaviour
         }
 
         if (thinkingElapsed > thinkingTime)
+        {
             actionList[(int)curActionType].OnUpdate();
+        }
     }
 
     public void OnTargetEnterSenseArea()
@@ -76,7 +91,7 @@ public class AiController : MonoBehaviour
 
     public void OnTargetOutSenseArea() 
     {
-        CurActionType = ai_action_type.ai_action_type_idle;
+        CurActionType = ai_action_type.ai_action_type_patrol;
         thinkingElapsed = thinking_type_immediately;
     }
 

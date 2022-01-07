@@ -6,6 +6,7 @@ public class ObjectSpawnPoint : MonoBehaviour
 {
     public GameObject objectToSpawn;
     public int spawnTimes = 10;
+    public int maxAliveCount = 20;
     public float spawnColdTime = 2.0f;
     private float spawnElapsedTime = 0.0f;
 
@@ -39,7 +40,7 @@ public class ObjectSpawnPoint : MonoBehaviour
                     nAliveCount++;
                 }
             }
-            if (nAliveCount > 2)
+            if (nAliveCount > maxAliveCount)
                 return;
             
             GameObject clonedObj = Instantiate(objectToSpawn);
