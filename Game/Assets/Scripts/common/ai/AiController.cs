@@ -107,6 +107,18 @@ public class AiController : MonoBehaviour
         thinkingElapsed = thinking_type_wait;
     }
 
+    public void OnAttackTarget(Transform targetTrans) 
+    {
+        if (enemySense.DetectTargetInArea(targetTrans, 120.0f, 2.0f))
+        {
+            Character character = targetTrans.GetComponent<Character>();
+            if (character != null)
+            {
+                character.actorBlood.OnDamage(10);
+            }
+        }
+    }
+
     public void OnAttackedByBullet()
     {
         blood -= 20;
@@ -133,6 +145,7 @@ public class AiController : MonoBehaviour
         actorMouth.PlayDeathSpeek();
         GameWorld.Instance.PlayKilledSoundEffect(transform.position);
         gameObject.layer = LayerMask.NameToLayer(LayerNames.Death);
+        GameWorld.Instance.killStatistics.Increase();
     }
 
     public bool IsDeath()

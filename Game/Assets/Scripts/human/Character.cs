@@ -5,6 +5,7 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     public Weapon weapon = null;
+    public ActorBlood actorBlood = null;
 
     // Start is called before the first frame update
     void Start()

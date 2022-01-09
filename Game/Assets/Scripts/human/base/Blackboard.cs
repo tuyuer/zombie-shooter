@@ -8,7 +8,7 @@ namespace HitJoy
     public class Blackboard : MonoBehaviour
     {
         public Animator animator;
-        public Transform character;
+        public Character character;
         public CharacterAim characterAim;
 
         public Brain actorBrain;
@@ -35,7 +35,7 @@ namespace HitJoy
         {
             if (moveDir.sqrMagnitude > 0)
             {
-                character.forward = moveDir;
+                character.transform.forward = moveDir;
             }
         }
     }

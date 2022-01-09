@@ -25,8 +25,8 @@ namespace HitJoy
                 //update animation
                 //float moveSpeed = Mathf.Min(blackboard.moveDir.magnitude, GlobalDef.ACTOR_MAX_FOWARD_SPEED);
                 Vector3 moveDir = blackboard.moveDir;
-                Vector3 forwardDir = blackboard.character.forward;
-                Vector3 rightDir = blackboard.character.right;
+                Vector3 forwardDir = blackboard.character.transform.forward;
+                Vector3 rightDir = blackboard.character.transform.right;
 
                 Vector3 forwardProject = Vector3.Project(moveDir, forwardDir);
                 Vector3 rightProject = Vector3.Project(moveDir, rightDir);

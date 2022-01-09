@@ -40,7 +40,7 @@ namespace HitJoy
                 if (jumpSpeed > 0)
                 {
                     Vector3 actorSpeed = blackboard.actorSpeed;
-                    actorSpeed += blackboard.character.up * jumpSpeed * deltaTime;
+                    actorSpeed += blackboard.character.transform.up * jumpSpeed * deltaTime;
                     jumpSpeed -= deltaTime * GlobalDef.ACTOR_JUMP_SPEED_ACCEL;
 
                     blackboard.actorSpeed = actorSpeed;

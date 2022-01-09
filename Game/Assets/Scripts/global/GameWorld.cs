@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HitJoy;
 
 public class GameWorld : MonoBehaviour
 {
+    public Blackboard playerBoard;
+
     public SimpleObjectPool bloodPool = null;
     public SimpleObjectPool soundPool = null;
 
@@ -11,6 +14,8 @@ public class GameWorld : MonoBehaviour
 
     public Joystick joystick = null;
     public Joystick aimstick = null;
+
+    public KillStatistics killStatistics;
 
     private static GameWorld _instance = null;
 

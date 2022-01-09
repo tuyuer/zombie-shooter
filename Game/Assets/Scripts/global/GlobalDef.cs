@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class GlobalDef
 {
     //Common Funcs
-    public const bool ENABLE_STICKJOY = true;
+    public const bool ENABLE_STICKJOY = false;
 
     //Common Defines
     public const int INVALID_VALUE = -1;
