@@ -12,7 +12,6 @@ public class AiController : MonoBehaviour
 {
     public Animator animator;
     public CharacterController characterController;
-    public Brain brain;
     public EnemySense enemySense;
     public ActorMouth actorMouth;
 

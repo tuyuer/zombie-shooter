@@ -1,4 +1,7 @@
-﻿public enum way_point_type
+﻿public enum zombie_type
 {
-    way_point_type_patrol = 0,
+    zombie_type_weak,
+    zombie_type_strong,
+    zombie_type_tank,
+    zombie_type_boss,
 };
