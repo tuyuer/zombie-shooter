@@ -86,7 +86,10 @@ public class AiController : MonoBehaviour
 
     private void LockYPosition()
     {
-        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        if (transform.position.y > 0.1f)
+        {
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        }
     }
 
     public void OnTargetEnterSenseArea()
