@@ -80,6 +80,13 @@ public class AiController : MonoBehaviour
         {
             actionList[(int)curActionType].OnUpdate();
         }
+
+        LockYPosition();
+    }
+
+    private void LockYPosition()
+    {
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
     }
 
     public void OnTargetEnterSenseArea()

@@ -2717,7 +2717,7 @@ GameObject:
   - component: {fileID: 1444030786}
   - component: {fileID: 1444030785}
   - component: {fileID: 1444030784}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: ground-plane
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3681,6 +3681,10 @@ PrefabInstance:
       propertyPath: aimTarget
       value: 
       objectReference: {fileID: 784716636}
+    - target: {fileID: 152311687, guid: 47ba3c0c3751c0748a50afb108c750d6, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 1472
+      objectReference: {fileID: 0}
     - target: {fileID: 4855519290411203220, guid: 47ba3c0c3751c0748a50afb108c750d6, type: 3}
       propertyPath: m_Name
       value: chracter-man
@@ -3874,7 +3878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3618082100327304553, guid: eb71f7f53b766491e8ec153c45992ac0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 7.85
       objectReference: {fileID: 0}
     - target: {fileID: 3618082100327304553, guid: eb71f7f53b766491e8ec153c45992ac0, type: 3}
       propertyPath: m_LocalPosition.z
