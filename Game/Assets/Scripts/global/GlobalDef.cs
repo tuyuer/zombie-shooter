@@ -15,7 +15,7 @@ public class GlobalDef
 
     //Actor Defines
     public const float ACTOR_MAX_FOWARD_SPEED = 1.0f;
-    public const float ACTOR_MOVE_SPEED = 6f;
+    public const float ACTOR_MOVE_SPEED = 4f;
     public const float ACTOR_VAULT_SPEED = 4f;
     public const float ACTOR_DODGE_SPEED = 6f;
     public const float ACTOR_JUMP_SPEED = 24f;

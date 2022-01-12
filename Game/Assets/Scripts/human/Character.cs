@@ -16,20 +16,19 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        weapon.Shoot();
         if (GlobalDef.ENABLE_STICKJOY)
         {
-            //if (GameWorld.Instance.aimstick)
-            //{
-
-            //}
+            if (GameWorld.Instance.aimstick.IsHolding)
+            {
+                weapon.Shoot();
+            }
         }
         else
         {
-            //if (Input.GetMouseButton(0))
-            //{
-            //    weapon.Shoot();
-            //}
+            if (Input.GetMouseButton(0))
+            {
+                weapon.Shoot();
+            }
         }
     }
 }

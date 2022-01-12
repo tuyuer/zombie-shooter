@@ -44,8 +44,20 @@ namespace HitJoy
             set { tankWeight = value; }
         }
 
+        private float wavePrepareTime = 6;
+        private float wavePrepareElapsed = 0;
+
         public delegate void OnSpawnZombie();
         public event OnSpawnZombie onSpawnZombie;
+
+        public delegate void OnWavePrepareBegin(Wave wave);
+        public event OnWavePrepareBegin onWavePrepareBegin;
+
+        public delegate void OnWavePrepareUpdate(Wave wave, float prepareElapsed, float prepareTime);
+        public event OnWavePrepareUpdate onWavePrepareUpdate;
+
+        public delegate void OnWavePrepareEnd(Wave wave);
+        public event OnWavePrepareEnd onWavePrepareEnd;
 
         public Wave()
         {
@@ -68,6 +80,37 @@ namespace HitJoy
 
         public void Update()
         {
+            if (waveElapsedTime == 0f)
+            {
+                Debug.Log("a");
+                wavePrepareElapsed += Time.deltaTime;
+                waveElapsedTime += Time.deltaTime;
+                if (onWavePrepareBegin != null)
+                    onWavePrepareBegin(this);
+                return;
+            }
+
+            if (wavePrepareElapsed < wavePrepareTime  &&
+                wavePrepareElapsed + Time.deltaTime > wavePrepareTime)
+            {
+                Debug.Log("b");
+                wavePrepareElapsed += Time.deltaTime;
+                waveElapsedTime += Time.deltaTime;
+                if (onWavePrepareEnd != null)
+                    onWavePrepareEnd(this);
+                return;
+            }
+
+            if (wavePrepareElapsed < wavePrepareTime)
+            {
+                Debug.Log("c");
+                wavePrepareElapsed += Time.deltaTime;
+                if (onWavePrepareUpdate != null)
+                    onWavePrepareUpdate(this, wavePrepareElapsed, wavePrepareTime);
+                return;
+            }
+
+            Debug.Log("d");
             waveElapsedTime += Time.deltaTime;
             CheckSpawn();
         }
@@ -92,7 +135,7 @@ namespace HitJoy
         {
             if (waveElapsedTime > nextSpawnTime)
             {
-                nextSpawnTime += spawnColdTime;
+                nextSpawnTime = waveElapsedTime + spawnColdTime;
                 if (onSpawnZombie != null)
                     onSpawnZombie();
             }

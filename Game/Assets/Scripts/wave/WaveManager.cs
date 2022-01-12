@@ -36,7 +36,13 @@ namespace HitJoy
                     curWave.Update();
                     return;
                 }
-
+                else
+                {
+                    int nAliveCount = GetAliveCount();
+                    if (nAliveCount > 0)
+                        return;
+                }
+                
                 BuildWave(curWave);
             }
             else
@@ -49,6 +55,9 @@ namespace HitJoy
         {
             Wave wave = new Wave();
             wave.onSpawnZombie += OnSpawnZombie;
+            wave.onWavePrepareBegin += OnWavePrepareBegin;
+            wave.onWavePrepareUpdate += OnWavePrepareUpdate;
+            wave.onWavePrepareEnd += OnWavePrepareEnd;
             waves.Add(wave);
 
             int nWaveCount = waves.Count;
@@ -88,6 +97,26 @@ namespace HitJoy
             }
         }
 
+        void OnWavePrepareBegin(Wave wave)
+        {
+            MessageObject msgObj = new MessageObject();
+            msgObj.nParameter = waves.Count;
+            MessageCenter.PostMessageWithData(NotificationDef.NOTIFICATION_ON_WAVE_PREPARE_BEGIN, msgObj);
+        }
+
+        void OnWavePrepareUpdate(Wave wave, float prepareElapsed, float prepareTime) 
+        {
+            MessageObject msgObj = new MessageObject();
+            msgObj.fParameter = prepareElapsed;
+            msgObj.fParameter2 = prepareTime;
+            MessageCenter.PostMessageWithData(NotificationDef.NOTIFICATION_ON_WAVE_PREPARE_UPDATE, msgObj);
+        }
+
+        void OnWavePrepareEnd(Wave wave)
+        {
+            MessageCenter.PostMessage(NotificationDef.NOTIFICATION_ON_WAVE_PREPARE_END);
+        }
+
         void SpawnWeakZombies()
         {
             GameObject clonedObj = Instantiate(weakZombies[UnityEngine.Random.Range(0, weakZombies.Length - 1)]);
@@ -111,6 +140,28 @@ namespace HitJoy
             ZombieSpawnPoint spawnPoint = zombieSpawnPoints[UnityEngine.Random.Range(0, zombieSpawnPoints.Length - 1)];
             clonedObj.transform.parent = spawnPoint.transform;
             clonedObj.transform.position = spawnPoint.transform.position;
+        }
+
+        public int GetAliveCount()
+        {
+            int nAliveCount = 0;
+            foreach (var spawnPoint in zombieSpawnPoints)
+            {
+                AiController[] childrenComps = spawnPoint.GetComponentsInChildren<AiController>();
+                foreach (var aiController in childrenComps)
+                {
+                    if (!aiController.IsDeath())
+                    {
+                        nAliveCount++;
+                    }
+                }
+            }
+            return nAliveCount;
+        }
+
+        public void GetTotalCount()
+        {
+
         }
     }
 }
