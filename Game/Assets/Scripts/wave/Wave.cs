@@ -82,7 +82,6 @@ namespace HitJoy
         {
             if (waveElapsedTime == 0f)
             {
-                Debug.Log("a");
                 wavePrepareElapsed += Time.deltaTime;
                 waveElapsedTime += Time.deltaTime;
                 if (onWavePrepareBegin != null)
@@ -93,7 +92,6 @@ namespace HitJoy
             if (wavePrepareElapsed < wavePrepareTime  &&
                 wavePrepareElapsed + Time.deltaTime > wavePrepareTime)
             {
-                Debug.Log("b");
                 wavePrepareElapsed += Time.deltaTime;
                 waveElapsedTime += Time.deltaTime;
                 if (onWavePrepareEnd != null)
@@ -103,14 +101,12 @@ namespace HitJoy
 
             if (wavePrepareElapsed < wavePrepareTime)
             {
-                Debug.Log("c");
                 wavePrepareElapsed += Time.deltaTime;
                 if (onWavePrepareUpdate != null)
                     onWavePrepareUpdate(this, wavePrepareElapsed, wavePrepareTime);
                 return;
             }
 
-            Debug.Log("d");
             waveElapsedTime += Time.deltaTime;
             CheckSpawn();
         }

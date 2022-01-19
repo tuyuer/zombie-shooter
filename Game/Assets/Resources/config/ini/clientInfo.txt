@@ -1,0 +1,6 @@
+[Info]
+buildversion=10000
+[注释信息]
+buildversion = 0 	 连接正式服
+buildversion = 900     连接审核服
+buildversion = 10000 连接测试服

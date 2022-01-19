@@ -1074,7 +1074,7 @@ MonoBehaviour:
   characterController: {fileID: 6210289941107082756}
   enemySense: {fileID: 6046876678462198915}
   actorMouth: {fileID: 8018476128632577979}
-  blood: 100
+  blood: 10
   thinkingTime: 1
 --- !u!143 &6210289941107082756
 CharacterController:
