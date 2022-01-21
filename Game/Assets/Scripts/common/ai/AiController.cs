@@ -123,7 +123,7 @@ public class AiController : MonoBehaviour
             Character character = targetTrans.GetComponent<Character>();
             if (character != null)
             {
-                character.actorBlood.OnDamage(10);
+                character.Blood.OnDamage(10);
             }
         }
     }

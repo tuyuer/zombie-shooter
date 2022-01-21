@@ -7,6 +7,7 @@ public class AnimatorParameter : MonoBehaviour
     public const string ForwardSpeed = "ForwardSpeed";
     public const string YSpeed = "YSpeed";
     public const string XSpeed = "XSpeed";
+    public const string Die = "Die";
 
     public const string AttackO = "AttackO";
     public const string AttackX = "AttackX";

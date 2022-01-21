@@ -132,7 +132,7 @@ MonoBehaviour:
   aimTarget: {fileID: 0}
   layerMask:
     serializedVersion: 2
-    m_Bits: 448
+    m_Bits: 1472
 --- !u!114 &1300959631
 MonoBehaviour:
   m_ObjectHideFlags: 0

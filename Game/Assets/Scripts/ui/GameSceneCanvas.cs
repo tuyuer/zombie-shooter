@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using HitJoy;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameSceneCanvas : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class GameSceneCanvas : MonoBehaviour
     public Image imgBlood;
 
     public GameObject waveInfoPanel;
+    public GameObject gameOverPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,8 @@ public class GameSceneCanvas : MonoBehaviour
         MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_WAVE_PREPARE_BEGIN, new MessageEvent(OnWavePrepareBegin));
         MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_WAVE_PREPARE_UPDATE, new MessageEvent(OnWavePrepareUpdate));
         MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_WAVE_PREPARE_END, new MessageEvent(OnWavePrepareEnd));
+
+        MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_PLAYER_DEATH, new MessageEvent(OnPlayerDeath));
     }
 
     private void OnDisable()
@@ -35,7 +39,7 @@ public class GameSceneCanvas : MonoBehaviour
     void Update()
     {
         tmpKills.text = "" + GameWorld.Instance.killStatistics.KillCount;
-        imgBlood.fillAmount = GameWorld.Instance.playerBoard.character.actorBlood.GetFillAmount();
+        imgBlood.fillAmount = GameWorld.Instance.playerBoard.character.Blood.GetFillAmount();
     }
 
     public void OnWavePrepareBegin(System.Object data)
@@ -72,5 +76,15 @@ public class GameSceneCanvas : MonoBehaviour
         {
             waveInfoPanel.gameObject.SetActive(false);
         }, 1.0f);
+    }
+
+    public void OnPlayerDeath(System.Object data)
+    {
+        gameOverPanel.gameObject.SetActive(true);
+    }
+
+    public void OnBtnRetryClicked()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 }
