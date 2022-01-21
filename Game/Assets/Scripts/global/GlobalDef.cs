@@ -3,8 +3,12 @@ using System.Collections.Generic;
 
 public class GlobalDef
 {
+#if UNITY_EDITOR
     //Common Funcs
     public const bool ENABLE_STICKJOY = false;
+#else
+    public const bool ENABLE_STICKJOY = true;
+#endif
 
     //Common Defines
     public const int INVALID_VALUE = -1;

@@ -14,6 +14,8 @@ namespace HitJoy
         public GameObject[] strongZombies;
         public GameObject[] tankZombies;
 
+        private float setupTime = 1.0f;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -23,6 +25,12 @@ namespace HitJoy
         // Update is called once per frame
         void Update()
         {
+            if (setupTime > 0)
+            {
+                setupTime -= Time.deltaTime;
+                return;
+            }
+
             UpdateWave();
         }
 

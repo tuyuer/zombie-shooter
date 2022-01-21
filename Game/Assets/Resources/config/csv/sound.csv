@@ -1,4 +1,4 @@
-SoundID,File
-1,audio/sound/wave/wave_begin
-2,audio/sound/wave/wave_countdown
-3,audio/sound/wave/wave_go
+SoundID,File,placeholder
+1,audio/sound/wave/wave_begin,a
+2,audio/sound/wave/wave_countdown,a
+3,audio/sound/wave/wave_go,a

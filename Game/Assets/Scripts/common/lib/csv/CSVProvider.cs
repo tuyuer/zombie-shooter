@@ -19,7 +19,7 @@ namespace HitJoy
             //{
 
             TextAsset textAsset = Resources.Load(csvFilePath.Replace(".csv", "")) as TextAsset;
-                string csvstr = textAsset.text;
+                string csvStr = textAsset.text;
 //#if UNITY_EDITOR
 //                string csvstr = File.ReadAllText(csvFilePath, Encoding.UTF8);
 //#elif UNITY_IPHONE
@@ -29,9 +29,9 @@ namespace HitJoy
                 //while (!www.isDone) { }
                 //string csvstr = www.text;
 //#endif
-                if (!string.IsNullOrEmpty(csvstr))
+                if (!string.IsNullOrEmpty(csvStr))
                 {
-                    dt = ParserCsvWithText(csvstr);
+                    dt = ParserCsvWithText(csvStr);
                 }
             //}
             return dt;

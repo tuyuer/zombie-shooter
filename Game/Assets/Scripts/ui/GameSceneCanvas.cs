@@ -44,10 +44,10 @@ public class GameSceneCanvas : MonoBehaviour
         waveInfoPanel.gameObject.SetActive(true);
         tmpWaves.text = "WAVE " + msgObj.nParameter;
 
-        SoundManager.Instance.PlaySound(sound_type.sound_type_wave_begin);
+        GameWorld.Instance.PlaySound(sound_type.sound_type_wave_begin);
         Utils.Instance.PerformFunctionWithDelay(delegate ()
         {
-            SoundManager.Instance.PlaySound(sound_type.sound_type_wave_countdown);
+            GameWorld.Instance.PlaySound(sound_type.sound_type_wave_countdown);
         }, 3.0f);
     }
 
@@ -66,7 +66,7 @@ public class GameSceneCanvas : MonoBehaviour
     public void OnWavePrepareEnd(System.Object data)
     {
         tmpWaves.text = "GO";
-        SoundManager.Instance.PlaySound(sound_type.sound_type_wave_go);
+        GameWorld.Instance.PlaySound(sound_type.sound_type_wave_go);
 
         Utils.Instance.PerformFunctionWithDelay(delegate ()
         {

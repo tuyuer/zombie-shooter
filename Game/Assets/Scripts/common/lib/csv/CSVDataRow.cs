@@ -30,7 +30,11 @@ namespace HitJoy
             int nItemIndex = headers.IndexOf(header);
             if (nItemIndex == -1)
             {
-                Debug.Log("header not found: " + header);
+                Debug.Log("GetIntValue: header not found=> " + header);
+                foreach (var headStr in headers)
+                {
+                    Debug.Log("====>" + headStr);
+                }
             }
             string itemValue = values[nItemIndex];
             if (itemValue.Length == 0)
@@ -45,8 +49,12 @@ namespace HitJoy
 			int nItemIndex = headers.IndexOf(header);
 			if (nItemIndex == -1)
 			{
-				Debug.Log("header not found: " + header);
-			}
+                Debug.Log("GetFloatValue: header not found=> " + header);
+                foreach (var headStr in headers)
+                {
+                    Debug.Log("====>" + headStr);
+                }
+            }
 			string itemValue = values[nItemIndex];
 			if (itemValue.Length == 0)
 			{
@@ -57,11 +65,19 @@ namespace HitJoy
 
         public string GetStringValue(string header)
         {
-            int nItemIndex = headers.IndexOf(header);
+            int nItemIndex = -1;
+            foreach (var headStr in headers)
+            {
+                nItemIndex++;
+                if (headStr.Equals(header))
+                    break;
+            }
+
             if (nItemIndex == -1)
             {
-                Debug.Log("header not found: " + header);
+                Debug.Log("GetStringValue: header not found=> " + header);
             }
+
             string itemValue = values[nItemIndex];
             return itemValue;
         }

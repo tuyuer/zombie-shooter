@@ -36,6 +36,17 @@ public class GameWorld : MonoBehaviour
         fetchedObj.transform.rotation = rotation;
     }
 
+    public void PlaySound(sound_type soundType)
+    {
+        SoundConfig soundConfig = ConfigManager.Instance.GetConfigByKey(EnumConfigGenre.ENUM_CONFIG_SOUND, (int)soundType) as SoundConfig;
+        if (soundConfig != null)
+        {
+            Debug.Log("soundType=>>>" + soundType + ",PlaySound=>>>" + soundConfig.m_strPath);
+            AudioClip audioClip = Resources.Load(soundConfig.m_strPath) as AudioClip;
+            PlaySound(Camera.main.transform.position, audioClip);
+        }
+    }
+
     public void PlaySound(Vector3 position, AudioClip audioClip)
     {
         GameObject fetchedObj = soundPool.FetchObject();
