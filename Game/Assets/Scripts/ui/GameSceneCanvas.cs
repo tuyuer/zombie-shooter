@@ -39,7 +39,7 @@ public class GameSceneCanvas : MonoBehaviour
     void Update()
     {
         tmpKills.text = "" + GameWorld.Instance.killStatistics.KillCount;
-        imgBlood.fillAmount = GameWorld.Instance.playerBoard.character.Blood.GetFillAmount();
+        imgBlood.fillAmount = GameWorld.Instance.player.Blood.GetFillAmount();
     }
 
     public void OnWavePrepareBegin(System.Object data)

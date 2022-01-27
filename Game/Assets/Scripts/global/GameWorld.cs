@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using HitJoy;
+using UnityEngine.Assertions;
 
 public class GameWorld : MonoBehaviour
 {
-    public Blackboard playerBoard;
+    [HideInInspector]
+    public Character player;
 
     public SimpleObjectPool bloodPool = null;
     public SimpleObjectPool soundPool = null;
@@ -27,6 +29,16 @@ public class GameWorld : MonoBehaviour
     void Awake()
     {
         _instance = this;
+        SetupPlayer();
+    }
+
+    void SetupPlayer()
+    {
+        GameObject playerObj = GameObject.FindGameObjectWithTag(TagDef.Player);
+        Assert.IsNotNull(playerObj);
+
+        player = playerObj.GetComponent<Character>();
+        Assert.IsNotNull(player);
     }
 
     public void SpawnBlood(Vector3 position, Quaternion rotation)

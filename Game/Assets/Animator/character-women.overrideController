@@ -8,4 +8,18 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: character-women
   m_Controller: {fileID: 9100000, guid: a6e6a293afbea9d4d8083510cf2bba9a, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: bf646ce4e0bdcda40bfbc85b5f7f5364, type: 3}
+    m_OverrideClip: {fileID: -3471829654104373833, guid: f6f195dd917589440bbbf644881dd56c, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: c6134ad6140b1c248b0fee297035f2f3, type: 3}
+    m_OverrideClip: {fileID: -623603649343465320, guid: d7a2370cd73c52d4d943e64ade1151ef, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 4f0c486d8b2e5194e862aa1cf617901e, type: 3}
+    m_OverrideClip: {fileID: -623603649343465320, guid: b33b6abfad2e8174f8ea470c5c62e912, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: aa8f086381775cc4684625104274a35f, type: 3}
+    m_OverrideClip: {fileID: 6260845149668199277, guid: b33b6abfad2e8174f8ea470c5c62e912, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: e6185fc16d83cc0429af087c9b026b70, type: 3}
+    m_OverrideClip: {fileID: -7278151529333285062, guid: b33b6abfad2e8174f8ea470c5c62e912, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: c7b412eb84a62324288fb3412cc6b4e3, type: 3}
+    m_OverrideClip: {fileID: 1833312578897081912, guid: b33b6abfad2e8174f8ea470c5c62e912, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: fe313ef1df4f98141a73c24cf33540a5, type: 3}
+    m_OverrideClip: {fileID: -623603649343465320, guid: 735c86ff8e6d6874e9ecf37a6b42c338, type: 3}
