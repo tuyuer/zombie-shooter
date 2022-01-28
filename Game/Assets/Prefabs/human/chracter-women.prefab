@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1555587712280337597}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Middle1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4288968905144845938}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Middle2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8066963360525454852}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptySniperRifle_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7911415528342180180}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Reload12Gauge_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6465602120704958291}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cWrist_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1116574121660646434}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hip_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6111326901620391373}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pinky3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6593005184402825614}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_012_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4269918433690271388}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptyShotgunKL228_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3259189864830775794}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMG&MinigunMagazineEmpty_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 886773789655514326}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ElbowArmor_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7729433867089067523}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_002_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7031425265997357865}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hip_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 443539228754756402}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3988233066130333911}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazinePistolARK9_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1996630972030066691}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_008_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +515,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7319100510444737472}
   - component: {fileID: 4487847864832521713}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BodyMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5517453458082759609}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_002_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -730,7 +730,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7139442366657969649}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptyOldPistol_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -761,7 +761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2089306035623828269}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineBoltActionRifle_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -792,7 +792,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1902634707749667654}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ShotgunCrossbow_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +823,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4513461793325602212}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pinky2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -855,7 +855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1695301421573445958}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pointer2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -887,7 +887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8895752542356986806}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bow_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -919,7 +919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 990014679447138525}
   - component: {fileID: 3385283149286465711}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FreeTestCharacterAsunaBoots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1100,8 +1100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4735266423769869352}
-  - component: {fileID: 2157358953091372569}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Firearm_WeaponSocketPistol_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1124,24 +1123,6 @@ Transform:
   m_Father: {fileID: 5708370349125107840}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2157358953091372569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782553092956493418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc989e5ccf6c1e84385a22dc5519f34c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blackboard: {fileID: 53246861435198466}
-  bulletPool: {fileID: 0}
-  spawnPoint: {fileID: 8055758028240609508}
-  muzzleFlash: {fileID: 6847509714378818605}
-  weaponSound: {fileID: 2157358952766806720}
-  coldTime: 0.5
 --- !u!1 &1827263894541379042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5348144240172515694}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FirearmMagazine_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1182,7 +1163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8698281374572694491}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Toe1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,7 +1194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 242701517783352400}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Firearm_SocketRifleOld_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1244,7 +1225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5960538469289073440}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MinesExplosives_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1275,7 +1256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1491575553528002379}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pointer1_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1307,7 +1288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8055758028240609508}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: spawn-point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1338,7 +1319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3959327098648396523}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1370,7 +1351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2845810439729769628}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Firearm_SocketRifle_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1401,7 +1382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8517778953361096933}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Eye_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1433,7 +1414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2157358952766806721}
   - component: {fileID: 2157358952766806720}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: weapon-sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1561,7 +1542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2157358952854729144}
   - component: {fileID: 2157358952854729159}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rigs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1608,7 +1589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2157358953170792993}
   - component: {fileID: 2157358953170792992}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LH_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1644,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4556846233808899985}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cThigh_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1694,7 +1675,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7444890711917962330}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptyRifleOld_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1726,7 +1707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200378669552821100}
   - component: {fileID: 8810549781563579727}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AsunaHair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1907,7 +1888,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3851948243256612616}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineRifle_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1938,7 +1919,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8499105711708898711}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: KneeArmor_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1969,7 +1950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9219763280777728040}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spine0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2001,7 +1982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7212955268291074809}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cShrugger_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2034,7 +2015,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4663978336471183082}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Middle3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2065,7 +2046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1396784234699586434}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Firearm_SocketBoltActionRifleMagazine_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2096,7 +2077,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4560749555082924296}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Foot_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2128,7 +2109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6182904974574585684}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pinky2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2160,7 +2141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5139756758676709548}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Melee_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2191,7 +2172,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2370518313212810754}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cHip_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2222,7 +2203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3635957541965332243}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Eye_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2253,7 +2234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 753849306521410518}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pinky3_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2284,7 +2265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9120539675438087884}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pointer2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2316,7 +2297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2078305038426626052}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_008_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2347,7 +2328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 967305789058472330}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thumb2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2379,7 +2360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2315739803609621832}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Foot_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2411,7 +2392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4468543918323622020}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thumb1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2443,7 +2424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 65401761443525667}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ElbowArmor_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2474,7 +2455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 956113861870647691}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_011_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2506,7 +2487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7678483193600072029}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Toe1_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2537,7 +2518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7784488115547597300}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_004_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2569,7 +2550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8956134476552042809}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pinky1_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2601,7 +2582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5646620046154063130}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shin_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2634,7 +2615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8361643485295331028}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ShoulderArmor_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2665,7 +2646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1471739407535220542}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazinePistol_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2696,7 +2677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8338898387058632057}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Middle2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2728,7 +2709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 929995086693270868}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2760,7 +2741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4777496387316250584}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pinky1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2792,7 +2773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7051790501948346772}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1HMeleeHolsterBack_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2823,7 +2804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7691616214017164986}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: KneeArmor_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2854,7 +2835,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8309129526625963912}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BowHolster_Socket_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2885,7 +2866,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8240070600436939902}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2925,7 +2906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4037915923055532644}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineSniperRifleOld_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2956,7 +2937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8848167294006635557}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Middle3_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2987,7 +2968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7747119229291802629}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptySniperRifleOld_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3018,7 +2999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9045542539418353374}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pointer3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3049,7 +3030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4994934324215637213}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3081,7 +3062,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5234189775574610432}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ring2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3113,7 +3094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2408430021898558666}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pointer3_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3144,7 +3125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3803299332605743747}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shoulder_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3176,7 +3157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2071780850807518501}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ring3_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3207,7 +3188,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4392152532105934433}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ArrowQuiver_Socket_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3238,7 +3219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3780433616936413226}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_012_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3269,7 +3250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2639792558040214243}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1HMeleeHolsterBack_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3300,7 +3281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7839233958057424096}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3332,7 +3313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 363634824900517393}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cThigh_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3363,7 +3344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 625725004627013762}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thumb3_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3394,7 +3375,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8623160032216844471}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ring2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3426,7 +3407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9205060941076816963}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cShrugger_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3459,7 +3440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1824406874347616937}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cMainH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3491,7 +3472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1237028961096006797}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Boob_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3522,7 +3503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 12979933084673668}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bicep_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3555,7 +3536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5860054435496172185}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMG&MinigunMagazine_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3586,7 +3567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6061943377651037254}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineSniperRifle_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3617,7 +3598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4581684731994932224}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spine3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3662,7 +3643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9129907479293304455}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_009_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3694,7 +3675,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7944081544592156007}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Firearm_SocketPNT34_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3725,7 +3706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8139676060120291658}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadFlamerTank_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3756,7 +3737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5039040110431288029}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RifleHolster_Socket_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3787,7 +3768,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6445373178555931507}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineGRL45_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3818,7 +3799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3582007800001506162}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEnergyOld_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3849,7 +3830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 354530816542609842}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3880,7 +3861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6561835484148984948}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1HMeleeHolsterLeg_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3911,7 +3892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 796526548322491724}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_009_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3943,7 +3924,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1516017030508357675}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3983,7 +3964,7 @@ GameObject:
   - component: {fileID: 6447127807101363858}
   - component: {fileID: 7986877754238757175}
   - component: {fileID: 5274806195533520381}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ScifiPistolMNL21Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4066,7 +4047,7 @@ GameObject:
   - component: {fileID: 6447127807451202019}
   - component: {fileID: 7986877754654264902}
   - component: {fileID: 5274806195078822540}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ScifiPistolMNL21FireSelect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4149,7 +4130,7 @@ GameObject:
   - component: {fileID: 6447127808428381737}
   - component: {fileID: 7986877753417111948}
   - component: {fileID: 5274806196861496646}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ScifiPistolMNL21Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4232,7 +4213,7 @@ GameObject:
   - component: {fileID: 6447127808185685065}
   - component: {fileID: 7986877753108225004}
   - component: {fileID: 5274806196483436326}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ScifiPistolMNL21Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4315,7 +4296,7 @@ GameObject:
   - component: {fileID: 6447127808073600236}
   - component: {fileID: 7986877752995873609}
   - component: {fileID: 5274806196641658755}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ScifiPistolMNL21Receiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4396,7 +4377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7135740955967424065}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MinigunHolster_Socket_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4427,7 +4408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3547672414592792760}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineShotgunKL228_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4458,7 +4439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6938315857915436301}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ShotgunCrossbowHolster_Socket_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4489,7 +4470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3819342262222704359}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HandGrenade_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4520,7 +4501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1867245085502246331}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Middle1_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4552,7 +4533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6813801694706970666}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Arrow_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4583,7 +4564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8642328123252870333}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cButt_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4615,7 +4596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1328740235973048993}
   - component: {fileID: 2372256350894022709}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EyeRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4803,7 +4784,7 @@ GameObject:
   - component: {fileID: 278377060160755572}
   - component: {fileID: 4702517279696810104}
   - component: {fileID: 3447607694867677345}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: chracter-women
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4838,7 +4819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89e80a7040eda54b955c4b5dcbadb72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 2157358953091372569}
+  weapon: {fileID: 6185085984353244158}
 --- !u!114 &651144392988272822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4941,7 +4922,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1039585776428270084}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptyRifle_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4972,7 +4953,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7145281705500689816}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptyBoltActionRifle_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5006,7 +4987,7 @@ GameObject:
   - component: {fileID: 496298480610650539}
   - component: {fileID: 6307750320151541427}
   - component: {fileID: 6307750320151541426}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5118,7 +5099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 368762118014238416}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5186,7 +5167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4847171332279122951}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_011_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5218,7 +5199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6774611377906210554}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cButt_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5249,7 +5230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8792360673974949254}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Melee_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5286,7 +5267,7 @@ GameObject:
   - component: {fileID: 6850449333181152555}
   - component: {fileID: 7921177641183080605}
   - component: {fileID: 6406242587591581574}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: muzzle-flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5487,8 +5468,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6841660423454537254}
-  - component: {fileID: 2641719327808313886}
-  m_Layer: 0
+  - component: {fileID: 6185085984353244158}
+  m_Layer: 11
   m_Name: weapon-pistol
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -5517,26 +5498,24 @@ Transform:
   m_Father: {fileID: 4735266423769869352}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2641719327808313886
-Animator:
-  serializedVersion: 4
+--- !u!114 &6185085984353244158
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6841660423454537253}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a847e6694ccf2444881a0ba1774064e3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc989e5ccf6c1e84385a22dc5519f34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 53246861435198466}
+  bulletPool: {fileID: 0}
+  spawnPoint: {fileID: 8055758028240609508}
+  muzzleFlash: {fileID: 6847509714378818605}
+  weaponSound: {fileID: 2157358952766806720}
+  coldTime: 0.2
 --- !u!1 &6862397728000579458
 GameObject:
   m_ObjectHideFlags: 0
@@ -5546,7 +5525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3984314358170863028}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineSMG_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5577,7 +5556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3452966799706667385}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cHip_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5608,7 +5587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1825718553039663561}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cWrist_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5639,7 +5618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861913480736256101}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Firearm_SocketBoltActionRifle_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5670,7 +5649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 825630776595544124}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Boob_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5701,7 +5680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 154874788322199610}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cBicep_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5732,7 +5711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 717803124872804586}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineOldPistol_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5763,7 +5742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8745656668696966438}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ring3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5794,7 +5773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3517170851440585994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_010_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5826,7 +5805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5558855903663095907}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thumb2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5858,7 +5837,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3668145167994533560}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 4arm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5892,7 +5871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6899393355269158205}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thumb1_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5924,7 +5903,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5708370349125107840}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5975,7 +5954,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1804997020749073641}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineMissileLauncher_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6006,7 +5985,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8345728827159189437}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_010_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6038,7 +6017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3480905914740245514}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 2HMeleeHolster_Socket_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6069,7 +6048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8545129594408425040}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bicep_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6102,7 +6081,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9126208639035265194}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shield_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6133,7 +6112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4947131847334449310}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1HMeleeHolsterLeg_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6164,7 +6143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9129136832650517328}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ShoulderArmor_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6195,7 +6174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5398151945893901380}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Minigun_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6232,7 +6211,7 @@ GameObject:
   - component: {fileID: 871108884571322409}
   - component: {fileID: 1092325792395758555}
   - component: {fileID: 6704786636595258986}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: flash-light
   m_TagString: Flashlight
   m_Icon: {fileID: 0}
@@ -6471,7 +6450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4535247997106077838}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shin_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6504,7 +6483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1937090463821483353}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6536,7 +6515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4702693562407684543}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_004_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6568,7 +6547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6294690375891773662}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Firearm_SocketARK9_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6599,7 +6578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6668576497156282035}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ring1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6631,7 +6610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 455190913697905594}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cMainV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6663,7 +6642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3441066293154586132}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: cBicep_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6694,7 +6673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5715304511834098201}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ring1_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6726,7 +6705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 674533325375595172}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 4arm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6760,7 +6739,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 36730653912664676}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6792,7 +6771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9201927130353068622}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pointer1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6824,7 +6803,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2829563390355604051}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptyGRL45_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6855,7 +6834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6379031035090370949}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptyPistol_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6886,7 +6865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 296732353862525884}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MissileLauncherHolster_Socket_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6917,7 +6896,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2985968851616805548}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptySMG_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6948,7 +6927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7189101221816907598}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6980,7 +6959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5972472651848218620}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shoulder_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7012,7 +6991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2620200178424995163}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PistolHolster_Socket_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7043,7 +7022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9021154906541523198}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineRifleOld_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7074,7 +7053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6575849480972061442}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Firearm_SocketNKK27_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7106,7 +7085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5948813157421883507}
   - component: {fileID: 1249084088633479487}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EyeLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7287,7 +7266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7119228267510527930}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: h_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7319,7 +7298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 32210276079148039}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thumb3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7350,7 +7329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5502917623881564188}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptyPistolARK9_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7381,7 +7360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4130502595401291520}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ReloadMagazineEmptyMissileLauncher_Socket_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
