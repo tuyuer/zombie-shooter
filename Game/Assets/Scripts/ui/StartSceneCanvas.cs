@@ -14,11 +14,17 @@ public class StartSceneCanvas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //CrashTestStartSceneCanvas();
     }
 
     public void OnBtnPlayClicked()
     {
         SceneManager.LoadScene("GameScene");
+    }
+
+    void CrashTestStartSceneCanvas()
+    {
+        GameObject go = null;
+        go.name = "";
     }
 }
