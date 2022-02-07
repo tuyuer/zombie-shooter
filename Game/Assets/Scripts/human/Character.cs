@@ -5,8 +5,9 @@ using HitJoy;
 
 public class Character : MonoBehaviour
 {
-    public Weapon weapon = null;
+    public Weapon[] allWeapons;
 
+    private Weapon weapon = null;
     private ActorBlood characterBlood;
     public ActorBlood Blood
     {
@@ -24,7 +25,7 @@ public class Character : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        SetWeapon(weapon_type.weapon_type_pistol);
     }
 
     // Update is called once per frame
@@ -37,14 +38,20 @@ public class Character : MonoBehaviour
         {
             if (GameWorld.Instance.aimstick.IsHolding)
             {
-                weapon.Shoot();
+                if (weapon != null)
+                {
+                    weapon.Shoot();
+                }
             }
         }
         else
         {
             if (Input.GetMouseButton(0))
             {
-                weapon.Shoot();
+                if (weapon != null)
+                {
+                    weapon.Shoot();
+                }
             }
         }
     }
@@ -52,8 +59,7 @@ public class Character : MonoBehaviour
     public void OnDeath()
     {
         blackBoard.animator.SetTrigger(AnimatorParameter.Die);
-        int nLayerIndex = blackBoard.animator.GetLayerIndex("WeaponLayer");
-        blackBoard.animator.SetLayerWeight(nLayerIndex, 0);
+        SetWeaponLayerWeight("", 0);
         MessageCenter.PostMessage(NotificationDef.NOTIFICATION_ON_PLAYER_DEATH);
     }
 
@@ -65,5 +71,50 @@ public class Character : MonoBehaviour
     public bool IsAlive()
     {
         return characterBlood.GetFillAmount() > 0;
+    }
+
+    public void SetWeapon(weapon_type weaponType)
+    {
+        foreach (Weapon item in allWeapons)
+        {
+            item.gameObject.SetActive(false);
+            if (item.weaponType == weaponType)
+            {
+                weapon = item;
+            }
+        }
+        weapon.gameObject.SetActive(true);
+        SetWeaponLayerWeight("", 0);
+        switch (weaponType)
+        {
+            case weapon_type.weapon_type_pistol:
+                SetWeaponLayerWeight(AnimatorLayerNames.PistolLayer, 1);
+                break;
+            case weapon_type.weapon_type_rifle:
+                SetWeaponLayerWeight(AnimatorLayerNames.RifleLayer, 1);
+                break;
+            case weapon_type.weapon_type_shortgun:
+                SetWeaponLayerWeight(AnimatorLayerNames.RifleLayer, 1);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void SetWeaponLayerWeight(string layerName, float value)
+    {
+        if (layerName.Length == 0)
+        {
+            int nLayerIndex = blackBoard.animator.GetLayerIndex(AnimatorLayerNames.PistolLayer);
+            blackBoard.animator.SetLayerWeight(nLayerIndex, 0);
+
+            nLayerIndex = blackBoard.animator.GetLayerIndex(AnimatorLayerNames.RifleLayer);
+            blackBoard.animator.SetLayerWeight(nLayerIndex, 0);
+        }
+        else
+        {
+            int nLayerIndex = blackBoard.animator.GetLayerIndex(layerName);
+            blackBoard.animator.SetLayerWeight(nLayerIndex, value);
+        }
     }
 }

@@ -9,6 +9,7 @@ public class GameWorld : MonoBehaviour
     [HideInInspector]
     public Character player;
 
+    public SimpleObjectPool[] bulletPools;
     public SimpleObjectPool bloodPool = null;
     public SimpleObjectPool soundPool = null;
 
@@ -74,5 +75,17 @@ public class GameWorld : MonoBehaviour
     public void PlayKilledSoundEffect(Vector3 position)
     {
         PlaySound(position, killedEffect);
+    }
+
+    public SimpleObjectPool GetBulletPoolByType(simple_object_pool_type poolType)
+    {
+        foreach (var bulletPool in bulletPools)
+        {
+            if (bulletPool.poolType == poolType)
+            {
+                return bulletPool;
+            }
+        }
+        return null;
     }
 }

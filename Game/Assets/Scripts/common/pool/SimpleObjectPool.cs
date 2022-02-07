@@ -7,6 +7,7 @@ public class SimpleObjectPool : MonoBehaviour
     [HideInInspector]
     public List<PoolObject> poolObjects = new List<PoolObject>();
 
+    public simple_object_pool_type poolType;
     public GameObject poolObjectPrefab = null;
 
     public GameObject FetchObject()
