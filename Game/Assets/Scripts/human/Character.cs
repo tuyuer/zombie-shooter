@@ -54,6 +54,15 @@ public class Character : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SetWeapon(weapon_type.weapon_type_pistol);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SetWeapon(weapon_type.weapon_type_rifle);
+        }
     }
 
     public void OnDeath()
