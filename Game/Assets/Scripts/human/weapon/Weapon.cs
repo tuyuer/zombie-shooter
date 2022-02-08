@@ -50,6 +50,9 @@ public class Weapon : MonoBehaviour
 
     void UpdateLaser()
     {
+        if (laserLine == null)
+            return;
+
         laserLine.SetPosition(0, Vector3.zero);
 
         RaycastHit hit;
