@@ -10,6 +10,7 @@ public class Weapon : MonoBehaviour
     public Transform spawnPoint = null;
     public MuzzleFlash muzzleFlash = null;
     public AudioSource weaponSound = null;
+    public LaserLine laserLine = null;
     public weapon_type weaponType = weapon_type.weapon_type_pistol;
 
     public float coldTime = 0.5f;
@@ -42,6 +43,24 @@ public class Weapon : MonoBehaviour
         if (coldElapsedTime > coldTime)
         {
             isReady = true;
+        }
+
+        UpdateLaser();
+    }
+
+    void UpdateLaser()
+    {
+        laserLine.SetPosition(0, Vector3.zero);
+
+        RaycastHit hit;
+        if (Physics.Raycast(laserLine.transform.position, laserLine.transform.forward, out hit))
+        {
+            Vector3 vecOffset = hit.point - laserLine.transform.position;
+            laserLine.SetPosition(1, -Vector3.left * vecOffset.magnitude);
+        }
+        else
+        {
+            laserLine.SetPosition(1, -Vector3.left * 100);
         }
     }
 

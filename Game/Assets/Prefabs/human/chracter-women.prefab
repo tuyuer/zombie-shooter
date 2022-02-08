@@ -2430,7 +2430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5517719681342920088
 Transform:
   m_ObjectHideFlags: 0
@@ -2438,7 +2438,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2420838797604862459}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.00040975297, y: 0.11073967, z: 0.0036773628, w: 0.9938426}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2448,7 +2448,7 @@ Transform:
   - {fileID: 8902504027428575172}
   m_Father: {fileID: 4735266423769869352}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 12.716, z: 0.424}
 --- !u!114 &990022773757858650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2465,6 +2465,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 8336819992024391731}
   muzzleFlash: {fileID: 7056681049753354964}
   weaponSound: {fileID: 2491239489612916397}
+  laserLine: {fileID: 0}
   weaponType: 1
   coldTime: 0.2
 --- !u!1 &2480575394173667779
@@ -2845,6 +2846,62 @@ Transform:
   m_Father: {fileID: 7784488115547597300}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3358327954564167307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3354871989891236467}
+  - component: {fileID: 3389200365941858833}
+  m_Layer: 0
+  m_Name: laser-line
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3354871989891236467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3358327954564167307}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.08, z: 0.173}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6841660423454537254}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3389200365941858833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3358327954564167307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1285e2695d5bbb46bb3435851a2e2f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outerColor: {r: 1, g: 0, b: 0, a: 1}
+  innerColor: {r: 1, g: 1, b: 1, a: 1}
+  width: 1
+  centerGlow: 25
+  pulseWidth: 0.5
+  pulseLength: 1.17
+  positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 10, z: 0}
+  innerFadeMaterial: {fileID: 2100000, guid: 0d379dd9c5fcf164494f003fe614f333, type: 2}
+  outerFadeMaterial: {fileID: 2100000, guid: 0d379dd9c5fcf164494f003fe614f333, type: 2}
+  useWorldSpace: 0
 --- !u!1 &3358766981346472581
 GameObject:
   m_ObjectHideFlags: 0
@@ -6123,7 +6180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6841660423454537254
 Transform:
   m_ObjectHideFlags: 0
@@ -6139,6 +6196,7 @@ Transform:
   - {fileID: 320992191613127981}
   - {fileID: 8055758028240609508}
   - {fileID: 6817939707682486491}
+  - {fileID: 3354871989891236467}
   m_Father: {fileID: 4735266423769869352}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6158,6 +6216,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 8055758028240609508}
   muzzleFlash: {fileID: 6847509714378818605}
   weaponSound: {fileID: 2157358952766806720}
+  laserLine: {fileID: 3389200365941858833}
   weaponType: 0
   coldTime: 0.2
 --- !u!1 &6862397728000579458

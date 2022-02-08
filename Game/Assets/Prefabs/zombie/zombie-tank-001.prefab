@@ -1038,7 +1038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heightOffset: 0
-  senseDetectRadius: 30
+  senseDetectRadius: 50
   senseDetectAngle: 360
   attackDetectRadius: 1
   attackDetectAngle: 131
