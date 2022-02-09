@@ -88,16 +88,16 @@ namespace HitJoy
         void OnSpawnZombie()
         {
             Wave curWave = waves[waves.Count - 1];
-            zombie_type genType = curWave.GenerateZombieType();
+            enemy_type genType = curWave.GenerateZombieType();
             switch (genType)
             {
-                case zombie_type.zombie_type_weak:
+                case enemy_type.enemy_type_zombie_weak:
                     SpawnWeakZombies();
                     break;
-                case zombie_type.zombie_type_strong:
+                case enemy_type.enemy_type_zombie_strong:
                     SpawnStrongZombies();
                     break;
-                case zombie_type.zombie_type_tank:
+                case enemy_type.enemy_type_zombie_tank:
                     SpawnTankZombies();
                     break;
                 default:

@@ -19,8 +19,14 @@ public class Weapon : MonoBehaviour
     private float coldElapsedTime = 0f;
     private bool isReady = true;
 
+    private int laserLineMask;
+
     void Start()
     {
+        int moveableLayer = LayerMask.NameToLayer(LayerNames.Moveable);
+        int obstableLayer = LayerMask.NameToLayer(LayerNames.Obstacle);
+        laserLineMask = (1 << moveableLayer) | (1 << obstableLayer);
+
         switch (weaponType)
         {
             case weapon_type.weapon_type_pistol:
@@ -56,7 +62,7 @@ public class Weapon : MonoBehaviour
         laserLine.SetPosition(0, Vector3.zero);
 
         RaycastHit hit;
-        if (Physics.Raycast(laserLine.transform.position, laserLine.transform.forward, out hit))
+        if (Physics.Raycast(laserLine.transform.position, laserLine.transform.forward, out hit, 100, laserLineMask))
         {
             Vector3 vecOffset = hit.point - laserLine.transform.position;
             laserLine.SetPosition(1, -Vector3.left * vecOffset.magnitude);

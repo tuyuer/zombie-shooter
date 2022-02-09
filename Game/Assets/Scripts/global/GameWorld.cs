@@ -19,6 +19,7 @@ public class GameWorld : MonoBehaviour
     public Joystick aimstick = null;
 
     public KillStatistics killStatistics;
+    public Backpack backpack;
 
     private static GameWorld _instance = null;
 

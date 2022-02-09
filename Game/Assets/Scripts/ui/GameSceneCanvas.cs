@@ -38,7 +38,7 @@ public class GameSceneCanvas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tmpKills.text = "" + GameWorld.Instance.killStatistics.KillCount;
+        tmpKills.text = "" + GameWorld.Instance.killStatistics.KillCount();
         imgBlood.fillAmount = GameWorld.Instance.player.Blood.GetFillAmount();
     }
 

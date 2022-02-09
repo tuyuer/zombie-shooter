@@ -16,6 +16,7 @@ public class AiController : MonoBehaviour
     public ActorMouth actorMouth;
 
     public float blood = 100.0f;
+    public float deathDelayRemvoveTime = 30.0f;
     public float thinkingTime = 1.0f;
     private float thinkingElapsed = 0.0f;
 
@@ -154,7 +155,9 @@ public class AiController : MonoBehaviour
         actorMouth.PlayDeathSpeek();
         GameWorld.Instance.PlayKilledSoundEffect(transform.position);
         gameObject.layer = LayerMask.NameToLayer(LayerNames.Death);
-        GameWorld.Instance.killStatistics.Increase();
+        GameWorld.Instance.killStatistics.KillEnemy(gameObject);
+
+        Destroy(gameObject, deathDelayRemvoveTime);
     }
 
     public bool IsDeath()

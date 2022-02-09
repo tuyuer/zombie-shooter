@@ -111,20 +111,20 @@ namespace HitJoy
             CheckSpawn();
         }
 
-        public zombie_type GenerateZombieType()
+        public enemy_type GenerateZombieType()
         {
             int nTotalWeight = weakWeight + strongWeight + tankWeight;
             int nRandomWeight = Random.Range(0, nTotalWeight);
             if (nRandomWeight <= weakWeight)
             {
-                return zombie_type.zombie_type_weak;
+                return enemy_type.enemy_type_zombie_weak;
             }
             else if (nRandomWeight <= weakWeight + strongWeight)
             {
-                return zombie_type.zombie_type_strong;
+                return enemy_type.enemy_type_zombie_strong;
             }
 
-            return zombie_type.zombie_type_tank;
+            return enemy_type.enemy_type_zombie_tank;
         }
 
         private void CheckSpawn()
