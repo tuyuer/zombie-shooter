@@ -61,15 +61,18 @@ public class Weapon : MonoBehaviour
 
         laserLine.SetPosition(0, Vector3.zero);
 
+        Debug.DrawRay(laserLine.transform.position, laserLine.transform.forward * 10);
         RaycastHit hit;
         if (Physics.Raycast(laserLine.transform.position, laserLine.transform.forward, out hit, 100, laserLineMask))
         {
             Vector3 vecOffset = hit.point - laserLine.transform.position;
-            laserLine.SetPosition(1, -Vector3.left * vecOffset.magnitude);
+            laserLine.SetPosition(1, Vector3.forward * vecOffset.magnitude);
         }
         else
         {
-            laserLine.SetPosition(1, -Vector3.left * 100);
+            Vector3 forwardDir = Vector3.forward;
+            Vector3 endPos = forwardDir * 100;
+            laserLine.SetPosition(1, endPos);
         }
     }
 

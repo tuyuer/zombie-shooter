@@ -63,6 +63,9 @@ public class LaserLine : MonoBehaviour {
         if (useWorldSpace != m_ColorLine.useWorldSpace) m_ColorLine.useWorldSpace = useWorldSpace;
         if (useWorldSpace != m_WhiteLine.useWorldSpace) m_WhiteLine.useWorldSpace = useWorldSpace;
 
+        m_ColorLine.transform.forward = transform.forward;
+        m_WhiteLine.transform.forward = transform.forward;
+
         m_ColorLine.enabled = m_IsVisible;
         m_WhiteLine.enabled = m_IsVisible;
 

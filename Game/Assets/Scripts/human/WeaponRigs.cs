@@ -26,16 +26,14 @@ public class WeaponRigs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        lh_ik.localPosition = lh_pos;
+        rh_ik.localPosition = rh_pos;
     }
 
     public void WeaponPistol()
     {
         lh_pos = pistol_lh;
         rh_pos = pistol_rh;
-
-        lh_ik.position = lh_pos;
-        rh_ik.position = rh_pos;
     }
 
     public void WeaponRifle()
