@@ -7,6 +7,7 @@ namespace HitJoy
 {
     public class WaveManager : MonoBehaviour
     {
+        public Light directionLight;
         public ZombieSpawnPoint[] zombieSpawnPoints;
         public List<Wave> waves = new List<Wave>();
 
@@ -14,7 +15,10 @@ namespace HitJoy
         public GameObject[] strongZombies;
         public GameObject[] tankZombies;
 
+        //a delay time that will setup WaveManager
         private float setupTime = 1.0f;
+
+        private day_time dayTime = day_time.day_time_night;
 
         // Start is called before the first frame update
         void Start()
@@ -25,13 +29,26 @@ namespace HitJoy
         // Update is called once per frame
         void Update()
         {
-            if (setupTime > 0)
+            if (!IsSetupFinished())
             {
-                setupTime -= Time.deltaTime;
                 return;
             }
 
-            UpdateWave();
+            //in night
+            if (dayTime == day_time.day_time_night)
+            {
+                UpdateWave();
+            }
+        }
+
+        bool IsSetupFinished()
+        {
+            if (setupTime > 0)
+            {
+                setupTime -= Time.deltaTime;
+                return false;
+            }
+            return true;
         }
 
         void UpdateWave()
@@ -50,13 +67,10 @@ namespace HitJoy
                     if (nAliveCount > 0)
                         return;
                 }
-                
-                BuildWave(curWave);
+                SwitchDayTime(day_time.day_time_day);
             }
-            else
-            {
-                BuildWave();
-            }
+
+            BuildWave();
         }
 
         void BuildWave(Wave lastWave = null)
@@ -82,6 +96,22 @@ namespace HitJoy
                 wave.WeakWeight = 600;
                 wave.StrongWeight = 200;
                 wave.TankWeight = 100;
+            }
+        }
+
+        void SwitchDayTime(day_time dayTimeType)
+        {
+            dayTime = dayTimeType;
+            switch (dayTime)
+            {
+                case day_time.day_time_day:
+                    directionLight.intensity = 1.0f;
+                    break;
+                case day_time.day_time_night:
+                    directionLight.intensity = 0f;
+                    break;
+                default:
+                    break;
             }
         }
 

@@ -1,4 +1,11 @@
-﻿public enum enemy_type
+﻿
+public enum day_time
+{
+    day_time_day,
+    day_time_night,
+};
+
+public enum enemy_type
 {
     enemy_type_zombie_weak,
     enemy_type_zombie_strong,
