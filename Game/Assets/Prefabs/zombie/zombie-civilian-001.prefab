@@ -1044,6 +1044,7 @@ MonoBehaviour:
   senseDetectAngle: 360
   attackDetectRadius: 1
   attackDetectAngle: 131
+  nearByDetectRadius: 3
   viewBlockerLayerMask:
     serializedVersion: 2
     m_Bits: 0
@@ -1090,6 +1091,7 @@ MonoBehaviour:
   enemySense: {fileID: 6046876678462198915}
   actorMouth: {fileID: 8018476128632577979}
   blood: 10
+  deathDelayRemvoveTime: 30
   thinkingTime: 1
 --- !u!143 &6210289941107082756
 CharacterController:
@@ -1122,6 +1124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseSpeed: 3.5
+  nearByChaseSpeed: 4
 --- !u!114 &4797504414848657820
 MonoBehaviour:
   m_ObjectHideFlags: 0

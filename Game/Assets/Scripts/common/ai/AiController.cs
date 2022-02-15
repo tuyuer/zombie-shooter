@@ -108,7 +108,7 @@ public class AiController : MonoBehaviour
     public void OnTargetEnterAttackArea()
     {
         CurActionType = ai_action_type.ai_action_type_attack;
-        thinkingElapsed = thinking_type_wait;
+        thinkingElapsed = thinking_type_immediately;
     }
 
     public void OnTargetOutAttackArea()

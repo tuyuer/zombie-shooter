@@ -108,6 +108,29 @@ public class Character : MonoBehaviour
             default:
                 break;
         }
+        SetWeaponRigs(weaponType);
+    }
+
+    private void SetWeaponRigs(weapon_type weaponType) 
+    {
+        WeaponRigs weaponRigs = GetComponent<WeaponRigs>();
+        if (weaponRigs == null)
+            return;
+
+        switch (weaponType)
+        {
+            case weapon_type.weapon_type_pistol:
+                weaponRigs.WeaponPistol();
+                break;
+            case weapon_type.weapon_type_rifle:
+                weaponRigs.WeaponRifle();
+                break;
+            case weapon_type.weapon_type_shortgun:
+                weaponRigs.WeaponRifle();
+                break;
+            default:
+                break;
+        }
     }
 
     public void SetWeaponLayerWeight(string layerName, float value)

@@ -5,6 +5,7 @@ using UnityEngine;
 public class AiActionChase : AiActionBase
 {
     public float chaseSpeed = 3.0f;
+    public float nearByChaseSpeed = 6.0f;
     void Awake()
     {
         actionType = ai_action_type.ai_action_type_chase;
@@ -39,7 +40,14 @@ public class AiActionChase : AiActionBase
             aiController.animator.SetFloat(AnimatorParameter.ForwardSpeed, 1.0f);
             aiController.transform.LookAt(targetTrans);
             Vector3 moveDir = (targetTrans.position - aiController.transform.position).normalized;
-            aiController.characterController.Move(moveDir * chaseSpeed * Time.deltaTime);
+
+            float moveSpeed = chaseSpeed;
+            if (aiController.enemySense.DetectTargetNearBy(targetTrans))
+            {
+                moveSpeed = nearByChaseSpeed;
+            }
+
+            aiController.characterController.Move(moveDir * moveSpeed * Time.deltaTime);
         }
     }
 }

@@ -16,6 +16,9 @@ namespace HitJoy
         [Range(0.0f, 360.0f)]
         public float attackDetectAngle = 160;
 
+        [Range(0.0f, 10.0f)]
+        public float nearByDetectRadius = 3;
+
         public LayerMask viewBlockerLayerMask;
 
         void Awake()
@@ -83,6 +86,11 @@ namespace HitJoy
         public virtual bool DetectTargetInAttackField(Transform target)
         {
             return DetectTargetInArea(target, attackDetectAngle, attackDetectRadius);
+        }
+
+        public virtual bool DetectTargetNearBy(Transform target)
+        {
+            return DetectTargetInArea(target, attackDetectAngle, nearByDetectRadius);
         }
 
         void OnDrawGizmosSelected()

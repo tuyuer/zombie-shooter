@@ -974,7 +974,7 @@ Transform:
   m_Children:
   - {fileID: 3618082099449710033}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &5178962813533887573
 Rigidbody:
@@ -1043,6 +1043,7 @@ MonoBehaviour:
   senseDetectAngle: 360
   attackDetectRadius: 1
   attackDetectAngle: 131
+  nearByDetectRadius: 4
   viewBlockerLayerMask:
     serializedVersion: 2
     m_Bits: 0
@@ -1089,6 +1090,7 @@ MonoBehaviour:
   enemySense: {fileID: 5178962812711904235}
   actorMouth: {fileID: 8895406402066704595}
   blood: 100
+  deathDelayRemvoveTime: 30
   thinkingTime: 1
 --- !u!143 &4763379849222779244
 CharacterController:
@@ -1121,6 +1123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseSpeed: 3.5
+  nearByChaseSpeed: 4.5
 --- !u!114 &6242452703102885620
 MonoBehaviour:
   m_ObjectHideFlags: 0

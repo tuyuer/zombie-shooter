@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 namespace HitJoy
 {
     public class WaveManager : MonoBehaviour
     {
         public Light directionLight;
+        public GameObject supplyBox;
         public ZombieSpawnPoint[] zombieSpawnPoints;
         public List<Wave> waves = new List<Wave>();
 
@@ -19,11 +21,12 @@ namespace HitJoy
         private float setupTime = 1.0f;
 
         private day_time dayTime = day_time.day_time_night;
+        private float stateTimeElapsed = 0.0f;
 
         // Start is called before the first frame update
         void Start()
         {
-
+            SwitchDayTime(day_time.day_time_night);
         }
 
         // Update is called once per frame
@@ -37,7 +40,11 @@ namespace HitJoy
             //in night
             if (dayTime == day_time.day_time_night)
             {
-                UpdateWave();
+                UpdateNight();
+            }
+            else if (dayTime == day_time.day_time_day)
+            {
+                UpdateDayTime();
             }
         }
 
@@ -51,8 +58,9 @@ namespace HitJoy
             return true;
         }
 
-        void UpdateWave()
+        void UpdateNight()
         {
+            stateTimeElapsed += Time.deltaTime;
             if (waves.Count > 0)
             {
                 Wave curWave = waves[waves.Count - 1];
@@ -69,8 +77,15 @@ namespace HitJoy
                 }
                 SwitchDayTime(day_time.day_time_day);
             }
+        }
 
-            BuildWave();
+        void UpdateDayTime()
+        {
+            stateTimeElapsed += Time.deltaTime;
+            if (stateTimeElapsed > 10.0f)
+            {
+                SwitchDayTime(day_time.day_time_night);
+            }
         }
 
         void BuildWave(Wave lastWave = null)
@@ -101,18 +116,34 @@ namespace HitJoy
 
         void SwitchDayTime(day_time dayTimeType)
         {
+            if (dayTime != dayTimeType)
+                stateTimeElapsed = 0f;
+
             dayTime = dayTimeType;
             switch (dayTime)
             {
                 case day_time.day_time_day:
-                    directionLight.intensity = 1.0f;
+                    {
+                        ShowSupplyBox(true);
+                        directionLight.DOIntensity(1.0f, 6.0f);
+                        Debug.Log("EnterDayTime!!!");
+                    }
                     break;
                 case day_time.day_time_night:
-                    directionLight.intensity = 0f;
+                    {
+                        ShowSupplyBox(false);
+                        directionLight.DOIntensity(0f, 1.0f);
+                        BuildWave();
+                    }
                     break;
                 default:
                     break;
             }
+        }
+
+        void ShowSupplyBox(bool bShow)
+        {
+            supplyBox.gameObject.SetActive(bShow);
         }
 
         void OnSpawnZombie()

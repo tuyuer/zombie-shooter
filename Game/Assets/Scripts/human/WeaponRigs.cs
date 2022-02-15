@@ -38,6 +38,7 @@ public class WeaponRigs : MonoBehaviour
 
     public void WeaponRifle()
     {
-        
+        lh_pos = rifle_lh;
+        rh_pos = rifle_rh;
     }
 }
