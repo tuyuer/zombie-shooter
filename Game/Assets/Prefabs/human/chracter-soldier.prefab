@@ -1,5 +1,61 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &741179634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741179635}
+  - component: {fileID: 741179636}
+  m_Layer: 0
+  m_Name: laser-line
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &741179635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741179634}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0024, y: 0.0551, z: 0.5036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2521992514125463196}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &741179636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741179634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1285e2695d5bbb46bb3435851a2e2f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outerColor: {r: 1, g: 0, b: 0, a: 1}
+  innerColor: {r: 1, g: 1, b: 1, a: 0}
+  width: 0.04
+  centerGlow: 25
+  pulseWidth: 0.5
+  pulseLength: 1.17
+  positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 10, z: 0}
+  innerFadeMaterial: {fileID: 2100000, guid: 0d379dd9c5fcf164494f003fe614f333, type: 2}
+  outerFadeMaterial: {fileID: 2100000, guid: 0d379dd9c5fcf164494f003fe614f333, type: 2}
+  useWorldSpace: 0
 --- !u!1 &1551490198603778252
 GameObject:
   m_ObjectHideFlags: 0
@@ -3671,7 +3727,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2521992513311954552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.059, z: 0.196}
+  m_LocalPosition: {x: -0.0002, y: 0.099, z: 0.6012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4669,7 +4725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2521992513927509418}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.068, z: 0.183}
+  m_LocalPosition: {x: 0, y: 0.102, z: 0.576}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4934,6 +4990,7 @@ Transform:
   - {fileID: 2521992513401923397}
   - {fileID: 2521992513311954553}
   - {fileID: 2521992513927509419}
+  - {fileID: 741179635}
   m_Father: {fileID: 1549559463911488338}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 22, y: -71.639, z: -79.922}
@@ -4953,7 +5010,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 2521992513311954553}
   muzzleFlash: {fileID: 2521992513927509423}
   weaponSound: {fileID: 2521992513798273360}
-  laserLine: {fileID: 0}
+  laserLine: {fileID: 741179636}
   weaponType: 1
   coldTime: 0.2
 --- !u!1 &2521992514340463352
@@ -5343,7 +5400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2521992514475975258}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: -0.111, z: 0.085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5758,7 +5815,7 @@ Transform:
   m_Children:
   - {fileID: 1549266468075157806}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &638184054213796335
 MonoBehaviour:

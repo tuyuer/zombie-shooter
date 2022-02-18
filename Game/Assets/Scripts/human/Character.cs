@@ -82,6 +82,11 @@ public class Character : MonoBehaviour
         return characterBlood.GetFillAmount() > 0;
     }
 
+    public weapon_type GetWeaponType()
+    {
+        return weapon.weaponType;
+    }
+
     public void SetWeapon(weapon_type weaponType)
     {
         foreach (Weapon item in allWeapons)

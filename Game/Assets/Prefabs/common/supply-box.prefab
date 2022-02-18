@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6339102215837369348}
   - component: {fileID: 1908791039}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6339102215837800484}
   m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: -2.0803928, y: 0.48801318, z: -1.06268}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 6339102215837369350}
   - component: {fileID: 6339102215836566566}
   - component: {fileID: 6339102215835600614}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: upper_covers_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 6339102215837369352}
   - component: {fileID: 6339102215836566568}
   - component: {fileID: 6339102215835600616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: supports_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 6339102215837369354}
   - component: {fileID: 6339102215836566570}
   - component: {fileID: 6339102215835600618}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bench_top_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 6339102215837369356}
   - component: {fileID: 6339102215836566572}
   - component: {fileID: 6339102215835600620}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bench_legs_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 6339102215837369358}
   - component: {fileID: 6339102215836566574}
   - component: {fileID: 6339102215835600622}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bench_bottom_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 6339102216033400722}
   - component: {fileID: 6339102216033400720}
   - component: {fileID: 6339102216033400723}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -612,7 +612,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6339102216183475710}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -1.06268}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -622,7 +622,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.0803928, y: 1.8796799}
+  m_AnchoredPosition: {x: 0, y: 1.83}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6339102216183475698
@@ -720,7 +720,7 @@ Transform:
   - {fileID: 6339102215837369348}
   - {fileID: 6339102216183475711}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &6339102216938122625
 SphereCollider:
@@ -733,7 +733,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 4.37
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6339102216938122630
 MonoBehaviour:
@@ -747,6 +747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bae344424c51a4eaf6b1fd0d870ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 6339102216183475710}
 --- !u!1 &6339102217057150142
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,7 +950,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6339102217161431430}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6339102216938122630}
+        m_TargetAssemblyTypeName: SupplyBox, Assembly-CSharp
+        m_MethodName: OnUseClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6339102217161431428
 MonoBehaviour:
   m_ObjectHideFlags: 0

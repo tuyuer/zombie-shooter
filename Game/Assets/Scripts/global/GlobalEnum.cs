@@ -5,6 +5,12 @@ public enum day_time
     day_time_night,
 };
 
+public enum wave_manager_state
+{
+    wave_manager_running,
+    wave_manager_pause,
+};
+
 public enum enemy_type
 {
     enemy_type_zombie_weak,

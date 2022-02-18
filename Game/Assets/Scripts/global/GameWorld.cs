@@ -9,6 +9,9 @@ public class GameWorld : MonoBehaviour
     [HideInInspector]
     public Character player;
 
+    public GameSceneCanvas uiCanvas;
+    public WaveManager waveManager;
+
     public SimpleObjectPool[] bulletPools;
     public SimpleObjectPool bloodPool = null;
     public SimpleObjectPool soundPool = null;

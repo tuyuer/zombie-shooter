@@ -9,7 +9,7 @@ namespace HitJoy
     public class WaveManager : MonoBehaviour
     {
         public Light directionLight;
-        public GameObject supplyBox;
+        public SupplyBox supplyBox;
         public ZombieSpawnPoint[] zombieSpawnPoints;
         public List<Wave> waves = new List<Wave>();
 
@@ -20,6 +20,7 @@ namespace HitJoy
         //a delay time that will setup WaveManager
         private float setupTime = 1.0f;
 
+        private wave_manager_state state = wave_manager_state.wave_manager_running;
         private day_time dayTime = day_time.day_time_night;
         private float stateTimeElapsed = 0.0f;
 
@@ -36,6 +37,9 @@ namespace HitJoy
             {
                 return;
             }
+
+            if (state == wave_manager_state.wave_manager_pause)
+                return;
 
             //in night
             if (dayTime == day_time.day_time_night)
@@ -107,7 +111,7 @@ namespace HitJoy
             }
             else
             {
-                wave.WaveTime = 30;
+                wave.WaveTime = 15;
                 wave.WeakWeight = 600;
                 wave.StrongWeight = 200;
                 wave.TankWeight = 100;
@@ -125,6 +129,7 @@ namespace HitJoy
                 case day_time.day_time_day:
                     {
                         ShowSupplyBox(true);
+                        GameWorld.Instance.player.SetWeapon(weapon_type.weapon_type_pistol);
                         directionLight.DOIntensity(1.0f, 6.0f);
                         Debug.Log("EnterDayTime!!!");
                     }
@@ -133,7 +138,17 @@ namespace HitJoy
                     {
                         ShowSupplyBox(false);
                         directionLight.DOIntensity(0f, 1.0f);
-                        BuildWave();
+
+                        if (waves.Count > 0)
+                        {
+                            Wave curWave = waves[waves.Count - 1];
+                            BuildWave(curWave);
+                        }
+                        else
+                        {
+                            BuildWave();
+                        }
+
                     }
                     break;
                 default:
@@ -228,9 +243,14 @@ namespace HitJoy
             return nAliveCount;
         }
 
-        public void GetTotalCount()
+        public void PauseWave()
         {
+            state = wave_manager_state.wave_manager_pause;
+        }
 
+        public void ResumeWave()
+        {
+            state = wave_manager_state.wave_manager_running;
         }
     }
 }

@@ -13,4 +13,6 @@ public static class NotificationDef
     public const string NOTIFICATION_ON_PLAYER_DAMAGE = "NOTIFICATION_ON_PLAYER_DAMAGE";
     public const string NOTIFICATION_ON_PLAYER_DEATH = "NOTIFICATION_ON_PLAYER_DEATH";
 
+    //supply box
+    public const string NOTIFICATION_ON_SUPPLY_BOX_USE_BUTTON_CLICKED = "NOTIFICATION_ON_SUPPLY_BOX_USE_BUTTON_CLICKED";
 }

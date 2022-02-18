@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HitJoy;
 
 public class SupplyBox : MonoBehaviour
 {
@@ -37,5 +38,10 @@ public class SupplyBox : MonoBehaviour
         {
             canvas.SetActive(false);
         }
+    }
+
+    public void OnUseClicked()
+    {
+        MessageCenter.PostMessage(NotificationDef.NOTIFICATION_ON_SUPPLY_BOX_USE_BUTTON_CLICKED);
     }
 }

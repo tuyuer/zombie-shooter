@@ -60,6 +60,10 @@ public class Backpack : MonoBehaviour
             if (item.elementType == elementType)
             {
                 item.elementCount -= elementCount;
+                if (item.elementCount < 0)
+                {
+                    item.elementCount = 0;
+                }
                 break;
             }
         }

@@ -10,11 +10,14 @@ using UnityEngine.SceneManagement;
 public class GameSceneCanvas : MonoBehaviour
 {
     public TMP_Text tmpKills;
+    public TMP_Text tmpChips;
     public TMP_Text tmpWaves;
     public Image imgBlood;
 
     public GameObject waveInfoPanel;
     public GameObject gameOverPanel;
+    public UIShopPanel shopPanel;
+    public UiTipsPanel tipsPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +31,7 @@ public class GameSceneCanvas : MonoBehaviour
         MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_WAVE_PREPARE_END, new MessageEvent(OnWavePrepareEnd));
 
         MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_PLAYER_DEATH, new MessageEvent(OnPlayerDeath));
+        MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_SUPPLY_BOX_USE_BUTTON_CLICKED, new MessageEvent(OnOpenShop));
     }
 
     private void OnDisable()
@@ -39,6 +43,7 @@ public class GameSceneCanvas : MonoBehaviour
     void Update()
     {
         tmpKills.text = "" + GameWorld.Instance.killStatistics.KillCount();
+        tmpChips.text = "" + GameWorld.Instance.backpack.GetElementCount(backpack_element_type.backpack_element_type_gold);
         imgBlood.fillAmount = GameWorld.Instance.player.Blood.GetFillAmount();
     }
 
@@ -81,6 +86,12 @@ public class GameSceneCanvas : MonoBehaviour
     public void OnPlayerDeath(System.Object data)
     {
         gameOverPanel.gameObject.SetActive(true);
+    }
+
+    public void OnOpenShop(System.Object data)
+    {
+        shopPanel.gameObject.SetActive(true);
+        GameWorld.Instance.waveManager.PauseWave();
     }
 
     public void OnBtnRetryClicked()
