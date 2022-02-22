@@ -19,7 +19,7 @@ public class StartSceneCanvas : MonoBehaviour
 
     public void OnBtnPlayClicked()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("StoryScene2");
     }
 
     void CrashTestStartSceneCanvas()
