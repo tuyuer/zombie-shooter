@@ -6,17 +6,22 @@ using Opsive.UltimateCharacterController.Objects;
 
 public class Weapon : MonoBehaviour
 {
-    public Blackboard blackboard;
     public Transform spawnPoint = null;
     public MuzzleFlash muzzleFlash = null;
     public AudioSource weaponSound = null;
     public LaserLine laserLine = null;
+
     public weapon_type weaponType = weapon_type.weapon_type_pistol;
 
-    public float coldTime = 0.5f;
+    //µ¯¼Ð´óÐ¡
+    public int clipSize = 10;
+    public int bulletsInClip = 0;
+
+    [Range(0, 10f)]
+    public float reloadTime = 0.5f;
+    private float reloadElapsedTime = GlobalDef.ZERO_FLOAT_VALUE;
 
     private SimpleObjectPool bulletPool = null;
-    private float coldElapsedTime = 0f;
     private bool isReady = true;
 
     private int laserLineMask;
@@ -38,6 +43,9 @@ public class Weapon : MonoBehaviour
             case weapon_type.weapon_type_shortgun:
                 bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_shortgun);
                 break;
+            case weapon_type.weapon_type_gun_turret:
+                bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_pistol);
+                break;
             default:
                 break;
         }
@@ -45,8 +53,8 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        coldElapsedTime += Time.deltaTime;
-        if (coldElapsedTime > coldTime)
+        reloadElapsedTime += Time.deltaTime;
+        if (reloadElapsedTime > reloadTime)
         {
             isReady = true;
         }
@@ -86,14 +94,13 @@ public class Weapon : MonoBehaviour
             GameObject bulletObj = bulletPool.FetchObject();
             BulletEffect bullet = bulletObj.GetComponent<BulletEffect>();
 
-            //Vector3 moveDir = blackboard.characterAim.aimTarget.transform.position - spawnPoint.position;
             Vector3 moveDir = transform.forward;
             bullet.Shoot(spawnPoint.position, moveDir);
             muzzleFlash.ShowEffect();
             weaponSound.Play();
 
             isReady = false;
-            coldElapsedTime = 0f;
+            reloadElapsedTime = GlobalDef.ZERO_FLOAT_VALUE;
         }
     }
 }

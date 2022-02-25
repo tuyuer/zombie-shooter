@@ -25,6 +25,7 @@ public enum weapon_type
     weapon_type_pistol,
     weapon_type_rifle,
     weapon_type_shortgun,
+    weapon_type_gun_turret,
 };
 
 public enum simple_object_pool_type

@@ -11,8 +11,10 @@ public class GlobalDef
 #endif
 
     //Common Defines
-    public const int INVALID_VALUE = -1;
-    public const float ZERO_VALUE = 0.0f;
+    public const int INVALID_INT_VALUE = -1;
+    public const int MAX_INT_VALUE = 9999999;
+    public const int ZERO_INT_VALUE = 0;
+    public const float ZERO_FLOAT_VALUE = 0.0f;
 
     //3D World
     public const float WORLD_GRAVITY = 9.8f;
