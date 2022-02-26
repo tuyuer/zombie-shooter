@@ -7,7 +7,7 @@ using Opsive.UltimateCharacterController.Objects;
 public class Weapon : MonoBehaviour
 {
     public Transform spawnPoint = null;
-    public MuzzleFlash muzzleFlash = null;
+    public Transform muzzleFlash = null;
     public AudioSource weaponSound = null;
     public LaserLine laserLine = null;
 
@@ -84,6 +84,12 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    void FireMuzzleFlash()
+    {
+        muzzleFlash.gameObject.SetActive(false);
+        muzzleFlash.gameObject.SetActive(true);
+    }
+
     public void Shoot()
     {
         if (isReady)
@@ -96,7 +102,7 @@ public class Weapon : MonoBehaviour
 
             Vector3 moveDir = transform.forward;
             bullet.Shoot(spawnPoint.position, moveDir);
-            muzzleFlash.ShowEffect();
+            FireMuzzleFlash();
             weaponSound.Play();
 
             isReady = false;
