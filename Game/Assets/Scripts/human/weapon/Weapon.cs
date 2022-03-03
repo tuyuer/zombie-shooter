@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
     public Transform spawnPoint = null;
     public Transform muzzleFlash = null;
     public AudioSource weaponSound = null;
-    public LaserLine laserLine = null;
+    public WeaponLazerLine laserLine = null;
 
     public weapon_type weaponType = weapon_type.weapon_type_pistol;
 
@@ -66,21 +66,16 @@ public class Weapon : MonoBehaviour
     {
         if (laserLine == null)
             return;
-
-        laserLine.SetPosition(0, Vector3.zero);
-
-        Debug.DrawRay(laserLine.transform.position, laserLine.transform.forward * 10);
+            
         RaycastHit hit;
         if (Physics.Raycast(laserLine.transform.position, laserLine.transform.forward, out hit, 100, laserLineMask))
         {
             Vector3 vecOffset = hit.point - laserLine.transform.position;
-            laserLine.SetPosition(1, Vector3.forward * vecOffset.magnitude);
+            laserLine.SetLength(vecOffset.magnitude);
         }
         else
         {
-            Vector3 forwardDir = Vector3.forward;
-            Vector3 endPos = forwardDir * 100;
-            laserLine.SetPosition(1, endPos);
+            laserLine.SetLength(200);
         }
     }
 

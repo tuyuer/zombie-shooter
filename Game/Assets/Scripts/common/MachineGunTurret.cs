@@ -13,15 +13,15 @@ public class MachineGunTurret : MonoBehaviour
 
     void Update()
     {
-        if (!IsEnemyInSight(lockedEnemy))
+        if (lockedEnemy == null)
         {
             lockedEnemy = GetClosestEnemyInSight();
-            if (lockedEnemy != null)
-            {
-                RotateToTarget(lockedEnemy.transform);
-            }
         }
-        weapon.Shoot();
+
+        if (lockedEnemy != null)
+        {
+            RotateToTarget(lockedEnemy.transform);
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -72,6 +72,7 @@ public class MachineGunTurret : MonoBehaviour
 
     void RotateToTarget(Transform target)
     {
+        Debug.Log("RotateToTarget");
         Vector3 targetPos = target.position;
         targetPos.y = weapon.transform.position.y;
         Vector3 forwardDir = targetPos - weapon.transform.position;
