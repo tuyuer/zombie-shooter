@@ -9,7 +9,6 @@ namespace HitJoy
     public class WaveManager : MonoBehaviour
     {
         public Light directionLight;
-        public SupplyBox supplyBox;
         public ZombieSpawnPoint[] zombieSpawnPoints;
         public List<Wave> waves = new List<Wave>();
 
@@ -128,7 +127,6 @@ namespace HitJoy
             {
                 case day_time.day_time_day:
                     {
-                        ShowSupplyBox(true);
                         GameWorld.Instance.player.SetWeapon(weapon_type.weapon_type_pistol);
                         directionLight.DOIntensity(1.0f, 6.0f);
                         Debug.Log("EnterDayTime!!!");
@@ -136,7 +134,6 @@ namespace HitJoy
                     break;
                 case day_time.day_time_night:
                     {
-                        ShowSupplyBox(false);
                         directionLight.DOIntensity(0f, 1.0f);
 
                         if (waves.Count > 0)
@@ -154,11 +151,6 @@ namespace HitJoy
                 default:
                     break;
             }
-        }
-
-        void ShowSupplyBox(bool bShow)
-        {
-            supplyBox.gameObject.SetActive(bShow);
         }
 
         void OnSpawnZombie()

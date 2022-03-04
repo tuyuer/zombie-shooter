@@ -9,7 +9,7 @@ public class MachineGunTurret : MonoBehaviour
     public Weapon weapon;
 
     private List<GameObject> insightEnemys = new List<GameObject>();
-    private GameObject lockedEnemy = null;
+    private AiController lockedEnemy = null;
 
     void Update()
     {
@@ -20,6 +20,11 @@ public class MachineGunTurret : MonoBehaviour
 
         if (lockedEnemy != null)
         {
+            if (lockedEnemy.IsDeath())
+            {
+                lockedEnemy = null;
+                return;
+            }
             RotateToTarget(lockedEnemy.transform);
         }
     }
@@ -28,21 +33,37 @@ public class MachineGunTurret : MonoBehaviour
     {
         if (other.tag == TagDef.Enemy)
         {
-            insightEnemys.Add(other.gameObject);
+            AiController aiController = other.gameObject.GetComponent<AiController>();
+            if (!insightEnemys.Contains(other.gameObject) &&
+                !aiController.IsDeath())
+            {
+                insightEnemys.Add(other.gameObject);
+            }
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == TagDef.Enemy)
+        {
+            AiController aiController = other.gameObject.GetComponent<AiController>();
+            if (aiController.IsDeath())
+            {
+                insightEnemys.Remove(other.gameObject);
+            }
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == TagDef.Enemy)
+        if (insightEnemys.Contains(other.gameObject))
         {
             insightEnemys.Remove(other.gameObject);
         }
     }
 
-    GameObject GetClosestEnemyInSight()
+    AiController GetClosestEnemyInSight()
     {
-        GameObject retObj = null; ;
         float closestDistance = GlobalDef.MAX_INT_VALUE;
         foreach (var item in insightEnemys)
         {
@@ -50,11 +71,11 @@ public class MachineGunTurret : MonoBehaviour
             if (distanceSqr < closestDistance)
             {
                 closestDistance = distanceSqr;
-                retObj = item;
+                return item.GetComponent<AiController>();
             }
         }
 
-        return retObj;
+        return null;
     }
 
     bool IsEnemyInSight(GameObject enemyObj)
@@ -72,7 +93,6 @@ public class MachineGunTurret : MonoBehaviour
 
     void RotateToTarget(Transform target)
     {
-        Debug.Log("RotateToTarget");
         Vector3 targetPos = target.position;
         targetPos.y = weapon.transform.position.y;
         Vector3 forwardDir = targetPos - weapon.transform.position;
