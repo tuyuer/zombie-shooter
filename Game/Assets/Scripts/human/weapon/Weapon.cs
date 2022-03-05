@@ -26,6 +26,12 @@ public class Weapon : MonoBehaviour
 
     private int laserLineMask;
 
+    private bool isEnemyFront = false;
+    public bool IsEnemyFront
+    {
+        get { return isEnemyFront; }
+    }
+
     void Start()
     {
         int moveableLayer = LayerMask.NameToLayer(LayerNames.Moveable);
@@ -72,10 +78,12 @@ public class Weapon : MonoBehaviour
         {
             Vector3 vecOffset = hit.point - laserLine.transform.position;
             laserLine.SetLength(vecOffset.magnitude);
+            isEnemyFront = true;
         }
         else
         {
             laserLine.SetLength(200);
+            isEnemyFront = false;
         }
     }
 

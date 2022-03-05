@@ -9499,10 +9499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: machine-gun-turret
       objectReference: {fileID: 0}
-    - target: {fileID: 7185060134425082170, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 963194227}
+    - target: {fileID: 4614242690052933519, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
+      propertyPath: weaponRotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}

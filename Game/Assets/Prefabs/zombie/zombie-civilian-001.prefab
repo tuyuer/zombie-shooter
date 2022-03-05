@@ -1042,7 +1042,7 @@ MonoBehaviour:
   heightOffset: 0
   senseDetectRadius: 50
   senseDetectAngle: 360
-  attackDetectRadius: 1
+  attackDetectRadius: 1.5
   attackDetectAngle: 131
   nearByDetectRadius: 0
   viewBlockerLayerMask:

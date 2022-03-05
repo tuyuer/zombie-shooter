@@ -20,12 +20,15 @@ public class MachineGunTurret : MonoBehaviour
 
         if (lockedEnemy != null)
         {
-            if (lockedEnemy.IsDeath())
+            if (lockedEnemy.IsDeath() ||
+                !IsEnemyInSight(lockedEnemy.gameObject))
             {
                 lockedEnemy = null;
                 return;
             }
+
             RotateToTarget(lockedEnemy.transform);
+            CheckAndShoot();
         }
     }
 
@@ -97,5 +100,13 @@ public class MachineGunTurret : MonoBehaviour
         targetPos.y = weapon.transform.position.y;
         Vector3 forwardDir = targetPos - weapon.transform.position;
         weapon.transform.forward = Vector3.Lerp(weapon.transform.forward, forwardDir, Time.deltaTime * weaponRotateSpeed);
+    }
+
+    void CheckAndShoot()
+    {
+        if (weapon.IsEnemyFront)
+        {
+            weapon.Shoot();
+        }
     }
 }
