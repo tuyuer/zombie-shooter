@@ -87,7 +87,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -148,7 +148,7 @@ Transform:
   - {fileID: 1844555262085374229}
   - {fileID: 1940661599}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1843676221365498619
 MonoBehaviour:
@@ -182,6 +182,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 1843676221365498616}
     m_Modifications:
     - target: {fileID: 1085479247620172, guid: ba54316b96cff42638fdba18762e1df5, type: 3}
@@ -247,6 +248,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 54172685824472444, guid: ba54316b96cff42638fdba18762e1df5, type: 3}
     - {fileID: 65576185600035948, guid: ba54316b96cff42638fdba18762e1df5, type: 3}
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ba54316b96cff42638fdba18762e1df5, type: 3}
 --- !u!1 &1843616007490962359 stripped
 GameObject:
