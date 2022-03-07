@@ -1091,7 +1091,7 @@ MonoBehaviour:
   enemySense: {fileID: 6046876678462198915}
   actorMouth: {fileID: 8018476128632577979}
   blood: 10
-  deathDelayRemvoveTime: 30
+  deathDelayRemvoveTime: 6
   thinkingTime: 1
 --- !u!143 &6210289941107082756
 CharacterController:
@@ -1123,8 +1123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416e27c8cbf284882a4697734e405aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 3.5
-  nearByChaseSpeed: 4
+  chaseSpeed: 4.5
+  nearByChaseSpeed: 6
 --- !u!114 &4797504414848657820
 MonoBehaviour:
   m_ObjectHideFlags: 0

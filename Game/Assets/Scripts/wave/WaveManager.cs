@@ -9,6 +9,7 @@ namespace HitJoy
     public class WaveManager : MonoBehaviour
     {
         public Light directionLight;
+        public float zombieSpawnPointColdTime = 0.3f;
         public ZombieSpawnPoint[] zombieSpawnPoints;
         public List<Wave> waves = new List<Wave>();
 
@@ -107,13 +108,19 @@ namespace HitJoy
                 wave.WeakWeight = Convert.ToInt32(lastWave.WeakWeight * 1.1f);
                 wave.StrongWeight = Convert.ToInt32(lastWave.StrongWeight * 1.3f);
                 wave.TankWeight = Convert.ToInt32(lastWave.TankWeight * 1.2f);
+                wave.SpawnColdTime = lastWave.SpawnColdTime;
+                if (lastWave.SpawnColdTime > 0.1f)
+                {
+                    wave.SpawnColdTime -= 0.1f;
+                }
             }
             else
             {
-                wave.WaveTime = 15;
+                wave.WaveTime = 45;
                 wave.WeakWeight = 600;
                 wave.StrongWeight = 200;
                 wave.TankWeight = 100;
+                wave.SpawnColdTime = zombieSpawnPointColdTime;
             }
         }
 

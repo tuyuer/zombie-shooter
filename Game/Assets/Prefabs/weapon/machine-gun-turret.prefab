@@ -63,7 +63,7 @@ Transform:
   m_Children:
   - {fileID: 4613462278568179368}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4614242690052933519
 MonoBehaviour:
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a15ad87d2d981884cbdc12d5c4b5f5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponRotateSpeed: 10
+  weaponRotateSpeed: 5
   weapon: {fileID: 399085194}
 --- !u!135 &71894529
 SphereCollider:
@@ -178,7 +178,7 @@ MonoBehaviour:
   weaponType: 3
   clipSize: 10
   bulletsInClip: 0
-  reloadTime: 0.5
+  reloadTime: 0.2
 --- !u!1 &4614713706273125008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,7 +1367,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 4613478090116266308}
     m_Modifications:
     - target: {fileID: 2020387621463714332, guid: e9a94666d1c9d1f4b8658508b13682d5, type: 3}
@@ -1438,6 +1437,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2020387621464143420, guid: e9a94666d1c9d1f4b8658508b13682d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2020387621464143422, guid: e9a94666d1c9d1f4b8658508b13682d5, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -1447,7 +1450,6 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: e9a94666d1c9d1f4b8658508b13682d5, type: 3}
 --- !u!4 &3570383617125222406 stripped
 Transform:
@@ -1459,7 +1461,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 4613478090116266308}
     m_Modifications:
     - target: {fileID: 5541382257541020342, guid: 579efc3b1f9c9489e8ef13e76d37adab, type: 3}
@@ -1519,7 +1520,6 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 579efc3b1f9c9489e8ef13e76d37adab, type: 3}
 --- !u!114 &8488460179174734374 stripped
 MonoBehaviour:

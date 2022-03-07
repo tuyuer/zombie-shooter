@@ -3649,7 +3649,7 @@ MonoBehaviour:
   weaponType: 0
   clipSize: 10
   bulletsInClip: 0
-  reloadTime: 0.5
+  reloadTime: 0.35
 --- !u!1 &2521992513311954552
 GameObject:
   m_ObjectHideFlags: 0
@@ -4754,7 +4754,7 @@ MonoBehaviour:
   weaponType: 1
   clipSize: 10
   bulletsInClip: 0
-  reloadTime: 0.5
+  reloadTime: 0.2
 --- !u!1 &2521992514340463352
 GameObject:
   m_ObjectHideFlags: 0
@@ -5597,7 +5597,7 @@ MonoBehaviour:
   aimTarget: {fileID: 0}
   layerMask:
     serializedVersion: 2
-    m_Bits: 1472
+    m_Bits: 1408
 --- !u!114 &5396208194073599100
 MonoBehaviour:
   m_ObjectHideFlags: 0
