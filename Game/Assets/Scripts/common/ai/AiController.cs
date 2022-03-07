@@ -119,7 +119,7 @@ public class AiController : MonoBehaviour
 
     public void OnAttackTarget(Transform targetTrans) 
     {
-        if (enemySense.DetectTargetInArea(targetTrans, 120.0f, 2.0f))
+        if (enemySense.DetectTargetInArea(targetTrans, enemySense.attackDamageAngle, enemySense.attackDamageRadius))
         {
             Character character = targetTrans.GetComponent<Character>();
             if (character != null)

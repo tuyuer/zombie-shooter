@@ -16,6 +16,10 @@ namespace HitJoy
         [Range(0.0f, 360.0f)]
         public float attackDetectAngle = 160;
 
+        public float attackDamageRadius = 2.0f;
+        [Range(0.0f, 360.0f)]
+        public float attackDamageAngle = 270;
+
         [Range(0.0f, 10.0f)]
         public float nearByDetectRadius = 3;
 
@@ -102,6 +106,11 @@ namespace HitJoy
             UnityEditor.Handles.color = c;
             Vector3 rotatedForward = Quaternion.Euler(0, -senseDetectAngle * 0.5f, 0) * transform.forward;
             UnityEditor.Handles.DrawSolidArc(transform.position, Vector3.up, rotatedForward, senseDetectAngle, senseDetectRadius);
+
+            c = new Color(0.0f, 1.0f, 0.0f, 0.8f);
+            UnityEditor.Handles.color = c;
+            rotatedForward = Quaternion.Euler(0, -attackDamageAngle * 0.5f, 0) * transform.forward;
+            UnityEditor.Handles.DrawSolidArc(transform.position, Vector3.up, rotatedForward, attackDamageAngle, attackDamageRadius);
 
             c = new Color(1.0f, 0, 0.0f, 0.8f);
             UnityEditor.Handles.color = c;

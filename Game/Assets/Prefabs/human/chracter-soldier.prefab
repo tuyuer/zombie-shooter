@@ -4720,7 +4720,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2521992514125463199}
-  m_LocalRotation: {x: 0.48756003, y: -0.34095794, z: -0.42563114, w: 0.68181455}
+  m_LocalRotation: {x: 0.5019358, y: -0.35097432, z: -0.4152354, w: 0.6726494}
   m_LocalPosition: {x: -0.0855, y: 0.0411, z: 0.0159}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4734,7 +4734,7 @@ Transform:
   - {fileID: 478555751105404919}
   m_Father: {fileID: 1549559463911488338}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 22, y: -71.639, z: -79.922}
+  m_LocalEulerAnglesHint: {x: 22.568, y: -74.308, z: -80.571}
 --- !u!114 &2521992514125463197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5501,7 +5501,7 @@ Transform:
   m_Children:
   - {fileID: 1549266468075157806}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &638184054213796335
 MonoBehaviour:
@@ -5634,6 +5634,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 2521992512984068669}
     m_Modifications:
     - target: {fileID: 2020387621463714332, guid: e9a94666d1c9d1f4b8658508b13682d5, type: 3}
@@ -5701,6 +5702,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: e9a94666d1c9d1f4b8658508b13682d5, type: 3}
 --- !u!4 &6780317916977543841 stripped
 Transform:
@@ -5712,6 +5714,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 2521992512984068669}
     m_Modifications:
     - target: {fileID: 5541382257548425782, guid: 579efc3b1f9c9489e8ef13e76d37adab, type: 3}
@@ -5763,6 +5766,7 @@ PrefabInstance:
       value: weapon-lazer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 579efc3b1f9c9489e8ef13e76d37adab, type: 3}
 --- !u!4 &617473274819291504 stripped
 Transform:
@@ -5785,6 +5789,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 2521992514125463196}
     m_Modifications:
     - target: {fileID: 5541382257548425782, guid: 579efc3b1f9c9489e8ef13e76d37adab, type: 3}
@@ -5836,6 +5841,7 @@ PrefabInstance:
       value: weapon-lazer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 579efc3b1f9c9489e8ef13e76d37adab, type: 3}
 --- !u!114 &478555750895498803 stripped
 MonoBehaviour:
@@ -5858,6 +5864,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 2521992514125463196}
     m_Modifications:
     - target: {fileID: 2020387621463714332, guid: e9a94666d1c9d1f4b8658508b13682d5, type: 3}
@@ -5925,6 +5932,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: e9a94666d1c9d1f4b8658508b13682d5, type: 3}
 --- !u!4 &5418432032338089574 stripped
 Transform:

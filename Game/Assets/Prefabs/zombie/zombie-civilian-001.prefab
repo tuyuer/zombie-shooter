@@ -968,14 +968,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2739191260245309952}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.837, y: 0, z: 4.047}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1982745383912151918}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &6046876679284386621
 Rigidbody:
@@ -1042,9 +1042,11 @@ MonoBehaviour:
   heightOffset: 0
   senseDetectRadius: 50
   senseDetectAngle: 360
-  attackDetectRadius: 1.5
-  attackDetectAngle: 131
-  nearByDetectRadius: 0
+  attackDetectRadius: 1.3
+  attackDetectAngle: 240
+  attackDamageRadius: 2.5
+  attackDamageAngle: 270
+  nearByDetectRadius: 4
   viewBlockerLayerMask:
     serializedVersion: 2
     m_Bits: 0
@@ -1123,7 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416e27c8cbf284882a4697734e405aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 4.5
+  chaseSpeed: 3.5
   nearByChaseSpeed: 6
 --- !u!114 &4797504414848657820
 MonoBehaviour:
@@ -1137,7 +1139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 388cf49bea2cd48c19291f6c1a5bc86b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coldTime: 2
+  coldTime: 1
 --- !u!114 &6905237668819707045
 MonoBehaviour:
   m_ObjectHideFlags: 0

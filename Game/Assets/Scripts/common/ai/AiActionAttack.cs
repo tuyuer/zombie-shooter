@@ -41,16 +41,13 @@ public class AiActionAttack : AiActionBase
     {
         if (coldElapsed > coldTime)
         {
+            coldElapsed = 0;
             aiController.transform.LookAt(targetTrans);
             aiController.animator.SetTrigger(AnimatorParameter.AttackO);
-            coldElapsed = 0;
-        }
-
-        //apply attack
-        if (coldElapsed < coldTime / 2 &&
-            coldElapsed + Time.deltaTime > coldTime / 2)
-        {
-            aiController.OnAttackTarget(targetTrans);
+            Utils.Instance.PerformFunctionWithDelay(delegate ()
+            {
+                aiController.OnAttackTarget(targetTrans);
+            }, coldTime / 2);
         }
     }
 }
