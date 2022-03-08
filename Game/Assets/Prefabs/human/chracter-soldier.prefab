@@ -3646,10 +3646,11 @@ MonoBehaviour:
   muzzleFlash: {fileID: 6780317916977543841}
   weaponSound: {fileID: 2521992513597454051}
   laserLine: {fileID: 617473275012153524}
+  weaponClip:
+    clipSize: 10000000
+    reloadTime: 2
+    bulletReadyTime: 0.5
   weaponType: 0
-  clipSize: 10
-  bulletsInClip: 0
-  reloadTime: 0.35
 --- !u!1 &2521992513311954552
 GameObject:
   m_ObjectHideFlags: 0
@@ -4751,10 +4752,11 @@ MonoBehaviour:
   muzzleFlash: {fileID: 5418432032338089574}
   weaponSound: {fileID: 2521992513798273360}
   laserLine: {fileID: 478555750895498803}
+  weaponClip:
+    clipSize: 30
+    reloadTime: 2
+    bulletReadyTime: 0.15
   weaponType: 1
-  clipSize: 10
-  bulletsInClip: 0
-  reloadTime: 0.2
 --- !u!1 &2521992514340463352
 GameObject:
   m_ObjectHideFlags: 0

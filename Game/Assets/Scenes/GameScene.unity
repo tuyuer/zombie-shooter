@@ -9296,6 +9296,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288c6f22a8232e8498db682051af21a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1823101964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1823101964, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
+  m_PrefabInstance: {fileID: 4614242690123776399}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1823101969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823101964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a593bf7597b9b4c8b25310a16c9bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1843989625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10776,6 +10793,26 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 209608223, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 209608224, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399085194, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
+      propertyPath: weaponClip.clipSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 399085194, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
+      propertyPath: weaponClip.reloadTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 399085194, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
+      propertyPath: weaponClip.bulletReadyTime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4614242690052932720, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -10823,10 +10860,6 @@ PrefabInstance:
     - target: {fileID: 4614242690052932721, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
       propertyPath: m_Name
       value: machine-gun-turret
-      objectReference: {fileID: 0}
-    - target: {fileID: 4614242690052932721, guid: f2783e25c726b3f4d8d83bb9593cf2a2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

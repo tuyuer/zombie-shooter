@@ -10,19 +10,11 @@ public class Weapon : MonoBehaviour
     public Transform muzzleFlash = null;
     public AudioSource weaponSound = null;
     public WeaponLazerLine laserLine = null;
+    public WeaponClip weaponClip;
 
     public weapon_type weaponType = weapon_type.weapon_type_pistol;
 
-    //µ¯¼Ð´óÐ¡
-    public int clipSize = 10;
-    public int bulletsInClip = 0;
-
-    [Range(0, 10f)]
-    public float reloadTime = 0.5f;
-    private float reloadElapsedTime = GlobalDef.ZERO_FLOAT_VALUE;
-
     private SimpleObjectPool bulletPool = null;
-    private bool isReady = true;
 
     private int laserLineMask;
 
@@ -55,17 +47,14 @@ public class Weapon : MonoBehaviour
             default:
                 break;
         }
+
+        weaponClip.Setup();
     }
 
     void Update()
     {
-        reloadElapsedTime += Time.deltaTime;
-        if (reloadElapsedTime > reloadTime)
-        {
-            isReady = true;
-        }
-
         UpdateLaser();
+        weaponClip.OnUpdate(Time.deltaTime);
     }
 
     void UpdateLaser()
@@ -95,7 +84,7 @@ public class Weapon : MonoBehaviour
 
     public void Shoot()
     {
-        if (isReady)
+        if (weaponClip.IsBulletReady)
         {
             if (bulletPool == null)
                 return;
@@ -107,9 +96,7 @@ public class Weapon : MonoBehaviour
             bullet.Shoot(spawnPoint.position, moveDir);
             FireMuzzleFlash();
             weaponSound.Play();
-
-            isReady = false;
-            reloadElapsedTime = GlobalDef.ZERO_FLOAT_VALUE;
+            weaponClip.Shoot();
         }
     }
 }
