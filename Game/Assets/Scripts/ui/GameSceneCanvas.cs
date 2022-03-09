@@ -9,6 +9,8 @@ using UnityEngine.SceneManagement;
 
 public class GameSceneCanvas : MonoBehaviour
 {
+    public Text txtBullets;
+
     public TMP_Text tmpKills;
     public TMP_Text tmpChips;
     public TMP_Text tmpWaves;
@@ -45,6 +47,28 @@ public class GameSceneCanvas : MonoBehaviour
         tmpKills.text = "" + GameWorld.Instance.killStatistics.KillCount();
         tmpChips.text = "" + GameWorld.Instance.backpack.GetElementCount(backpack_element_type.backpack_element_type_gold);
         imgBlood.fillAmount = GameWorld.Instance.player.Blood.GetFillAmount();
+
+        Weapon curWeapon = GameWorld.Instance.player.CurrentWeapon;
+        if (curWeapon != null)
+        {
+            int nBulletInClip = curWeapon.weaponClip.LeftBullet;
+            int nClipSize = curWeapon.weaponClip.clipSize;
+            if (curWeapon.weaponType == weapon_type.weapon_type_pistol)
+            {
+                txtBullets.text = "无限子弹";
+            }
+            else
+            {
+                if (nBulletInClip == 0)
+                {
+                    txtBullets.text = "换弹中...";
+                }
+                else
+                {
+                    txtBullets.text = String.Format("{0:D}/{1:D}", nBulletInClip, nClipSize);
+                }
+            }
+        }
     }
 
     public void OnWavePrepareBegin(System.Object data)

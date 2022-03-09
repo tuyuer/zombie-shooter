@@ -3649,7 +3649,7 @@ MonoBehaviour:
   weaponClip:
     clipSize: 10000000
     reloadTime: 2
-    bulletReadyTime: 0.5
+    bulletReadyTime: 0.4
   weaponType: 0
 --- !u!1 &2521992513311954552
 GameObject:
@@ -5503,7 +5503,7 @@ Transform:
   m_Children:
   - {fileID: 1549266468075157806}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &638184054213796335
 MonoBehaviour:

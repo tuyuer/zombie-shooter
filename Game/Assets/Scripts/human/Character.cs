@@ -8,6 +8,11 @@ public class Character : MonoBehaviour
     public Weapon[] allWeapons;
 
     private Weapon weapon = null;
+    public Weapon CurrentWeapon
+    {
+        get { return weapon; }
+    }
+
     private ActorBlood characterBlood;
     public ActorBlood Blood
     {
@@ -80,11 +85,6 @@ public class Character : MonoBehaviour
     public bool IsAlive()
     {
         return characterBlood.GetFillAmount() > 0;
-    }
-
-    public weapon_type GetWeaponType()
-    {
-        return weapon.weaponType;
     }
 
     public void SetWeapon(weapon_type weaponType)

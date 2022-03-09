@@ -33,7 +33,7 @@ public class UIShopPanel : MonoBehaviour
 
     public void OnBuyClicked()
     {
-        if (GameWorld.Instance.player.GetWeaponType() == weapon_type.weapon_type_rifle)
+        if (GameWorld.Instance.player.CurrentWeapon.weaponType == weapon_type.weapon_type_rifle)
         {
             GameWorld.Instance.uiCanvas.tipsPanel.ShopTips("您已装备自动步枪，请前往战场杀敌！");
             return;

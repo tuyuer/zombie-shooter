@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MachineGunTurret : MonoBehaviour
 {
-    public float weaponRotateSpeed = 1;
-
     public Weapon weapon;
+    public Text txtBullets;
+    public float weaponRotateSpeed = 1;
 
     private List<GameObject> insightEnemys = new List<GameObject>();
     private AiController lockedEnemy = null;
@@ -29,6 +30,17 @@ public class MachineGunTurret : MonoBehaviour
 
             RotateToTarget(lockedEnemy.transform);
             CheckAndShoot();
+        }
+
+        int nBulletInClip = weapon.weaponClip.LeftBullet;
+        int nClipSize = weapon.weaponClip.clipSize;
+        if (nBulletInClip == 0)
+        {
+            txtBullets.text = "»»µ¯ÖÐ...";
+        }
+        else
+        {
+            txtBullets.text = System.String.Format("{0:D}/{1:D}", nBulletInClip, nClipSize);
         }
     }
 
