@@ -55,13 +55,13 @@ public class GameSceneCanvas : MonoBehaviour
             int nClipSize = curWeapon.weaponClip.clipSize;
             if (curWeapon.weaponType == weapon_type.weapon_type_pistol)
             {
-                txtBullets.text = "无限子弹";
+                txtBullets.text = "infinity";
             }
             else
             {
                 if (nBulletInClip == 0)
                 {
-                    txtBullets.text = "换弹中...";
+                    txtBullets.text = "loading...";
                 }
                 else
                 {

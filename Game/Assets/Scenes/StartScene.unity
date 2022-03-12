@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -932,7 +932,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F00\u59CB\u6E38\u620F"
+  m_Text: START
 --- !u!114 &1201119960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2051,6 +2051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89e80a7040eda54b955c4b5dcbadb72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runSound: {fileID: 0}
   allWeapons:
   - {fileID: 0}
   - {fileID: 0}
@@ -7457,13 +7458,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc989e5ccf6c1e84385a22dc5519f34c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackboard: {fileID: 7315633122650091683}
   spawnPoint: {fileID: 2521992512912748952}
-  muzzleFlash: {fileID: 2521992513999090600}
+  muzzleFlash: {fileID: 0}
   weaponSound: {fileID: 2521992513209058975}
-  laserLine: {fileID: 2521992514367635193}
+  laserLine: {fileID: 0}
+  weaponClip:
+    clipSize: 10
+    reloadTime: 2
+    bulletReadyTime: 0.1
   weaponType: 0
-  coldTime: 0.2
 --- !u!4 &2521992512912748952
 Transform:
   m_ObjectHideFlags: 0
@@ -8073,13 +8076,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc989e5ccf6c1e84385a22dc5519f34c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackboard: {fileID: 7315633122650091683}
   spawnPoint: {fileID: 2521992513494558213}
-  muzzleFlash: {fileID: 2521992513980007891}
+  muzzleFlash: {fileID: 0}
   weaponSound: {fileID: 2521992514081982764}
   laserLine: {fileID: 0}
+  weaponClip:
+    clipSize: 10
+    reloadTime: 2
+    bulletReadyTime: 0.1
   weaponType: 1
-  coldTime: 0.2
 --- !u!1 &2521992513771441891
 GameObject:
   m_ObjectHideFlags: 0
@@ -13609,6 +13614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89e80a7040eda54b955c4b5dcbadb72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runSound: {fileID: 0}
   allWeapons:
   - {fileID: 0}
   - {fileID: 0}

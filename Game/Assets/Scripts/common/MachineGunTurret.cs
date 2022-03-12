@@ -36,7 +36,7 @@ public class MachineGunTurret : MonoBehaviour
         int nClipSize = weapon.weaponClip.clipSize;
         if (nBulletInClip == 0)
         {
-            txtBullets.text = "»»µ¯ÖÐ...";
+            txtBullets.text = "loading...";
         }
         else
         {

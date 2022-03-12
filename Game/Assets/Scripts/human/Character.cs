@@ -5,6 +5,7 @@ using HitJoy;
 
 public class Character : MonoBehaviour
 {
+    public AudioSource runSound;
     public Weapon[] allWeapons;
 
     private Weapon weapon = null;
@@ -114,6 +115,24 @@ public class Character : MonoBehaviour
                 break;
         }
         SetWeaponRigs(weaponType);
+    }
+
+    public void EnterRunState()
+    {
+        if (runSound != null &&
+            !runSound.gameObject.activeSelf)
+        {
+            runSound.gameObject.SetActive(true);
+        }
+    }
+
+    public void ExitRunState()
+    {
+        if (runSound != null &&
+            runSound.gameObject.activeSelf)
+        {
+            runSound.gameObject.SetActive(false);
+        }
     }
 
     private void SetWeaponRigs(weapon_type weaponType) 

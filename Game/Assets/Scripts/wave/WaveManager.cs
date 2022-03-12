@@ -136,7 +136,11 @@ namespace HitJoy
                     {
                         GameWorld.Instance.player.SetWeapon(weapon_type.weapon_type_pistol);
                         directionLight.DOIntensity(1.0f, 6.0f);
-                        MessageCenter.PostMessage(NotificationDef.NOTIFICATION_ON_OPEN_SHOP_PANEL);
+
+                        Utils.Instance.PerformFunctionWithDelay(delegate ()
+                        {
+                            MessageCenter.PostMessage(NotificationDef.NOTIFICATION_ON_OPEN_SHOP_PANEL);
+                        }, 2.0f);
                     }
                     break;
                 case day_time.day_time_night:

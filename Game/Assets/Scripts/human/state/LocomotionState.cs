@@ -47,6 +47,16 @@ namespace HitJoy
                 if (blackboard.characterController.enabled)
                 {
                     blackboard.characterController.Move(blackboard.actorSpeed);
+                    Debug.Log("aaa:" + blackboard.actorSpeed);
+                    if (Mathf.Abs(xSpeed) > 0 ||
+                        Mathf.Abs(ySpeed) > 0)
+                    {
+                        blackboard.character.EnterRunState();
+                    }
+                    else
+                    {
+                        blackboard.character.ExitRunState();
+                    }
                 }
             }
         }
