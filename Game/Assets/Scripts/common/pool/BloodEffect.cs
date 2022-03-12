@@ -9,10 +9,4 @@ public class BloodEffect : PoolObject
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -975,7 +975,7 @@ Transform:
   m_Children:
   - {fileID: 1982745383912151918}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &6046876679284386621
 Rigidbody:
@@ -1126,7 +1126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseSpeed: 3.5
-  nearByChaseSpeed: 6
+  nearByChaseSpeed: 5
 --- !u!114 &4797504414848657820
 MonoBehaviour:
   m_ObjectHideFlags: 0
