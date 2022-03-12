@@ -30,7 +30,7 @@ public class Character : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetWeapon(weapon_type.weapon_type_pistol);
+        SetWeapon(weapon_type.weapon_type_rifle);
     }
 
     // Update is called once per frame

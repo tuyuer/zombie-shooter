@@ -35,7 +35,14 @@ public class KillStatistics : MonoBehaviour
 
             if (enemyInfo.enemyType == enemy_type.enemy_type_zombie_tank)
             {
-                DropManager.Instance.DropElement(backpack_element_type.backpack_element_type_gold, 1, enemy.transform.position);
+                if (UnityEngine.Random.Range(0,100) > 80)
+                {
+                    DropManager.Instance.DropElement(backpack_element_type.backpack_element_type_healpack, 1, enemy.transform.position);
+                }
+                else
+                {
+                    DropManager.Instance.DropElement(backpack_element_type.backpack_element_type_gold, 1, enemy.transform.position);
+                }
             }
         }
     }

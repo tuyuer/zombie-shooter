@@ -136,7 +136,7 @@ namespace HitJoy
                     {
                         GameWorld.Instance.player.SetWeapon(weapon_type.weapon_type_pistol);
                         directionLight.DOIntensity(1.0f, 6.0f);
-                        Debug.Log("EnterDayTime!!!");
+                        MessageCenter.PostMessage(NotificationDef.NOTIFICATION_ON_OPEN_SHOP_PANEL);
                     }
                     break;
                 case day_time.day_time_night:

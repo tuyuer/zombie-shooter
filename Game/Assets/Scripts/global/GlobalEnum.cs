@@ -40,5 +40,6 @@ public enum simple_object_pool_type
 public enum backpack_element_type
 {
     backpack_element_type_gold,
+    backpack_element_type_healpack,
     backpack_element_type_count,
 };

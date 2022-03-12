@@ -42,6 +42,6 @@ public class SupplyBox : MonoBehaviour
 
     public void OnUseClicked()
     {
-        MessageCenter.PostMessage(NotificationDef.NOTIFICATION_ON_SUPPLY_BOX_USE_BUTTON_CLICKED);
+        MessageCenter.PostMessage(NotificationDef.NOTIFICATION_ON_OPEN_SHOP_PANEL);
     }
 }

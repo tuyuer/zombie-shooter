@@ -4754,7 +4754,7 @@ MonoBehaviour:
   laserLine: {fileID: 478555750895498803}
   weaponClip:
     clipSize: 30
-    reloadTime: 2
+    reloadTime: 1
     bulletReadyTime: 0.15
   weaponType: 1
 --- !u!1 &2521992514340463352

@@ -33,7 +33,7 @@ public class GameSceneCanvas : MonoBehaviour
         MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_WAVE_PREPARE_END, new MessageEvent(OnWavePrepareEnd));
 
         MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_PLAYER_DEATH, new MessageEvent(OnPlayerDeath));
-        MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_SUPPLY_BOX_USE_BUTTON_CLICKED, new MessageEvent(OnOpenShop));
+        MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_OPEN_SHOP_PANEL, new MessageEvent(OnOpenShop));
     }
 
     private void OnDisable()
