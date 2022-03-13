@@ -13,6 +13,8 @@ public class Weapon : MonoBehaviour
     public WeaponClip weaponClip;
 
     public weapon_type weaponType = weapon_type.weapon_type_pistol;
+    public bool enableLaser = true;
+    public bool enableSound = true;
 
     private SimpleObjectPool bulletPool = null;
 
@@ -61,7 +63,12 @@ public class Weapon : MonoBehaviour
     {
         if (laserLine == null)
             return;
-            
+
+        if (!enableLaser)
+        {
+            return;
+        }
+
         RaycastHit hit;
         if (Physics.Raycast(laserLine.transform.position, laserLine.transform.forward, out hit, 100, laserLineMask))
         {
@@ -95,8 +102,12 @@ public class Weapon : MonoBehaviour
             Vector3 moveDir = transform.forward;
             bullet.Shoot(spawnPoint.position, moveDir);
             FireMuzzleFlash();
-            weaponSound.Play();
             weaponClip.Shoot();
+
+            if (enableSound)
+            {
+                weaponSound.Play();
+            }
         }
     }
 }

@@ -1093,6 +1093,7 @@ MonoBehaviour:
   enemySense: {fileID: 6046876678462198915}
   actorMouth: {fileID: 8018476128632577979}
   blood: 10
+  attackDamage: 5
   deathDelayRemvoveTime: 6
   thinkingTime: 1
 --- !u!143 &6210289941107082756
