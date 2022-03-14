@@ -9,7 +9,7 @@ public class AiAutoAim : MonoBehaviour
     private List<GameObject> insightEnemys = new List<GameObject>();
     private AiController lockedEnemy = null;
 
-    private float leftTime = 0.0f;
+    private float leftTime = -1f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class AiAutoAim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        leftTime -= Time.deltaTime;
         lockedEnemy = GetClosestEnemyInSight();
 
         if (lockedEnemy != null)

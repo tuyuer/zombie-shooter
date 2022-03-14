@@ -11,10 +11,12 @@ public class UiMainPanel : MonoBehaviour
 
     public int casCost = 2;
 
+    private AiAutoAim autoAim;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        autoAim = GameWorld.Instance.player.AutoAim;
     }
 
     // Update is called once per frame
@@ -23,7 +25,7 @@ public class UiMainPanel : MonoBehaviour
         int nGoldCount = GameWorld.Instance.backpack.GetElementCount(backpack_element_type.backpack_element_type_gold);
         btnCas.gameObject.SetActive(nGoldCount >= casCost && IsAirForceReady());
 
-        btnAuxiliary.gameObject.SetActive(nGoldCount >= casCost && GameWorld.Instance.player.AutoAim.IsRunning());
+        btnAuxiliary.gameObject.SetActive(nGoldCount >= casCost && !autoAim.IsRunning());
     }
 
     private bool IsAirForceReady() 
@@ -52,6 +54,10 @@ public class UiMainPanel : MonoBehaviour
 
     public void OnCallAutoAim() 
     {
-        GameWorld.Instance.player.StartAutoAim();
+        if (!autoAim.IsRunning())
+        {
+            GameWorld.Instance.player.StartAutoAim();
+            GameWorld.Instance.backpack.RemoveElement(backpack_element_type.backpack_element_type_gold, casCost);
+        }
     }
 }

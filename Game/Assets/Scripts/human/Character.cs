@@ -30,7 +30,7 @@ public class Character : MonoBehaviour
     private AiAutoAim autoAim;
     public AiAutoAim AutoAim
     {
-        get { return AutoAim; }
+        get { return autoAim; }
     }
 
     void Awake()

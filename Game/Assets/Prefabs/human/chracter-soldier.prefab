@@ -1003,7 +1003,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1551708319266141138}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.1564345, z: 0, w: 0.98768836}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1026,7 +1026,7 @@ Transform:
   - {fileID: 5086692997273560694}
   m_Father: {fileID: 3653214600939890092}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -18, z: 0}
 --- !u!95 &1502624557753574696
 Animator:
   serializedVersion: 4
@@ -3649,7 +3649,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2521992512984068668}
-  m_LocalRotation: {x: 0.49443322, y: -0.36633766, z: -0.47731274, w: 0.6272998}
+  m_LocalRotation: {x: 0.5400539, y: -0.33670977, z: -0.42667085, w: 0.6425888}
   m_LocalPosition: {x: -0.109, y: 0.038, z: 0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3662,7 +3662,7 @@ Transform:
   - {fileID: 6780317916977543841}
   m_Father: {fileID: 1549559463911488338}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 15.7, y: -75.4, z: -86.7}
+  m_LocalEulerAnglesHint: {x: 24, y: -78, z: -86.7}
 --- !u!114 &2521992512984068658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5647,6 +5647,8 @@ GameObject:
   - component: {fileID: 2628343653973896357}
   - component: {fileID: 5396208194073599100}
   - component: {fileID: 5396208194073599101}
+  - component: {fileID: 1341168790}
+  - component: {fileID: 1341168789}
   m_Layer: 11
   m_Name: chracter-soldier
   m_TagString: Player
@@ -5797,6 +5799,32 @@ MonoBehaviour:
   pistol_rh: {x: 0.169, y: 1.48, z: 0.336}
   rifle_lh: {x: 0.16, y: 1.378, z: 0.362}
   rifle_rh: {x: 0.244, y: 1.427, z: 0.242}
+--- !u!135 &1341168790
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3653214600939890093}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8
+  m_Center: {x: 0, y: 1.76, z: 0}
+--- !u!114 &1341168789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3653214600939890093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ab95f5cc0aa407a9aa36e6bcd3e46a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 20
 --- !u!1001 &4760688461002395837
 PrefabInstance:
   m_ObjectHideFlags: 0
