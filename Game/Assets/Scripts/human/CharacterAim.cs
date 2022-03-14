@@ -6,6 +6,14 @@ public class CharacterAim : MonoBehaviour
 {
     public GameObject aimTarget;
     public LayerMask layerMask;
+
+    private AiAutoAim autoAim;
+
+    void Awake()
+    {
+        autoAim = GetComponent<AiAutoAim>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +23,11 @@ public class CharacterAim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (autoAim.IsRunning())
+        {
+            return;
+        }
+
         if (GlobalDef.ENABLE_STICKJOY)
         {
             Vector2 forwardDir = GameWorld.Instance.aimstick.Direction;

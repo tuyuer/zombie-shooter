@@ -7,6 +7,8 @@ using HitJoy;
 public class UiMainPanel : MonoBehaviour
 {
     public Button btnCas;
+    public Button btnAuxiliary;
+
     public int casCost = 2;
 
     // Start is called before the first frame update
@@ -20,6 +22,8 @@ public class UiMainPanel : MonoBehaviour
     {
         int nGoldCount = GameWorld.Instance.backpack.GetElementCount(backpack_element_type.backpack_element_type_gold);
         btnCas.gameObject.SetActive(nGoldCount >= casCost && IsAirForceReady());
+
+        btnAuxiliary.gameObject.SetActive(nGoldCount >= casCost && GameWorld.Instance.player.AutoAim.IsRunning());
     }
 
     private bool IsAirForceReady() 
@@ -44,5 +48,10 @@ public class UiMainPanel : MonoBehaviour
             MessageCenter.PostMessage(NotificationDef.NOTIFICATION_ON_CALL_AIR_FORCE);
             GameWorld.Instance.backpack.RemoveElement(backpack_element_type.backpack_element_type_gold, casCost);
         }
+    }
+
+    public void OnCallAutoAim() 
+    {
+        GameWorld.Instance.player.StartAutoAim();
     }
 }

@@ -22,10 +22,22 @@ public class Character : MonoBehaviour
 
     private Blackboard blackBoard;
 
+    public Blackboard BBoard
+    {
+        get { return blackBoard; }
+    }
+
+    private AiAutoAim autoAim;
+    public AiAutoAim AutoAim
+    {
+        get { return AutoAim; }
+    }
+
     void Awake()
     {
         characterBlood = GetComponent<ActorBlood>();
         blackBoard = GetComponent<Blackboard>();
+        autoAim = GetComponent<AiAutoAim>();
     }
 
     // Start is called before the first frame update
@@ -68,6 +80,28 @@ public class Character : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SetWeapon(weapon_type.weapon_type_rifle);
+        }
+    }
+
+    private void SetWeaponRigs(weapon_type weaponType)
+    {
+        WeaponRigs weaponRigs = GetComponent<WeaponRigs>();
+        if (weaponRigs == null)
+            return;
+
+        switch (weaponType)
+        {
+            case weapon_type.weapon_type_pistol:
+                weaponRigs.WeaponPistol();
+                break;
+            case weapon_type.weapon_type_rifle:
+                weaponRigs.WeaponRifle();
+                break;
+            case weapon_type.weapon_type_shortgun:
+                weaponRigs.WeaponRifle();
+                break;
+            default:
+                break;
         }
     }
 
@@ -135,28 +169,6 @@ public class Character : MonoBehaviour
         }
     }
 
-    private void SetWeaponRigs(weapon_type weaponType) 
-    {
-        WeaponRigs weaponRigs = GetComponent<WeaponRigs>();
-        if (weaponRigs == null)
-            return;
-
-        switch (weaponType)
-        {
-            case weapon_type.weapon_type_pistol:
-                weaponRigs.WeaponPistol();
-                break;
-            case weapon_type.weapon_type_rifle:
-                weaponRigs.WeaponRifle();
-                break;
-            case weapon_type.weapon_type_shortgun:
-                weaponRigs.WeaponRifle();
-                break;
-            default:
-                break;
-        }
-    }
-
     public void SetWeaponLayerWeight(string layerName, float value)
     {
         if (layerName.Length == 0)
@@ -172,5 +184,10 @@ public class Character : MonoBehaviour
             int nLayerIndex = blackBoard.animator.GetLayerIndex(layerName);
             blackBoard.animator.SetLayerWeight(nLayerIndex, value);
         }
+    }
+
+    public void StartAutoAim()
+    {
+        autoAim.StartAutoAim();
     }
 }

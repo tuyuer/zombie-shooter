@@ -3684,6 +3684,8 @@ MonoBehaviour:
     reloadTime: 2
     bulletReadyTime: 0.4
   weaponType: 0
+  enableLaser: 1
+  enableSound: 1
 --- !u!1 &2521992513311954552
 GameObject:
   m_ObjectHideFlags: 0
@@ -4790,6 +4792,8 @@ MonoBehaviour:
     reloadTime: 1
     bulletReadyTime: 0.15
   weaponType: 1
+  enableLaser: 1
+  enableSound: 1
 --- !u!1 &2521992514340463352
 GameObject:
   m_ObjectHideFlags: 0
