@@ -34,7 +34,13 @@ public class GameWorld : MonoBehaviour
     void Awake()
     {
         _instance = this;
+        SetupGame();
         SetupPlayer();
+    }
+
+    void SetupGame() 
+    {
+        Application.targetFrameRate = 60;
     }
 
     void SetupPlayer()

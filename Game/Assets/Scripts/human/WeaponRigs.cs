@@ -5,40 +5,43 @@ using UnityEngine.Animations.Rigging;
 
 public class WeaponRigs : MonoBehaviour
 {
-    public Transform lh_ik;
-    public Transform rh_ik;
+    public Transform lh_ik_target;
+    public Transform rh_ik_target;
 
-    public Vector3 pistol_lh = new Vector3(0.08f, 1.47f, 0.365f);
-    public Vector3 pistol_rh = new Vector3(0.2f, 1.5f, 0.3f);
+    public Transform lh_pistol;
+    public Transform rh_pistol;
 
-    public Vector3 rifle_lh = new Vector3(0.08f, 1.47f, 0.365f);
-    public Vector3 rifle_rh = new Vector3(0.2f, 1.5f, 0.3f);
+    public Transform lh_refile;
+    public Transform rh_refile;
 
-    private Vector3 lh_pos;
-    private Vector3 rh_pos;
+    private Transform curLhTrans;
+    private Transform curRhTrans;
 
     // Start is called before the first frame update
     void Start()
     {
-        WeaponPistol();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        lh_ik.localPosition = lh_pos;
-        rh_ik.localPosition = rh_pos;
+        lh_ik_target.position = curLhTrans.position;
+        rh_ik_target.position = curRhTrans.position;
+
+        lh_ik_target.rotation = curLhTrans.rotation;
+        rh_ik_target.rotation = curRhTrans.rotation;
     }
 
     public void WeaponPistol()
     {
-        lh_pos = pistol_lh;
-        rh_pos = pistol_rh;
+        curLhTrans = lh_pistol;
+        curRhTrans = rh_pistol;
     }
 
     public void WeaponRifle()
     {
-        lh_pos = rifle_lh;
-        rh_pos = rifle_rh;
+        curLhTrans = lh_refile;
+        curRhTrans = rh_refile;
     }
 }
