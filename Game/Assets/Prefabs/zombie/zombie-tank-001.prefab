@@ -953,6 +953,7 @@ GameObject:
   - component: {fileID: 6267746909603568693}
   - component: {fileID: 95149786429359066}
   - component: {fileID: 5178962812162913119}
+  - component: {fileID: 2561085811451523815}
   m_Layer: 8
   m_Name: zombie-tank-001
   m_TagString: Enemy
@@ -1043,6 +1044,8 @@ MonoBehaviour:
   senseDetectAngle: 360
   attackDetectRadius: 1.2
   attackDetectAngle: 270
+  attackDamageRadius: 2
+  attackDamageAngle: 270
   nearByDetectRadius: 5
   viewBlockerLayerMask:
     serializedVersion: 2
@@ -1090,6 +1093,7 @@ MonoBehaviour:
   enemySense: {fileID: 5178962812711904235}
   actorMouth: {fileID: 8895406402066704595}
   blood: 100
+  attackDamage: 10
   deathDelayRemvoveTime: 6
   thinkingTime: 1
 --- !u!143 &4763379849222779244
@@ -1192,6 +1196,28 @@ MonoBehaviour:
   obstacleLayers:
     serializedVersion: 2
     m_Bits: 320
+--- !u!195 &2561085811451523815
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618082100327304552}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &5378542211050342662
 GameObject:
   m_ObjectHideFlags: 0
