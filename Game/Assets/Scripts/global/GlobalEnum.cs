@@ -32,6 +32,7 @@ public enum simple_object_pool_type
 {
     simple_object_pool_type_bullet_pistol,
     simple_object_pool_type_bullet_rifle,
+    simple_object_pool_type_bullet_turret,
     simple_object_pool_type_bullet_shortgun,
     simple_object_pool_type_blood,
     simple_object_pool_type_sound,

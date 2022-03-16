@@ -44,7 +44,7 @@ public class Weapon : MonoBehaviour
                 bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_shortgun);
                 break;
             case weapon_type.weapon_type_gun_turret:
-                bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_pistol);
+                bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_turret);
                 break;
             default:
                 break;
@@ -94,7 +94,10 @@ public class Weapon : MonoBehaviour
         if (weaponClip.IsBulletReady)
         {
             if (bulletPool == null)
+            {
+                Debug.LogError("bulletPool is null !!!");
                 return;
+            }
 
             GameObject bulletObj = bulletPool.FetchObject();
             BulletEffect bullet = bulletObj.GetComponent<BulletEffect>();

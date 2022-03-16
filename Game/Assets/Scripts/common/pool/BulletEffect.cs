@@ -58,6 +58,14 @@ public class BulletEffect : PoolObject
     public override void DestroySelf()
     {
         base.DestroySelf();
-        trailRender.Clear();
+        ClearTrailRender();
+    }
+
+    private void ClearTrailRender()
+    {
+        if (trailRender != null)
+        {
+            trailRender.Clear();
+        }
     }
 }
