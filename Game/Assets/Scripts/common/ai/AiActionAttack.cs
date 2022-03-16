@@ -1,15 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class AiActionAttack : AiActionBase
 {
     public float coldTime = 2.0f;
     private float coldElapsed = 0f;
+
+    private NavMeshAgent navAgent;
+
     void Awake()
     {
         coldElapsed = coldTime;
         actionType = ai_action_type.ai_action_type_attack;
+        navAgent = GetComponent<NavMeshAgent>();
+    }
+
+    public override void OnEnter()
+    {
+        base.OnEnter();
+
+        navAgent.speed = 0f;
+        navAgent.isStopped = true;
     }
 
     public override void OnUpdate()

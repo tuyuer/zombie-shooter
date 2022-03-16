@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class AiActionPatrol : AiActionBase
 {
@@ -19,15 +20,20 @@ public class AiActionPatrol : AiActionBase
     private float nextPatrolTime = 0.0f;
 
     private Vector3 moveDir = Vector3.zero;
+    private NavMeshAgent navAgent;
+
+
     void Awake()
     {
         actionType = ai_action_type.ai_action_type_patrol;
+        navAgent = GetComponent<NavMeshAgent>();
     }
 
     public override void OnEnter()
     {
         base.OnEnter();
         BuildPatrol();
+        navAgent.isStopped = false;
     }
 
     public override void OnExit()

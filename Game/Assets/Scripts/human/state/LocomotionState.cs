@@ -19,7 +19,7 @@ namespace HitJoy
                 //apply gravity
                 blackboard.ApplyGravityForActorSpeed(Time.deltaTime);
 
-                ////set forward dir
+                ////set forward dir, navMesh will do
                 //blackboard.ApplyForwardDirForActor();
 
                 //update animation
