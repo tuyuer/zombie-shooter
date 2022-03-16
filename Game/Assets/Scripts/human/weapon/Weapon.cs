@@ -35,10 +35,10 @@ public class Weapon : MonoBehaviour
         switch (weaponType)
         {
             case weapon_type.weapon_type_pistol:
-                bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_pistol);
+                bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_turret);
                 break;
             case weapon_type.weapon_type_rifle:
-                bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_rifle);
+                bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_turret);
                 break;
             case weapon_type.weapon_type_shortgun:
                 bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_shortgun);
