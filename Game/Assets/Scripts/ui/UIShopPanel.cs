@@ -35,7 +35,7 @@ public class UIShopPanel : MonoBehaviour
     {
         if (GameWorld.Instance.player.CurrentWeapon.weaponType == weapon_type.weapon_type_rifle)
         {
-            GameWorld.Instance.uiCanvas.tipsPanel.ShopTips("您已装备自动步枪，请前往战场杀敌！");
+            GameWorld.Instance.uiCanvas.tipsPanel.ShopTips("鎮ㄥ凡瑁呭鑷姩姝ユ灙锛岃鍓嶅線鎴樺満鏉�鏁岋紒");
             return;
         }
 
@@ -44,11 +44,11 @@ public class UIShopPanel : MonoBehaviour
         {
             GameWorld.Instance.player.SetWeapon(weapon_type.weapon_type_rifle);
             GameWorld.Instance.backpack.RemoveElement(backpack_element_type.backpack_element_type_gold, 6);
-            GameWorld.Instance.uiCanvas.tipsPanel.ShopTips("您已装备自动步枪，请前往战场杀敌！");
+            GameWorld.Instance.uiCanvas.tipsPanel.ShopTips("鎮ㄥ凡瑁呭鑷姩姝ユ灙锛岃鍓嶅線鎴樺満鏉�鏁岋紒");
         }
         else
         {
-            GameWorld.Instance.uiCanvas.tipsPanel.ShopTips("筹码不足，请您在战场中收集更多筹码！");
+            GameWorld.Instance.uiCanvas.tipsPanel.ShopTips("绛圭爜涓嶈冻锛岃鎮ㄥ湪鎴樺満涓敹闆嗘洿澶氱鐮侊紒");
         }
     }
 }
