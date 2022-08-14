@@ -185,9 +185,4 @@ public class Character : MonoBehaviour
             blackBoard.animator.SetLayerWeight(nLayerIndex, value);
         }
     }
-
-    public void StartAutoAim()
-    {
-        autoAim.StartAutoAim();
-    }
 }

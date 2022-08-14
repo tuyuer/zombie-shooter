@@ -5,7 +5,7 @@ public class GlobalDef
 {
 #if UNITY_EDITOR
     //Common Funcs
-    public const bool ENABLE_STICKJOY = false;
+    public const bool ENABLE_STICKJOY = true;
 #else
     public const bool ENABLE_STICKJOY = true;
 #endif
