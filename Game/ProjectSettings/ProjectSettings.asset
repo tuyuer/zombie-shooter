@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: hitjoy
-  productName: "\u9ED1\u6697\u4FB5\u88AD"
+  productName: "\u5B64\u80C6\u82F1\u96C4"
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -162,7 +162,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.hitjoy.zombie
+    Android: com.hitjoy.shooter
     Standalone: com.DefaultCompany.Myproject
   buildNumber:
     Standalone: 0
