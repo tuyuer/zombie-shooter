@@ -7,33 +7,23 @@ public class CharacterAim : MonoBehaviour
     public GameObject aimTarget;
     public LayerMask layerMask;
 
-    private AiAutoAim autoAim;
+    private Character character;
 
     void Awake()
     {
-        autoAim = GetComponent<AiAutoAim>();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        character = this.GetComponent<Character>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (autoAim.IsRunning())
-        {
-            return;
-        }
-
         if (GlobalDef.ENABLE_STICKJOY)
         {
             Vector2 forwardDir = GameWorld.Instance.aimstick.Direction;
-            if (forwardDir != Vector2.zero)
+            if (forwardDir.sqrMagnitude > 0.3)
             {
-                transform.forward = new Vector3(forwardDir.x, 0, forwardDir.y);
+                Vector3 lookTo = new Vector3(forwardDir.x, 0, forwardDir.y);
+                character.LookTo(lookTo, true);
             }
         }
         else

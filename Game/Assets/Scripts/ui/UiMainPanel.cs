@@ -6,15 +6,12 @@ using HitJoy;
 
 public class UiMainPanel : MonoBehaviour
 {
-    public Button btnCas;
-
     public int casCost = 2;
 
     // Update is called once per frame
     void Update()
     {
-        int nGoldCount = GameWorld.Instance.backpack.GetElementCount(backpack_element_type.backpack_element_type_gold);
-        btnCas.gameObject.SetActive(nGoldCount >= casCost && IsAirForceReady());
+        //int nGoldCount = GameWorld.Instance.backpack.GetElementCount(backpack_element_type.backpack_element_type_gold);
     }
 
     private bool IsAirForceReady() 

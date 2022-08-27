@@ -9,18 +9,10 @@ public class AiAutoAim : MonoBehaviour
     private List<GameObject> insightEnemys = new List<GameObject>();
     private AiController lockedEnemy = null;
 
-    private float leftTime = -1f;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        leftTime -= Time.deltaTime;
         lockedEnemy = GetClosestEnemyInSight();
 
         if (lockedEnemy != null)
@@ -99,29 +91,14 @@ public class AiAutoAim : MonoBehaviour
 
     private void RotateToTarget(Transform target)
     {
-        if (!IsRunning())
-        {
-            return;
-        }
-
         Vector3 posOffset = target.position - transform.position;
         posOffset.y = 0;
 
         transform.forward = Vector3.Lerp(transform.forward, posOffset, Time.deltaTime * rotateSpeed);
     }
 
-    public bool IsRunning()
+    public bool IsTargetLocked
     {
-        if (leftTime < 0)
-        {
-            return false;
-        }
-
-        return true;
-    }
-
-    public void StartAutoAim()
-    {
-        leftTime = 10f;
+        get { return lockedEnemy != null; }
     }
 }

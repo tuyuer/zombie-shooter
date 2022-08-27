@@ -52,14 +52,15 @@ public class Character : MonoBehaviour
         if (!IsAlive())
             return;
 
-        if (!GlobalDef.ENABLE_STICKJOY)
+        if (GlobalDef.ENABLE_STICKJOY)
+        {
+
+        }
+        else
         {
             if (Input.GetMouseButton(0))
             {
-                if (weapon != null)
-                {
-                    weapon.Shoot();
-                }
+                Shoot();
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -157,6 +158,18 @@ public class Character : MonoBehaviour
         }
     }
 
+    public void LookTo(Vector3 dir, bool force = false)
+    {
+        if (force)
+        {
+            transform.forward = dir;
+        }
+        else
+        {
+            if (!autoAim.IsTargetLocked) transform.forward = dir;
+        }
+    }
+
     public void SetWeaponLayerWeight(string layerName, float value)
     {
         if (layerName.Length == 0)
@@ -172,5 +185,11 @@ public class Character : MonoBehaviour
             int nLayerIndex = blackBoard.animator.GetLayerIndex(layerName);
             blackBoard.animator.SetLayerWeight(nLayerIndex, value);
         }
+    }
+
+    public void Shoot()
+    {
+        if (weapon != null)
+            weapon.Shoot();
     }
 }

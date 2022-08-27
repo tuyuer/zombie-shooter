@@ -50,7 +50,7 @@ namespace HitJoy
         {
             if (moveDir.sqrMagnitude > 0)
             {
-                character.transform.forward = moveDir;
+                character.LookTo(moveDir);
             }
         }
     }

@@ -8,12 +8,14 @@ namespace HitJoy
     {
         private Camera mainCamera;
         private InputComponent inputComponent;
+        private Character actor;
         // Start is called before the first frame update
         void Awake()
         {
             base.Awake();
             mainCamera = Camera.main;
             inputComponent = GetComponent<InputComponent>();
+            actor = GetComponent<Character>();
         }
 
         void OnEnable()
@@ -48,9 +50,10 @@ namespace HitJoy
             {
                 OnAttackO();
             }
-            else if (action == InputActionNames.X && actionState == input_action_state.press)
+            else if (action == InputActionNames.X && actionState == input_action_state.hold)
             {
-                OnAttackX();
+                Debug.Log("input event!!");
+                actor.Shoot();
             }
             else if (action == InputActionNames.SHOWSWEAPON && actionState == input_action_state.press)
             {

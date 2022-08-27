@@ -104,12 +104,13 @@ public class InputComponent : MonoBehaviour
         float hRaw = h > 0 ? 1 : 0;
         float vRaw = v > 0 ? 1 : 0;
 
-        input_action_state actionState = input_action_state.release;
-        if (GameWorld.Instance.joystick.Direction.sqrMagnitude > 0)
-        {
-            actionState = input_action_state.press;
-        }
+        //direction event
+        input_action_state actionState = GameWorld.Instance.joystick.Direction.sqrMagnitude > 0? actionState = input_action_state.press: input_action_state.release;
         onDirectionEvent(new Vector2(h, v), new Vector2(hRaw, vRaw), actionState);
+
+        //input event
+        input_action_state keyXState = GameWorld.Instance.aimstick.IsHolding ? input_action_state.hold : input_action_state.release;
+        onInputEvent(InputActionNames.X, keyXState);
     }
 
     void MouseEvents()
