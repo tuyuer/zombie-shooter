@@ -52,17 +52,7 @@ public class Character : MonoBehaviour
         if (!IsAlive())
             return;
 
-        if (GlobalDef.ENABLE_STICKJOY)
-        {
-            if (GameWorld.Instance.aimstick.IsHolding)
-            {
-                if (weapon != null)
-                {
-                    weapon.Shoot();
-                }
-            }
-        }
-        else
+        if (!GlobalDef.ENABLE_STICKJOY)
         {
             if (Input.GetMouseButton(0))
             {
@@ -71,15 +61,15 @@ public class Character : MonoBehaviour
                     weapon.Shoot();
                 }
             }
-        }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            SetWeapon(weapon_type.weapon_type_pistol);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            SetWeapon(weapon_type.weapon_type_rifle);
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                SetWeapon(weapon_type.weapon_type_pistol);
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                SetWeapon(weapon_type.weapon_type_rifle);
+            }
         }
     }
 
@@ -128,9 +118,7 @@ public class Character : MonoBehaviour
         {
             item.gameObject.SetActive(false);
             if (item.weaponType == weaponType)
-            {
                 weapon = item;
-            }
         }
         weapon.gameObject.SetActive(true);
         SetWeaponLayerWeight("", 0);
@@ -184,10 +172,5 @@ public class Character : MonoBehaviour
             int nLayerIndex = blackBoard.animator.GetLayerIndex(layerName);
             blackBoard.animator.SetLayerWeight(nLayerIndex, value);
         }
-    }
-
-    public void StartAutoAim()
-    {
-        autoAim.StartAutoAim();
     }
 }
