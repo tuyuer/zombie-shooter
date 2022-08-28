@@ -6,6 +6,7 @@ public class ActorBlood : MonoBehaviour
 {
     [Range(0, 100)]
     public int totolBlood = 100;
+    public bool isActive = true;
     private int curBlood = 100;
     private Character character = null;
 
@@ -17,6 +18,8 @@ public class ActorBlood : MonoBehaviour
 
     public void OnDamage(int nDamage = 10)
     {
+        if (!isActive) return;
+
         int nOriginBlood = curBlood;
         curBlood -= nDamage;
         curBlood = Mathf.Max(0, curBlood);
@@ -34,6 +37,8 @@ public class ActorBlood : MonoBehaviour
 
     public void OnRemedy(int nRemedy = 10)
     {
+        if (!isActive) return;
+
         curBlood += nRemedy;
         curBlood = Mathf.Min(totolBlood, curBlood);
     }

@@ -4,48 +4,51 @@ using UnityEngine;
 
 namespace HitJoy
 {
+    [System.Serializable]
     public class Wave
     {
-        private float waveTime;
+        public float waveTime = 10;
+        public float spawnColdTime = 0.5f;
+        public int weakWeight = 50;
+        public int strongWeight = 30;
+        public int tankWeight = 20;
+
         public float WaveTime
         {
             get { return waveTime; }
             set { waveTime = value; }
         }
 
-        private float spawnColdTime = 0.5f;
         public float SpawnColdTime
         {
             get { return spawnColdTime; }
             set { spawnColdTime = value; }
         }
 
-        private float waveElapsedTime;
-        private float nextSpawnTime;
-
-        private int weakWeight;
         public int WeakWeight
         {
             get { return weakWeight; }
             set { weakWeight = value; }
         }
 
-        private int strongWeight;
         public int StrongWeight
         {
             get { return strongWeight; }
             set { strongWeight = value; }
         }
 
-        private int tankWeight;
         public int TankWeight
         {
             get { return tankWeight; }
             set { tankWeight = value; }
         }
 
+        private float waveElapsedTime;
+        private float nextSpawnTime;
+
         private float wavePrepareTime = 6;
         private float wavePrepareElapsed = 0;
+
 
         public delegate void OnSpawnZombie();
         public event OnSpawnZombie onSpawnZombie;
