@@ -5288,7 +5288,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478555750927998374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -10404,7 +10404,7 @@ MonoBehaviour:
   weaponSound: {fileID: 2521992513841481505}
   laserLine: {fileID: 478555751137937474}
   weaponClip:
-    clipSize: 30
+    clipSize: 99999999
     reloadTime: 1
     bulletReadyTime: 0.15
   weaponType: 1
@@ -11129,7 +11129,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3653214601184435164}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb22e3e53250d154890eac3f2e4fc6bd, type: 3}
   m_Name: 
@@ -11379,6 +11379,7 @@ GameObject:
   - component: {fileID: 5396208193898258956}
   - component: {fileID: 1097081575}
   - component: {fileID: 7753500697949630751}
+  - component: {fileID: 7964789509719483955}
   m_Layer: 11
   m_Name: chracter-soldier
   m_TagString: Player
@@ -12133,6 +12134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totolBlood: 100
+  isActive: 0
 --- !u!198 &5418432032095120841
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -51436,7 +51438,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3653214601184435164}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1189c3686ee1cee4288a526cdcd98cf7, type: 3}
   m_Name: 
@@ -51518,6 +51520,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &7964789509719483955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3653214601184435164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a85827f2575491999d4c32ffd241c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8180113331700555985
 MonoBehaviour:
   m_ObjectHideFlags: 0
