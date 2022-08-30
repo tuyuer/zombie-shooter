@@ -9,8 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class GameSceneCanvas : MonoBehaviour
 {
-    public Text txtBullets;
-
+    public TMP_Text tmpBullets;
     public TMP_Text tmpKills;
     public TMP_Text tmpChips;
     public TMP_Text tmpWaves;
@@ -55,17 +54,17 @@ public class GameSceneCanvas : MonoBehaviour
             int nClipSize = curWeapon.weaponClip.clipSize;
             if (curWeapon.weaponType == weapon_type.weapon_type_pistol)
             {
-                txtBullets.text = "infinity";
+                tmpBullets.text = "infinity";
             }
             else
             {
                 if (nBulletInClip == 0)
                 {
-                    txtBullets.text = "loading...";
+                    tmpBullets.text = "loading...";
                 }
                 else
                 {
-                    txtBullets.text = String.Format("{0:D}/{1:D}", nBulletInClip, nClipSize);
+                    tmpBullets.text = String.Format("{0:D}/{1:D}", nBulletInClip, nClipSize);
                 }
             }
         }
