@@ -17,27 +17,34 @@ public class CharacterAim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GlobalDef.ENABLE_STICKJOY)
-        {
+        //if (GlobalDef.ENABLE_STICKJOY)
+        //{
             Vector2 forwardDir = GameWorld.Instance.aimstick.Direction;
             if (forwardDir.sqrMagnitude > 0.3)
             {
-                Vector3 lookTo = new Vector3(forwardDir.x, 0, forwardDir.y);
-                character.LookTo(lookTo, true);
+                //Vector3 lookTo = new Vector3(forwardDir.x, 0, forwardDir.y);
+                //character.LookTo(lookTo, true);
+
+                Vector3 newDir = new Vector3(forwardDir.x, 0, forwardDir.y);
+                GameWorld.Instance.player.BBoard.ChangeShootDir(newDir);
             }
-        }
-        else
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hitInfo;
-            if (Physics.Raycast(ray, out hitInfo, 200, layerMask))
+            else
             {
-                Vector3 target = hitInfo.point;
-                target.y = transform.position.y;
-                transform.forward = target - transform.position;
-                target.y = 1.3f;
-                aimTarget.transform.position = target;
+                GameWorld.Instance.player.BBoard.ChangeShootDir(Vector3.zero);
             }
-        }
+        //}
+        //else
+        //{
+        //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //    RaycastHit hitInfo;
+        //    if (Physics.Raycast(ray, out hitInfo, 200, layerMask))
+        //    {
+        //        Vector3 target = hitInfo.point;
+        //        target.y = transform.position.y;
+        //        transform.forward = target - transform.position;
+        //        target.y = 1.3f;
+        //        aimTarget.transform.position = target;
+        //    }
+        //}
     }
 }

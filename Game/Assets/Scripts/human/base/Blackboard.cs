@@ -22,8 +22,16 @@ namespace HitJoy
         public CharacterController characterController;
 
         public actor_action_state actorState = actor_action_state.actor_action_state_locomotion;
-        public Vector3 moveDir = Vector3.zero;
         public Vector3 actorSpeed = Vector3.zero;
+
+        private Vector3 moveDir = Vector3.zero;
+        private Vector3 shootDir = Vector3.zero;
+        private Vector3 autoAimDir = Vector3.zero;
+
+        public Vector3 MoveDir
+        {
+            get { return moveDir; }
+        }
 
 
         private void Awake()
@@ -32,6 +40,11 @@ namespace HitJoy
             characterAim = GetComponent<CharacterAim>();
             actorBrain = GetComponent<Brain>();
             characterController = GetComponent<CharacterController>();
+        }
+
+        private void Update()
+        {
+            ApplyForwardDirForActor();
         }
 
         public void ApplyGravityForActorSpeed(float deltaTime)
@@ -46,12 +59,36 @@ namespace HitJoy
             actorSpeed = newActorSpeed;
         }
 
+
         public void ApplyForwardDirForActor()
         {
-            if (moveDir.sqrMagnitude > 0)
+            if (shootDir.sqrMagnitude > 0)
+            {
+                character.LookTo(shootDir);
+            }
+            else if (autoAimDir.sqrMagnitude > 0)
+            {
+                character.LookTo(autoAimDir);
+            }
+            else if (moveDir.sqrMagnitude > 0)
             {
                 character.LookTo(moveDir);
             }
+        }
+
+        public void ChangeMoveDir(Vector3 dir)
+        {
+            moveDir = dir;
+        }
+
+        public void ChangeShootDir(Vector3 dir)
+        {
+            shootDir = dir;
+        }
+
+        public void ChangeAutoAimDir(Vector3 dir)
+        {
+            autoAimDir = dir;
         }
     }
 

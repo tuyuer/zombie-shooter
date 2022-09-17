@@ -67,7 +67,8 @@ namespace HitJoy
 
         void OnDirectionEvent(Vector2 dir, Vector2 dirRaw, input_action_state inputState)
         {
-            blackboard.moveDir = CalculateMoveDir(dir, inputState);
+            var newDir = CalculateMoveDir(dir, inputState);
+            blackboard.ChangeMoveDir(newDir);
         }
 
         Vector3 CalculateMoveDir(Vector2 dir, input_action_state inputState)

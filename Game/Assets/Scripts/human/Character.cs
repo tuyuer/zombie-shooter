@@ -158,16 +158,17 @@ public class Character : MonoBehaviour
         }
     }
 
-    public void LookTo(Vector3 dir, bool force = false)
+    public void LookTo(Vector3 dir/*, bool force = false*/)
     {
-        if (force)
-        {
-            transform.forward = dir;
-        }
-        else
-        {
-            if (!autoAim.IsTargetLocked) transform.forward = dir;
-        }
+        transform.forward = dir;
+        //if (force)
+        //{
+        //    transform.forward = dir;
+        //}
+        //else
+        //{
+        //    if (!autoAim.IsTargetLocked) transform.forward = dir;
+        //}
     }
 
     public void SetWeaponLayerWeight(string layerName, float value)

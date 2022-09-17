@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementType: 1
   collectUse: 1
+  autoCollect: 0
   destroyTime: 15
   remedyValue: 10
 --- !u!1 &7974646330489245401

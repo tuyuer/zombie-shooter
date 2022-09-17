@@ -6,6 +6,7 @@ public class DropElement : MonoBehaviour
 {
     public backpack_element_type elementType;
     public bool collectUse = false;
+    public bool autoCollect = false;
     public float destroyTime = 15;
 
     // Start is called before the first frame update
@@ -17,7 +18,7 @@ public class DropElement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        CheckAutoCollect();
     }
 
     void OnTriggerEnter(Collider other)
@@ -39,5 +40,13 @@ public class DropElement : MonoBehaviour
     public virtual void UseElement()
     {
 
+    }
+
+    private void CheckAutoCollect()
+    {
+        if (!autoCollect) return;
+
+        var target = GameWorld.Instance.player.transform.position;
+        transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * 3);
     }
 }

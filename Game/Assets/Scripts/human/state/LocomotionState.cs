@@ -20,11 +20,11 @@ namespace HitJoy
                 blackboard.ApplyGravityForActorSpeed(Time.deltaTime);
 
                 ////set forward dir, navMesh will do
-                blackboard.ApplyForwardDirForActor();
+                //blackboard.ApplyForwardDirForActor();
 
                 //update animation
                 //float moveSpeed = Mathf.Min(blackboard.moveDir.magnitude, GlobalDef.ACTOR_MAX_FOWARD_SPEED);
-                Vector3 moveDir = blackboard.moveDir;
+                Vector3 moveDir = blackboard.MoveDir;
                 Vector3 forwardDir = blackboard.character.transform.forward;
                 Vector3 rightDir = blackboard.character.transform.right;
 

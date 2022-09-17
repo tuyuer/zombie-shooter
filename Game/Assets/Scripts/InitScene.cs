@@ -11,7 +11,7 @@ public class InitScene : MonoBehaviour
         BuglyAgent.InitWithAppId("2f1eab0569");
         BuglyAgent.EnableExceptionHandler();
 
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene("StartScene2");
     }
 
     // Start is called before the first frame update

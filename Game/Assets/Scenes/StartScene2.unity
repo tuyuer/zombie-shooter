@@ -195,6 +195,65 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4944562466581198700, guid: 1e01b970619c1ae489a0273987adf037, type: 3}
   m_PrefabInstance: {fileID: 2134048}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &15053887
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.33878946
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.485962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &44651138
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +759,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be69099b491b8e842b76b3d62a4cfe23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &143016359
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.040003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.810001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &160639263
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +915,183 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160639263}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &164300417
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.538788
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.515963
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &169340716
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.66121
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 28.035965
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &213425215
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -23.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &222443473
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +1237,124 @@ Transform:
   m_Father: {fileID: 762570862}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &261397572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.18879
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.084036
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &288061004
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.321211
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.295963
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1001 &342741538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1123,6 +1536,65 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &367757970
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.721212
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.085964
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &399085192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1841,183 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &407863076
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &432811133
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 31.760002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &436255276
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.998787
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.365963
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!114 &440600918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1381,6 +2030,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48948dfe9d76b07488dacd46a7955fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &453014116
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1001 &462947674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1445,6 +2153,65 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4944562466581198700, guid: 1e01b970619c1ae489a0273987adf037, type: 3}
   m_PrefabInstance: {fileID: 462947674}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &489599000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.7387896
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.245964
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &514126020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +2460,301 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4944562466581198700, guid: 1e01b970619c1ae489a0273987adf037, type: 3}
   m_PrefabInstance: {fileID: 545393696}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &571526462
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &576651856
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.840002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.610001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &580311083
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.538788
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.8559628
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &603835100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.541216
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 29.244038
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &627997481
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!114 &687744475 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4944562466581198701, guid: 1e01b970619c1ae489a0273987adf037, type: 3}
@@ -2105,6 +3167,65 @@ MonoBehaviour:
   - {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
   tankZombies:
   - {fileID: 3618082100327304552, guid: eb71f7f53b766491e8ec153c45992ac0, type: 3}
+--- !u!1001 &818396110
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!4 &823662104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4944562466581198700, guid: 1e01b970619c1ae489a0273987adf037, type: 3}
@@ -2232,6 +3353,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f167d51335f294ebfdb5d4f274c9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &868953920
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.950001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &905327857
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.309998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &911868919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,6 +3674,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288c6f22a8232e8498db682051af21a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &937199694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.3287888
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.825962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!114 &950749547 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4944562466581198701, guid: 1e01b970619c1ae489a0273987adf037, type: 3}
@@ -2644,6 +3942,65 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &986671806
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.030003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1001 &987330188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2727,6 +4084,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288c6f22a8232e8498db682051af21a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1001795079
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.061213
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.935963
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &1069580484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,6 +4174,65 @@ Transform:
   m_Father: {fileID: 762570862}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1072023385
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &1075558266
 GameObject:
   m_ObjectHideFlags: 0
@@ -3045,6 +4520,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288c6f22a8232e8498db682051af21a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1130447560
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 28.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1001 &1135600049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3449,6 +4983,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288c6f22a8232e8498db682051af21a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1376879671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.4399967
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.849998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &1383792708
 GameObject:
   m_ObjectHideFlags: 0
@@ -3621,6 +5214,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+--- !u!1001 &1403568789
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.33878946
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.145962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &1444030783
 GameObject:
   m_ObjectHideFlags: 0
@@ -3723,6 +5375,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1467819437
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1001 &1477373254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4218,6 +5929,65 @@ Transform:
   m_Father: {fileID: 514126021}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1658703576
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -23.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1001 &1664576285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4301,6 +6071,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288c6f22a8232e8498db682051af21a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1674433654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.878789
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3340359
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &1736305042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -32.93879
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.615965
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1001 &1737639519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4467,6 +6355,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288c6f22a8232e8498db682051af21a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1780416195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!114 &1806745424 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4944562466581198701, guid: 1e01b970619c1ae489a0273987adf037, type: 3}
@@ -4583,6 +6530,242 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288c6f22a8232e8498db682051af21a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1933451990
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.8299999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -25.259998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &1942404972
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.258789
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.284037
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &1945174282
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.030003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.839998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+--- !u!1001 &1984995643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.061213
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.275963
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &2022668483
 GameObject:
   m_ObjectHideFlags: 0
@@ -4614,6 +6797,65 @@ Transform:
   m_Father: {fileID: 762570862}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2042486316
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.690002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.3500004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!114 &2068878839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4681,6 +6923,65 @@ Transform:
   m_Father: {fileID: 514126021}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2098448757
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -23.700003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &2100615662
 GameObject:
   m_ObjectHideFlags: 0
@@ -4820,6 +7121,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 288c6f22a8232e8498db682051af21a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &2119332625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739191260245309952, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_Name
+      value: zombie-civilian-001 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739191260245309953, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 021dba51a57b54d2093627f5e301fdd1, type: 3}
 --- !u!1 &2135356971
 GameObject:
   m_ObjectHideFlags: 0

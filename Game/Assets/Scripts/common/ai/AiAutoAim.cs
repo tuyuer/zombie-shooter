@@ -26,6 +26,10 @@ public class AiAutoAim : MonoBehaviour
 
             RotateToTarget(lockedEnemy.transform);
         }
+        else
+        {
+            GameWorld.Instance.player.BBoard.ChangeAutoAimDir(Vector3.zero);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -94,7 +98,10 @@ public class AiAutoAim : MonoBehaviour
         Vector3 posOffset = target.position - transform.position;
         posOffset.y = 0;
 
-        transform.forward = Vector3.Lerp(transform.forward, posOffset, Time.deltaTime * rotateSpeed);
+        Vector3 newDir = Vector3.Lerp(transform.forward, posOffset, Time.deltaTime * rotateSpeed);
+        GameWorld.Instance.player.BBoard.ChangeAutoAimDir(newDir);
+
+        //transform.forward = Vector3.Lerp(transform.forward, posOffset, Time.deltaTime * rotateSpeed);
     }
 
     public bool IsTargetLocked
