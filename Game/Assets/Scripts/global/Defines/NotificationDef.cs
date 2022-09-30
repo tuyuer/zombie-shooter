@@ -16,7 +16,4 @@ public static class NotificationDef
     //operation
     public const string NOTIFICATION_ON_CALL_AIR_FORCE = "NOTIFICATION_ON_CALL_AIR_FORCE";
     public const string NOTIFICATION_ON_EXIT_AIR_FORCE = "NOTIFICATION_ON_EXIT_AIR_FORCE";
-
-    //ui
-    public const string NOTIFICATION_ON_OPEN_SHOP_PANEL = "NOTIFICATION_ON_OPEN_SHOP_PANEL";
 }

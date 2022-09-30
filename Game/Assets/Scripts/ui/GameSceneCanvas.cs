@@ -17,8 +17,6 @@ public class GameSceneCanvas : MonoBehaviour
 
     public GameObject waveInfoPanel;
     public GameObject gameOverPanel;
-    public UIShopPanel shopPanel;
-    public UiConfirmPanel confirmPanel;
     public UiTipsPanel tipsPanel;
     // Start is called before the first frame update
     void Start()
@@ -33,7 +31,6 @@ public class GameSceneCanvas : MonoBehaviour
         MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_WAVE_PREPARE_END, new MessageEvent(OnWavePrepareEnd));
 
         MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_PLAYER_DEATH, new MessageEvent(OnPlayerDeath));
-        MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_OPEN_SHOP_PANEL, new MessageEvent(OnOpenShop));
     }
 
     private void OnDisable()
@@ -112,11 +109,6 @@ public class GameSceneCanvas : MonoBehaviour
         gameOverPanel.gameObject.SetActive(true);
     }
 
-    public void OnOpenShop(System.Object data)
-    {
-        shopPanel.gameObject.SetActive(true);
-        GameWorld.Instance.waveManager.PauseWave();
-    }
 
     public void OnBtnRetryClicked()
     {
