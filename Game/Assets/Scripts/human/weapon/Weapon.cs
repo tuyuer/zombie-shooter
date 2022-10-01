@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using HitJoy;
-using Opsive.UltimateCharacterController.Objects;
 
 public class Weapon : MonoBehaviour
 {

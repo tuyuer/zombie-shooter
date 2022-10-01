@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Opsive.UltimateCharacterController.Objects;
+//using Opsive.UltimateCharacterController.Objects;
 using UnityEngine.SceneManagement;
 
 public class StorySignalEvents : MonoBehaviour
@@ -9,7 +9,6 @@ public class StorySignalEvents : MonoBehaviour
     public GameObject timelineCaptions;
     public GameObject timelineShoot1;
 
-    public MuzzleFlash muzzleFlash = null;
 
     public void OnStoryCaptionsEnd()
     {
@@ -19,7 +18,7 @@ public class StorySignalEvents : MonoBehaviour
 
     public void OnSoldierPistolMuzzleFlash()
     {
-        muzzleFlash.ShowEffect();
+        //muzzleFlash.ShowEffect();
     }
 
     public void OnEnterGameScene()
