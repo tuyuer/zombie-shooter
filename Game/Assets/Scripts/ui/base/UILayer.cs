@@ -32,7 +32,7 @@ public class UILayer : MonoBehaviour
         if (ui)
         {
             ui = Instantiate(ui);
-            ui.transform.parent = gameObject.transform;
+            ui.transform.SetParent(gameObject.transform);
             RectTransform rTransform = ui.transform as RectTransform;
 
             //left bottom

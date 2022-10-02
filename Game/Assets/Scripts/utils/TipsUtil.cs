@@ -25,7 +25,10 @@ public class TipsUtil : MonoBehaviour
         if (proxy)
         {
             UiTipsPanel tipsPanel = proxy as UiTipsPanel;
-            tipsPanel.Show(tips);
+            if (tipsPanel)
+            {
+                tipsPanel.Show(tips);
+            }
         }
     }
 }

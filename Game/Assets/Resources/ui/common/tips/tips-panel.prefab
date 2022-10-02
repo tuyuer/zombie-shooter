@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1777089478808581085}
   - component: {fileID: 1777089478808581082}
-  - component: {fileID: 1777089478808581083}
   - component: {fileID: 4812535162801348839}
   m_Layer: 5
   m_Name: tips-panel
@@ -48,18 +47,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777089478808581084}
   m_CullTransparentMesh: 1
---- !u!114 &1777089478808581083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777089478808581084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 210eb6f30d780461c910dcb7889e930b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4812535162801348839
 MonoBehaviour:
   m_ObjectHideFlags: 0
