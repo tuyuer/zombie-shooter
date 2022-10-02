@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIProxy : MonoBehaviour
+public class UIProxy : UIInstance
 {
+    [HideInInspector]
+    public UIProxyType type;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,6 @@ public class UIProxy : MonoBehaviour
 
     public void Close()
     {
-        Destroy(gameObject);
+        UIManager.GetInst().CloseProxy(this);
     }
 }

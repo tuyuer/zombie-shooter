@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class UILayers : MonoBehaviour
 {
-    private UILayer[] _layers = null;
-
-    void Awake()
-    {
-        _layers = GetComponentsInChildren<UILayer>();
-    }
+    private Dictionary<UILayerType, UILayer> _layers = new Dictionary<UILayerType, UILayer>();
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        var layers = GetComponentsInChildren<UILayer>();
+        for (int i = 0; i < layers.Length; i++)
+        {
+            var layer = layers[i];
+            _layers.Add(layer.type, layer);
+        }
     }
 
     // Update is called once per frame
@@ -33,13 +33,10 @@ public class UILayers : MonoBehaviour
 
     public UILayer GetLayer(UILayerType type)
     {
-        for(int i = 0; i < _layers.Length; i++)
-        {
-            if(_layers[i].type == type)
-            {
-                return _layers[i];
-            }
-        }
-        return null;
+        UILayer layer;
+        var success = _layers.TryGetValue(type, out layer);
+        if (!success) return null;
+
+        return layer;
     }
 }

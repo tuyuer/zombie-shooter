@@ -19,19 +19,19 @@ public class CharacterAim : MonoBehaviour
     {
         //if (GlobalDef.ENABLE_STICKJOY)
         //{
-            Vector2 forwardDir = GameWorld.Instance.aimstick.Direction;
-            if (forwardDir.sqrMagnitude > 0.3)
-            {
-                //Vector3 lookTo = new Vector3(forwardDir.x, 0, forwardDir.y);
-                //character.LookTo(lookTo, true);
+            //Vector2 forwardDir = GameWorld.Instance.aimstick.Direction;
+            //if (forwardDir.sqrMagnitude > 0.3)
+            //{
+            //    //Vector3 lookTo = new Vector3(forwardDir.x, 0, forwardDir.y);
+            //    //character.LookTo(lookTo, true);
 
-                Vector3 newDir = new Vector3(forwardDir.x, 0, forwardDir.y);
-                GameWorld.Instance.player.BBoard.ChangeShootDir(newDir);
-            }
-            else
-            {
-                GameWorld.Instance.player.BBoard.ChangeShootDir(Vector3.zero);
-            }
+            //    Vector3 newDir = new Vector3(forwardDir.x, 0, forwardDir.y);
+            //    GameWorld.Instance.player.BBoard.ChangeShootDir(newDir);
+            //}
+            //else
+            //{
+            //    GameWorld.Instance.player.BBoard.ChangeShootDir(Vector3.zero);
+            //}
         //}
         //else
         //{

@@ -41,8 +41,6 @@ public class Blink : MonoBehaviour
             _sign = reachMin ? Sign.Positive : Sign.Negative;
         }
         _canvasGroup.alpha = alpha;
-
-        TipsUtil.ShowTips("hello boy");
     }
 
 }

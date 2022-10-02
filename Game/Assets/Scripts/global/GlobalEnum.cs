@@ -9,6 +9,7 @@ public enum wave_manager_state
 {
     wave_manager_running,
     wave_manager_pause,
+    wave_manager_stoped,
 };
 
 public enum enemy_type

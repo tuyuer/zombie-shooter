@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1777089478808581082}
   - component: {fileID: 4812535162801348839}
   m_Layer: 5
-  m_Name: tips-panel
+  m_Name: tipsPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

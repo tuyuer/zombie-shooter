@@ -17,10 +17,7 @@ namespace HitJoy
         public GameObject[] strongZombies;
         public GameObject[] tankZombies;
 
-        //a delay time that will setup WaveManager
-        private float setupTime = 1.0f;
-
-        private wave_manager_state state = wave_manager_state.wave_manager_running;
+        private wave_manager_state state = wave_manager_state.wave_manager_stoped;
         private day_time dayTime = day_time.day_time_night;
         private float stateTimeElapsed = 0.0f;
 
@@ -33,10 +30,8 @@ namespace HitJoy
         // Update is called once per frame
         void Update()
         {
-            if (!IsSetupFinished())
-            {
+            if (state == wave_manager_state.wave_manager_stoped)
                 return;
-            }
 
             if (state == wave_manager_state.wave_manager_pause)
                 return;
@@ -50,16 +45,6 @@ namespace HitJoy
             {
                 UpdateDayTime();
             }
-        }
-
-        bool IsSetupFinished()
-        {
-            if (setupTime > 0)
-            {
-                setupTime -= Time.deltaTime;
-                return false;
-            }
-            return true;
         }
 
         void UpdateNight()
@@ -104,10 +89,10 @@ namespace HitJoy
             int nWaveCount = waves.Count;
             if (lastWave != null)
             {
-                wave.WaveTime = lastWave.WaveTime * 1.2f;
-                wave.WeakWeight = Convert.ToInt32(lastWave.WeakWeight * 1.1f);
-                wave.StrongWeight = Convert.ToInt32(lastWave.StrongWeight * 1.3f);
-                wave.TankWeight = Convert.ToInt32(lastWave.TankWeight * 1.2f);
+                wave.WaveTime = lastWave.WaveTime * 1.1f;
+                wave.WeakWeight = Convert.ToInt32(lastWave.WeakWeight * 1.05f);
+                wave.StrongWeight = Convert.ToInt32(lastWave.StrongWeight * 1.1f);
+                wave.TankWeight = Convert.ToInt32(lastWave.TankWeight * 1.1f);
                 wave.SpawnColdTime = lastWave.SpawnColdTime;
                 if (lastWave.SpawnColdTime > 0.1f)
                 {
@@ -247,6 +232,16 @@ namespace HitJoy
         }
 
         public void ResumeWave()
+        {
+            state = wave_manager_state.wave_manager_running;
+        }
+
+        public void StopWave()
+        {
+            state = wave_manager_state.wave_manager_stoped;
+        }
+
+        public void StartWave()
         {
             state = wave_manager_state.wave_manager_running;
         }

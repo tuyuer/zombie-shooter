@@ -4,7 +4,8 @@ using UnityEngine;
 
 public enum UIProxyType
 {
-    CommonTips
+    CommonTips,
+    StorePanel,
 }
 
 public class UIProxyData
@@ -59,14 +60,10 @@ public class UIManager : MonoBehaviour
         return _container.GetComponent<UIManager>();
     }
 
-    void Awake()
-    {
-    }
-
     // Start is called before the first frame update
     void Start()
     {
-        _layers = GameObject.FindObjectOfType<UILayers>();
+        _layers = FindObjectOfType<UILayers>();
         RegistPrxoys();
 
         DontDestroyOnLoad(gameObject);
@@ -82,11 +79,20 @@ public class UIManager : MonoBehaviour
         _proxyDatas.Add(data.Type, data);
     }
 
-    public UIProxy ShowProxy(UIProxyType type)
+    private bool IsProxyRegist(UIProxyType type)
     {
         if (!_proxyDatas.ContainsKey(type))
         {
             Debug.Log("ShowProxy Err: pls regist ui => " + type);
+            return false;
+        }
+        return true;
+    }
+
+    public UIProxy ShowProxy(UIProxyType type)
+    {
+        if (!IsProxyRegist(type))
+        {
             return null;
         }
 
@@ -95,5 +101,57 @@ public class UIManager : MonoBehaviour
         if (!isSuccess) return null;
 
         return _layers.AddUI(proxyData);
+    }
+
+    public UIProxy GetProxy(UIProxyType type)
+    {
+        if (!IsProxyRegist(type))
+        {
+            return null;
+        }
+
+        UIProxyData proxyData;
+        var isSuccess = _proxyDatas.TryGetValue(type, out proxyData);
+        if (!isSuccess) return null;
+
+        var layer = _layers.GetLayer(proxyData.LayerType);
+        if (!layer) return null;
+
+        var proxy = layer.GetProxy(type);
+        return proxy;
+    }
+
+    public void CloseProxy(UIProxyType type)
+    {
+        if (!IsProxyRegist(type))
+        {
+            return;
+        }
+
+        UIProxyData proxyData;
+        var isSuccess = _proxyDatas.TryGetValue(type, out proxyData);
+        if (!isSuccess) return;
+
+        var layer = _layers.GetLayer(proxyData.LayerType);
+        if (!layer) return;
+
+        layer.CloseProxy(type);
+    }
+
+    public void CloseProxy(UIProxy proxy)
+    {
+        if (!IsProxyRegist(proxy.type))
+        {
+            return;
+        }
+
+        UIProxyData proxyData;
+        var isSuccess = _proxyDatas.TryGetValue(proxy.type, out proxyData);
+        if (!isSuccess) return;
+
+        var layer = _layers.GetLayer(proxyData.LayerType);
+        if (!layer) return;
+
+        layer.CloseProxy(proxy);
     }
 }
