@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using com.ootii.Messages;
 
 namespace HitJoy
 {
@@ -85,11 +84,6 @@ namespace HitJoy
         }
 
         public void OnShowWeapon()
-        {
-
-        }
-
-        private void OnListenAttacken(IMessage incomingMessage)
         {
 
         }
