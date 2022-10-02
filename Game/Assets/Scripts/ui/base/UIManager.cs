@@ -5,6 +5,8 @@ using UnityEngine;
 public enum UIProxyType
 {
     CommonTips,
+    MainPanel,
+    WaveInfoPanel,
     StorePanel,
 }
 
@@ -55,23 +57,49 @@ public class UIManager : MonoBehaviour
             Debug.Log("Create Singleton.");
             _container = new GameObject();
             _container.name = _name;
-            _container.AddComponent(typeof(UIManager));
+            _container.AddComponent<UIManager>();
         }
         return _container.GetComponent<UIManager>();
+    }
+
+    void Awake()
+    {
+        TryCreateLayers();
+        RegistPrxoys();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        _layers = FindObjectOfType<UILayers>();
-        RegistPrxoys();
-
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void TryCreateLayers()
+    {
+        var layers = FindObjectOfType<UILayers>();
+        if (!layers)
+        {
+            GameObject obj = Resources.Load("ui/common/UILayers") as GameObject;
+            if (obj)
+            {
+                obj = Instantiate(obj);
+                layers = obj.GetComponent<UILayers>();
+                layers.InitLayers();
+            }
+        }
+        _layers = layers;
     }
 
     private void RegistPrxoys()
     {
-        RegistProxy(new UIProxyData(UIProxyType.CommonTips, "ui/common/tips/tips-panel", UILayerType.Tip));
+        //tips
+        RegistProxy(new UIProxyData(UIProxyType.CommonTips, "ui/common/tips/tipsPanel", UILayerType.Tip));
+
+        //dialog
+
+        //normal
+        RegistProxy(new UIProxyData(UIProxyType.MainPanel, "ui/gameScene/mainPanel"));
+        RegistProxy(new UIProxyData(UIProxyType.WaveInfoPanel, "ui/gameScene/waveInfoPanel"));
     }
 
     private void RegistProxy(UIProxyData data)

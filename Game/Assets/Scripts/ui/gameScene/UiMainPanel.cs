@@ -12,6 +12,9 @@ public class UiMainPanel : UIProxy
     public TMP_Text tmpKills;
     public TMP_Text tmpChips;
 
+    public Joystick joystick;
+    public Joystick aimstick;
+
     public Image imgBlood;
     public SkillButton airforceBtn = null;
 

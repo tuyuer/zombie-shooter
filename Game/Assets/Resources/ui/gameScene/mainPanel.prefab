@@ -1172,9 +1172,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e589abcd3f763844d97e79221a15a639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   tmpBullets: {fileID: 541889495830600287}
   tmpKills: {fileID: 541889495739198965}
   tmpChips: {fileID: 541889496525332907}
+  joystick: {fileID: 541889495895740898}
+  aimstick: {fileID: 541889497161758094}
   imgBlood: {fileID: 541889496213129205}
   airforceBtn: {fileID: 541889496619298084}
   casCost: 2

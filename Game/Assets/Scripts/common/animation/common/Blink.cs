@@ -14,7 +14,7 @@ public class Blink : MonoBehaviour
     public float maxAlpha = 1;
 
     private CanvasGroup _canvasGroup;
-    private Sign _sign = Sign.Positive;
+    private sign_type _sign = sign_type.sign_type_positive;
 
     void Awake()
     {
@@ -26,19 +26,19 @@ public class Blink : MonoBehaviour
     void Update()
     {
         float alpha = _canvasGroup.alpha;
-        if(_sign == Sign.Positive)
+        if(_sign == sign_type.sign_type_positive)
         {
             float nextAlpha = alpha + Time.deltaTime / blinkInTime;
             bool reachMax = nextAlpha >= maxAlpha;
             alpha = reachMax ? maxAlpha : nextAlpha;
-            _sign = reachMax ? Sign.Negative : Sign.Positive; 
+            _sign = reachMax ? sign_type.sign_type_negative : sign_type.sign_type_positive; 
         }
-        else if(_sign == Sign.Negative)
+        else if(_sign == sign_type.sign_type_negative)
         {
             float nextAlpha = alpha - Time.deltaTime / blinkOutTime;
             bool reachMin = nextAlpha <= minAlpha;
             alpha = reachMin ? minAlpha : nextAlpha;
-            _sign = reachMin ? Sign.Positive : Sign.Negative;
+            _sign = reachMin ? sign_type.sign_type_positive : sign_type.sign_type_negative;
         }
         _canvasGroup.alpha = alpha;
     }

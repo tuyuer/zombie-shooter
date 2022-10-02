@@ -34,13 +34,26 @@ public class GameWorld : MonoBehaviour
     void Awake()
     {
         _instance = this;
+    }
+
+    void Start()
+    {
         SetupGame();
         SetupPlayer();
     }
 
     void SetupGame() 
     {
+        //目标帧率
         Application.targetFrameRate = 60;
+
+        //打开页面
+        var uiManager = UIManager.GetInst();
+        UiMainPanel mainPanel = uiManager.ShowProxy(UIProxyType.MainPanel) as UiMainPanel;
+
+        //设置joystick, aimstick
+        joystick = mainPanel.joystick;
+        aimstick = mainPanel.aimstick;
     }
 
     void SetupPlayer()

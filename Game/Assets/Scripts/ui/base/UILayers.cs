@@ -9,18 +9,24 @@ public class UILayers : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var layers = GetComponentsInChildren<UILayer>();
-        for (int i = 0; i < layers.Length; i++)
-        {
-            var layer = layers[i];
-            _layers.Add(layer.type, layer);
-        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void InitLayers()
+    {
+        var layers = GetComponentsInChildren<UILayer>();
+        for (int i = 0; i < layers.Length; i++)
+        {
+            var layer = layers[i];
+            _layers.Add(layer.type, layer);
+        }
+        DontDestroyOnLoad(gameObject);
     }
 
     public UIProxy AddUI(UIProxyData data)

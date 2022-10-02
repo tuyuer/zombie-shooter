@@ -45,3 +45,9 @@ public enum backpack_element_type
     backpack_element_type_healpack,
     backpack_element_type_count,
 };
+
+public enum sign_type
+{
+    sign_type_positive,
+    sign_type_negative,
+}

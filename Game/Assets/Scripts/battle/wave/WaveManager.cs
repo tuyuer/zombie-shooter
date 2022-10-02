@@ -236,12 +236,12 @@ namespace HitJoy
             state = wave_manager_state.wave_manager_running;
         }
 
-        public void StopWave()
+        public void StopWrok()
         {
             state = wave_manager_state.wave_manager_stoped;
         }
 
-        public void StartWave()
+        public void StartWork()
         {
             state = wave_manager_state.wave_manager_running;
         }

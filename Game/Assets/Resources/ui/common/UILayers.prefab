@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
+  proxys: []
 --- !u!1 &4728858225448873133
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,6 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  proxys: []
 --- !u!1 &5117435841075502883
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,3 +394,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  proxys: []
