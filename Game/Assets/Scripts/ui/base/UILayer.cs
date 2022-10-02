@@ -29,6 +29,9 @@ public class UILayer : MonoBehaviour
 
     public UIProxy AddUI(UIProxyData data)
     {
+        var p = GetProxy(data.Type);
+        if (p) return p;
+
         GameObject ui = Resources.Load(data.Url) as GameObject;
         if (ui)
         {

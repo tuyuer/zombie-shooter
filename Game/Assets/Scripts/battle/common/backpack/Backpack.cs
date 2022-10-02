@@ -39,7 +39,6 @@ public class Backpack : MonoBehaviour
             if (item.elementType == elementType)
             {
                 item.elementCount += elementCount;
-                Debug.Log(item.elementCount);
                 bSuccess = true;
                 break;
             }

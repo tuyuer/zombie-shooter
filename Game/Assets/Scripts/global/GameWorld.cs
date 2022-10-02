@@ -83,6 +83,7 @@ public class GameWorld : MonoBehaviour
 
     void OnPlayerDeath(System.Object data)
     {
+        UIManager.GetInst().CloseAllProxy();
         UIManager.GetInst().ShowProxy(UIProxyType.GameOverPanel);
     }
 
