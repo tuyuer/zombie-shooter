@@ -7,6 +7,7 @@ public enum UIProxyType
     CommonTips,
     MainPanel,
     WaveInfoPanel,
+    GameOverPanel,
     StorePanel,
 }
 
@@ -100,6 +101,7 @@ public class UIManager : MonoBehaviour
         //normal
         RegistProxy(new UIProxyData(UIProxyType.MainPanel, "ui/gameScene/mainPanel"));
         RegistProxy(new UIProxyData(UIProxyType.WaveInfoPanel, "ui/gameScene/waveInfoPanel"));
+        RegistProxy(new UIProxyData(UIProxyType.GameOverPanel, "ui/gameScene/gameOverPanel"));
     }
 
     private void RegistProxy(UIProxyData data)
@@ -181,5 +183,10 @@ public class UIManager : MonoBehaviour
         if (!layer) return;
 
         layer.CloseProxy(proxy);
+    }
+
+    public void CloseAllProxy()
+    {
+        _layers.CloseAllProxy();
     }
 }

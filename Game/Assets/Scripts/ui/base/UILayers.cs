@@ -6,18 +6,6 @@ public class UILayers : MonoBehaviour
 {
     private Dictionary<UILayerType, UILayer> _layers = new Dictionary<UILayerType, UILayer>();
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void InitLayers()
     {
         var layers = GetComponentsInChildren<UILayer>();
@@ -44,5 +32,14 @@ public class UILayers : MonoBehaviour
         if (!success) return null;
 
         return layer;
+    }
+
+    public void CloseAllProxy()
+    {
+        foreach (var item in _layers)
+        {
+            UILayer layer = item.Value;
+            layer.CloseAllProxy();
+        }
     }
 }

@@ -111,4 +111,13 @@ public class UILayer : MonoBehaviour
         proxys.Remove(proxy);
         Destroy(proxy.gameObject);
     }
+
+    public void CloseAllProxy()
+    {
+        var tempProxys = new List<UIProxy>(proxys);
+        foreach(var proxy in tempProxys)
+        {
+            CloseProxy(proxy);
+        }
+    }
 }

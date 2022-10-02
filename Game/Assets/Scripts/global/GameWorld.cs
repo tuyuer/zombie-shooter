@@ -8,8 +8,12 @@ public class GameWorld : MonoBehaviour
 {
     [HideInInspector]
     public Character player;
+    [HideInInspector]
+    public Joystick joystick = null;
+    [HideInInspector]
+    public Joystick aimstick = null;
 
-    public GameSceneCanvas uiCanvas;
+    public bool isGameScene = false;
     public WaveManager waveManager;
 
     public SimpleObjectPool[] bulletPools;
@@ -17,9 +21,6 @@ public class GameWorld : MonoBehaviour
     public SimpleObjectPool soundPool = null;
 
     public AudioClip killedEffect = null;
-
-    public Joystick joystick = null;
-    public Joystick aimstick = null;
 
     public KillStatistics killStatistics;
     public Backpack backpack;
@@ -33,20 +34,30 @@ public class GameWorld : MonoBehaviour
 
     void Awake()
     {
+        Application.targetFrameRate = 60;
         _instance = this;
     }
 
     void Start()
     {
-        SetupGame();
+        if(isGameScene) SetupGame();
+
         SetupPlayer();
+        SetupWave();
+    }
+
+    void OnEnable()
+    {
+        MessageCenter.AddMessageObserver(this, NotificationDef.NOTIFICATION_ON_PLAYER_DEATH, new MessageEvent(OnPlayerDeath));
+    }
+
+    void OnDisable()
+    {
+        MessageCenter.RemoveAllObservers(this);
     }
 
     void SetupGame() 
     {
-        //目标帧率
-        Application.targetFrameRate = 60;
-
         //打开页面
         var uiManager = UIManager.GetInst();
         UiMainPanel mainPanel = uiManager.ShowProxy(UIProxyType.MainPanel) as UiMainPanel;
@@ -63,6 +74,16 @@ public class GameWorld : MonoBehaviour
 
         player = playerObj.GetComponent<Character>();
         Assert.IsNotNull(player);
+    }
+
+    void SetupWave()
+    {
+        waveManager.StartWork();
+    }
+
+    void OnPlayerDeath(System.Object data)
+    {
+        UIManager.GetInst().ShowProxy(UIProxyType.GameOverPanel);
     }
 
     public void SpawnBlood(Vector3 position, Quaternion rotation)
