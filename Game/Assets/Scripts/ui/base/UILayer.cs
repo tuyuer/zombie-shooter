@@ -26,7 +26,7 @@ public class UILayer : MonoBehaviour
         
     }
 
-    public void AddUI(UIProxyData data)
+    public UIProxy AddUI(UIProxyData data)
     {
         GameObject ui = Resources.Load(data.Url) as GameObject;
         if (ui)
@@ -39,6 +39,9 @@ public class UILayer : MonoBehaviour
             rTransform.offsetMin = new Vector2(0.0f, 0.0f);
             //right top
             rTransform.offsetMax = new Vector2(0.0f, 0.0f);
+
+            return ui.GetComponent<UIProxy>();
         }
+        return null;
     }
 }

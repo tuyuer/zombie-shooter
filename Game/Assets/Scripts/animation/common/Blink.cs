@@ -42,7 +42,7 @@ public class Blink : MonoBehaviour
         }
         _canvasGroup.alpha = alpha;
 
-        UIManager.GetInst().ShowProxy(UIProxyType.CommonTips);
+        TipsUtil.ShowTips("hello boy");
     }
 
 }

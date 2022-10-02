@@ -32,6 +32,5 @@ public class UiTipsPanel : UIProxy
     public void Show(string tips)
     {
         tmpTips.text = tips;
-        leftTime = 2;
     }
 }

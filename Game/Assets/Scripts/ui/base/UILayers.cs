@@ -23,10 +23,12 @@ public class UILayers : MonoBehaviour
         
     }
 
-    public void AddUI(UIProxyData data)
+    public UIProxy AddUI(UIProxyData data)
     {
         UILayer layer = GetLayer(data.LayerType);
-        if (layer) layer.AddUI(data);
+        if (layer) return layer.AddUI(data);
+
+        return null;
     }
 
     public UILayer GetLayer(UILayerType type)

@@ -82,18 +82,18 @@ public class UIManager : MonoBehaviour
         _proxyDatas.Add(data.Type, data);
     }
 
-    public void ShowProxy(UIProxyType type)
+    public UIProxy ShowProxy(UIProxyType type)
     {
         if (!_proxyDatas.ContainsKey(type))
         {
             Debug.Log("ShowProxy Err: pls regist ui => " + type);
-            return;
+            return null;
         }
 
         UIProxyData proxyData;
         var isSuccess = _proxyDatas.TryGetValue(type, out proxyData);
-        if (!isSuccess) return;
+        if (!isSuccess) return null;
 
-        _layers.AddUI(proxyData);
+        return _layers.AddUI(proxyData);
     }
 }
