@@ -37,7 +37,7 @@ public class Weapon : MonoBehaviour
                 bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_turret);
                 break;
             case weapon_type.weapon_type_rifle:
-                bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_turret);
+                bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_rifle);
                 break;
             case weapon_type.weapon_type_shortgun:
                 bulletPool = GameWorld.Instance.GetBulletPoolByType(simple_object_pool_type.simple_object_pool_type_bullet_shortgun);
